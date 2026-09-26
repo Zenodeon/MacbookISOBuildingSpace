@@ -1,0 +1,4 @@
+add "I:\MacbookISOBuildingSpace\work\staging\startnet.cmd" \Windows\System32\startnet.cmd
+add "I:\MacbookISOBuildingSpace\work\staging\A1706Drivers" \A1706Drivers
+add "I:\MacbookISOBuildingSpace\work\staging\DisplaySwitch.exe" \Windows\System32\DisplaySwitch.exe
+add "I:\MacbookISOBuildingSpace\work\staging\DisplaySwitch.exe.mui" \Windows\System32\en-US\DisplaySwitch.exe.mui

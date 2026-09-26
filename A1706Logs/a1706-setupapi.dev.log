@@ -1,0 +1,866 @@
+[Device Install Log]
+     OS Version = 10.0.19041
+     Service Pack = 0.0
+     Suite = 0x0100
+     ProductType = 1
+     Architecture = amd64
+
+[BeginLog]
+
+[Boot Session: 2026/09/26 21:53:36.500]
+
+>>>  [Device Install (DiInstallDevice) - USB\VID_0B95&PID_1790\000000000000A9]
+>>>  Section start 2026/09/26 21:53:50.256
+      cmd: wpeinit
+     ndv: Flags: 0x00000002
+     dvi: Class GUID of device changed to: {4d36e972-e325-11ce-bfc1-08002be10318}.
+     sto: {Setup Import Driver Package: X:\windows\INF\netax88179_178a.inf} 21:53:50.256
+     sto:      Driver package already imported as 'netax88179_178a.inf'.
+     sto: {Setup Import Driver Package - exit (0x00000000)} 21:53:50.256
+     dvi: Searching for hardware ID(s):
+     dvi:      usb\vid_0b95&pid_1790&rev_0200
+     dvi:      usb\vid_0b95&pid_1790
+     dvi: Searching for compatible ID(s):
+     dvi:      usb\class_ff&subclass_ff&prot_00
+     dvi:      usb\class_ff&subclass_ff
+     dvi:      usb\class_ff
+     dvi: Class GUID of device changed to: {4d36e972-e325-11ce-bfc1-08002be10318}.
+     ump: {Plug and Play Service: Device Install for USB\VID_0B95&PID_1790\000000000000A9}
+     dvi:      {Core Device Install} 21:53:50.287
+     dvi:           {Configure Device - USB\VID_0B95&PID_1790\000000000000A9} 21:53:50.287
+     dvi:                Device Status: 0x01806400 [0x12 - 0xc0000493]
+     dvi:                Config Flags: 0x00000020
+     dvi:                Parent Device: USB\VID_05E3&PID_0626\8&105e9f7c&0&4
+     sto:                {Configure Driver Package: X:\windows\System32\DriverStore\FileRepository\netax88179_178a.inf_amd64_b6748bc8bb8ccf4d\netax88179_178a.inf}
+     sto:                     Source Filter  = usb\vid_0b95&pid_1790
+     inf:                     Class GUID     = {4d36e972-e325-11ce-bfc1-08002be10318}
+     inf:                     Class Options  = Configurable
+     inf:                     {Configure Driver: ASIX AX88179 USB 3.0 to Gigabit Ethernet Adapter}
+     inf:                          Section Name = AX88179.Ndi
+     inf:                          {Add Service: AX88179}
+     inf:                               Start Type    = 3
+     inf:                               Service Type  = 1
+     inf:                               Error Control = 1
+     inf:                               Image Path    = \SystemRoot\System32\drivers\ax88179_178a.sys
+     inf:                               Display Name  = ASIX AX88179 USB 3.0 to Gigabit Ethernet Adapter
+     inf:                               Created new service 'AX88179'.
+     inf:                          {Add Service: exit(0x00000000)}
+     inf:                          Hardware Id  = USB\VID_0B95&PID_1790
+     inf:                          {Configure Driver Configuration: AX88179.Ndi}
+     inf:                               Service Name  = AX88179
+     inf:                               Config Flags  = 0x00000000
+     inf:                          {Configure Driver Configuration: exit(0x00000000)}
+     inf:                     {Configure Driver: exit(0x00000000)}
+     flq:                     {FILE_QUEUE_COMMIT} 21:53:50.302
+     flq:                          Hardlinking 'X:\windows\System32\DriverStore\FileRepository\netax88179_178a.inf_amd64_b6748bc8bb8ccf4d\ax88179_178a.sys' to 'X:\windows\System32\drivers\ax88179_178a.sys'.
+!    flq:                          HardLink: 'X:\windows\System32\DriverStore\FileRepository\netax88179_178a.inf_amd64_b6748bc8bb8ccf4d\ax88179_178a.sys' to 'X:\windows\System32\drivers\ax88179_178a.sys' FAILED
+!    flq:                          Error 1: Incorrect function.
+     flq:                     {FILE_QUEUE_COMMIT - exit(0x00000000)} 21:53:50.318
+     dvi:                     Existing files modified, may need to restart related services.
+     sto:                {Configure Driver Package: exit(0x00000bc3)}
+     dvi:                Restart required for any devices using this driver.
+     dvi:                Install Device: Configuring device. 21:53:50.318
+     dvi:                     Configuration: netax88179_178a.inf:usb\vid_0b95&pid_1790,AX88179.Ndi
+     dvi:                Install Device: Configuring device completed. 21:53:50.318
+     dvi:                Device Status: 0x01806000
+     dvi:                {Restarting Devices} 21:53:50.318
+     dvi:                     Start: USB\VID_0B95&PID_1790\000000000000A9
+!    dvi:                     Device 'USB\VID_0B95&PID_1790\000000000000A9' pending start: Device has problem: 0x38 (CM_PROB_NEED_CLASS_CONFIG), problem status: 0x00000000.
+     dvi:                {Restarting Devices exit} 21:53:50.318
+     dvi:           {Configure Device - exit(0x00000000)} 21:53:50.318
+     dvi:      {Core Device Install - exit(0x00000000)} 21:53:50.334
+     dvi:      Waiting for device post-install to complete. 21:53:50.334
+     dvi:      Device post-install completed. 21:53:51.590
+     dvi:      Device Status: 0x0180600a
+     ump: {Plug and Play Service: Device Install exit(00000000)}
+<<<  Section end 2026/09/26 21:53:51.590
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Device Install (DiInstallDriver) - E:\$WinPEDriver$\Thunderbolt\tbt81x.inf]
+>>>  Section start 2026/09/26 21:53:57.397
+      cmd: drvload  "E:\$WinPEDriver$\Thunderbolt\tbt81x.inf" 
+     ndv: Flags: 0x00000000
+     ndv: INF path: E:\$WinPEDriver$\Thunderbolt\tbt81x.inf
+     dvs: {DrvSetupInstallDriver - E:\$WinPEDriver$\Thunderbolt\tbt81x.inf}
+     dvs:      Flags: 0x00000000
+     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\Thunderbolt\tbt81x.inf} 21:53:57.413
+     sto:           {Copy Driver Package: E:\$WinPEDriver$\Thunderbolt\tbt81x.inf} 21:53:57.414
+     sto:                Driver Package = E:\$WinPEDriver$\Thunderbolt\tbt81x.inf
+     sto:                Flags          = 0x00000007
+     sto:                Destination    = X:\windows\TEMP\{0ecc314d-533a-784c-801e-005ddd3f5705}
+     sto:                Copying driver package files to 'X:\windows\TEMP\{0ecc314d-533a-784c-801e-005ddd3f5705}'.
+     flq:                {FILE_QUEUE_COMMIT} 21:53:57.414
+     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbtcoinx.dll' to 'X:\windows\TEMP\{0ecc314d-533a-784c-801e-005ddd3f5705}\tbtcoinx.dll'.
+     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbt81x.cat' to 'X:\windows\TEMP\{0ecc314d-533a-784c-801e-005ddd3f5705}\tbt81x.cat'.
+     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbt81x.inf' to 'X:\windows\TEMP\{0ecc314d-533a-784c-801e-005ddd3f5705}\tbt81x.inf'.
+     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbt81x.sys' to 'X:\windows\TEMP\{0ecc314d-533a-784c-801e-005ddd3f5705}\tbt81x.sys'.
+!!!  flq:                     Error installing file (0x00000002)
+!!!  flq:                     Error 2: The system cannot find the file specified.
+!    flq:                          SourceFile   - 'E:\$WinPEDriver$\Thunderbolt\setup.msi'
+!    flq:                          TargetFile   - 'X:\windows\TEMP\{0ecc314d-533a-784c-801e-005ddd3f5705}\setup.msi'
+!!!  cpy:                     Failed to copy file 'E:\$WinPEDriver$\Thunderbolt\setup.msi' to 'X:\windows\TEMP\{0ecc314d-533a-784c-801e-005ddd3f5705}\setup.msi'. Error = 0x00000002
+!!!  flq:                     SPFQNOTIFY_COPYERROR: returned SPFQOPERATION_ABORT.
+!!!  flq:                     Error 995: The I/O operation has been aborted because of either a thread exit or an application request.
+!!!  flq:                     Failed to commit copy queue. Error = 0x000003e3
+!!!  flq:                     FileQueueCommit aborting
+!!!  flq:                     Error 995: The I/O operation has been aborted because of either a thread exit or an application request.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x000003e3)} 21:53:57.444
+!!!  sto:                Failed to copy driver package to 'X:\windows\TEMP\{0ecc314d-533a-784c-801e-005ddd3f5705}'. Error = 0x00000002
+     sto:           {Copy Driver Package: exit(0x00000002)} 21:53:57.444
+     dvs:      {Driver Setup Import Driver Package - exit (0x00000002)} 21:53:57.444
+!!!  dvs:      Failed to import driver packages under 'E:\$WinPEDriver$\Thunderbolt\tbt81x.inf'. Error = 0x00000002
+     dvs: {DrvSetupInstallDriver - exit(00000002)}
+<<<  Section end 2026/09/26 21:53:57.444
+<<<  [Exit status: FAILURE(0x00000002)]
+
+
+>>>  [Device Install (DiInstallDriver) - E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf]
+>>>  Section start 2026/09/26 21:53:57.537
+      cmd: drvload  "E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf" 
+     ndv: Flags: 0x00000000
+     ndv: INF path: E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf
+     dvs: {DrvSetupInstallDriver - E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf}
+     dvs:      Flags: 0x00000000
+     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf} 21:53:57.537
+     sto:           {Copy Driver Package: E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf} 21:53:57.584
+     sto:                Driver Package = E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf
+     sto:                Flags          = 0x00000007
+     sto:                Destination    = X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}
+     sto:                Copying driver package files to 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}'.
+     flq:                {FILE_QUEUE_COMMIT} 21:53:57.633
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CLFiltAPO.dll' to 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\x64\CLFiltAPO.dll'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CLLoopAPO.dll' to 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\x64\CLLoopAPO.dll'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CSLFD.sys' to 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\x64\CSLFD.sys'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CSUFD.sys' to 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\x64\CSUFD.sys'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\WdfCoInstaller01011.dll' to 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\x64\WdfCoInstaller01011.dll'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\CS4208.cat' to 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\CS4208.cat'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf' to 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\cs4208_36.inf'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 21:53:57.710
+     sto:           {Copy Driver Package: exit(0x00000000)} 21:53:57.710
+     ump:           Import flags: 0x00000000
+     pol:           {Driver package policy check} 21:53:57.710
+     pol:           {Driver package policy check - exit(0x00000000)} 21:53:57.710
+     sto:           {Stage Driver Package: X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\cs4208_36.inf} 21:53:57.710
+     inf:                {Query Configurability: X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\cs4208_36.inf} 21:53:57.773
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Found legacy RegisterDlls operation. Code = 1300
+!    inf:                     Found legacy AddReg operation using non-relative key (HKLM\Software\\Cirrus\\APO\\FilterAPO). Code = 1304
+!    inf:                     Found legacy DelReg operation. Code = 1308
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 256
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                     Driver package 'cs4208_36.inf' is NOT configurable.
+     inf:                {Query Configurability: exit(0x00000000)} 21:53:57.835
+     flq:                {FILE_QUEUE_COMMIT} 21:53:57.835
+     flq:                     Copying 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\x64\CLFiltAPO.dll' to 'X:\windows\System32\DriverStore\Temp\{2d642749-30e0-e84e-9d17-6ee2e0047c5f}\x64\CLFiltAPO.dll'.
+     flq:                     Copying 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\x64\CLLoopAPO.dll' to 'X:\windows\System32\DriverStore\Temp\{2d642749-30e0-e84e-9d17-6ee2e0047c5f}\x64\CLLoopAPO.dll'.
+     flq:                     Copying 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\x64\CSLFD.sys' to 'X:\windows\System32\DriverStore\Temp\{2d642749-30e0-e84e-9d17-6ee2e0047c5f}\x64\CSLFD.sys'.
+     flq:                     Copying 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\x64\CSUFD.sys' to 'X:\windows\System32\DriverStore\Temp\{2d642749-30e0-e84e-9d17-6ee2e0047c5f}\x64\CSUFD.sys'.
+     flq:                     Copying 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\x64\WdfCoInstaller01011.dll' to 'X:\windows\System32\DriverStore\Temp\{2d642749-30e0-e84e-9d17-6ee2e0047c5f}\x64\WdfCoInstaller01011.dll'.
+     flq:                     Copying 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\CS4208.cat' to 'X:\windows\System32\DriverStore\Temp\{2d642749-30e0-e84e-9d17-6ee2e0047c5f}\CS4208.cat'.
+     flq:                     Copying 'X:\windows\TEMP\{be0375b2-0d15-2d48-bc4c-04cceb087c22}\cs4208_36.inf' to 'X:\windows\System32\DriverStore\Temp\{2d642749-30e0-e84e-9d17-6ee2e0047c5f}\cs4208_36.inf'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 21:53:57.882
+     sto:                {DRIVERSTORE IMPORT VALIDATE} 21:53:57.913
+     sig:                     Driver package catalog is valid.
+     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 21:53:57.992
+     sig:                Signer Score  = 0x0D000004 (Unclassified)
+     sig:                Submission ID = 1926262
+     sto:                {Core Driver Package Import: cs4208_36.inf_amd64_79baf8ffb0dada0e} 21:53:58.023
+     sto:                     {DRIVERSTORE IMPORT BEGIN} 21:53:58.023
+     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 21:53:58.023
+     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{2d642749-30e0-e84e-9d17-6ee2e0047c5f}} 21:53:58.023
+     cpy:                          Target Path = X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e
+     cpy:                          {Copy Directory: X:\windows\System32\DriverStore\Temp\{2d642749-30e0-e84e-9d17-6ee2e0047c5f}\x64} 21:53:58.023
+     cpy:                               Target Path = X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64
+     cpy:                          {Copy Directory: exit(0x00000000)} 21:53:58.059
+     cpy:                     {Copy Directory: exit(0x00000000)} 21:53:58.059
+     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf} 21:53:58.059
+     idb:                          Created driver package object 'cs4208_36.inf_amd64_79baf8ffb0dada0e' in DRIVERS database node.
+     idb:                          Created driver INF file object 'oem1.inf' in DRIVERS database node.
+     idb:                          Registered driver package 'cs4208_36.inf_amd64_79baf8ffb0dada0e' with 'oem1.inf'.
+     idb:                     {Register Driver Package: exit(0x00000000)} 21:53:58.090
+     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf} 21:53:58.090
+     idb:                          Activating driver package 'cs4208_36.inf_amd64_79baf8ffb0dada0e'.
+     cpy:                          Published 'cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf' to 'oem1.inf'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    idb:                          Driver INF match for 'oem1.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_4206&SUBSYS_10134206&REV_1003'.
+!    idb:                          Driver INF match for 'oem1.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_4207&SUBSYS_10134207&REV_1003'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 256
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    idb:                          Driver INF match for 'oem1.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_4208&SUBSYS_10134208'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    idb:                          Driver INF match for 'oem1.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_10138408'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    idb:                          Driver INF match for 'oem1.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_10138409'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    idb:                          Driver INF match for 'oem1.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_10138409'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    idb:                          Driver INF match for 'oem1.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_10138408'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    idb:                          Driver INF match for 'oem1.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_10138409'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    idb:                          Driver INF match for 'oem1.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_10138409'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+     idb:                          Indexed 38 device IDs for 'cs4208_36.inf_amd64_79baf8ffb0dada0e'.
+     sto:                          Flushed driver database node 'DRIVERS'. Time = 0 ms
+     sto:                          Flushed driver database node 'SYSTEM'. Time = 0 ms
+     idb:                     {Publish Driver Package: exit(0x00000000)} 21:53:58.158
+!    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CLFiltAPO.dll'. Error = 0x00000001
+!    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CLLoopAPO.dll'. Error = 0x00000001
+!    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CSLFD.sys'. Error = 0x00000001
+!    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CSUFD.sys'. Error = 0x00000001
+!    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\WdfCoInstaller01011.dll'. Error = 0x00000001
+     sto:                     {DRIVERSTORE IMPORT END} 21:53:58.174
+!    dvi:                          Unable to flush all driver package files to disk. Time = 0 ms, Error = 0x00000005
+     sig:                          Installed catalog 'CS4208.cat' as 'oem1.cat'.
+     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 21:53:58.189
+     sto:                {Core Driver Package Import: exit(0x00000000)} 21:53:58.189
+     sto:           {Stage Driver Package: exit(0x00000000)} 21:53:58.189
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 256
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
+     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 21:53:58.283
+     dvs:      {Driver Setup Update Device: HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&a4c0fcf&0&0001} 21:53:58.283
+     utl:           {Select Drivers - HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&a4c0fcf&0&0001} 21:53:58.283
+     utl:                Driver Node:
+     utl:                     Status         - Selected
+     utl:                     Driver INF     - oem1.inf (X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf)
+     utl:                     Class GUID     - {4d36e96c-e325-11ce-bfc1-08002be10318}
+     utl:                     Driver Version - 11/22/2016,6.6001.3.36
+     utl:                     Configuration  - HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600
+     utl:                     Driver Rank    - 00FF0001
+     utl:                     Signer Score   - Unclassified (0D000004)
+     utl:                Driver Node:
+     utl:                     Status         - Outranked | Installed
+     utl:                     Driver INF     - hdaudio.inf (X:\windows\System32\DriverStore\FileRepository\hdaudio.inf_amd64_98fd5b0ddcb79b7d\hdaudio.inf)
+     utl:                     Class GUID     - {4d36e96c-e325-11ce-bfc1-08002be10318}
+     utl:                     Driver Version - 10/19/2023,10.0.19041.3636
+     utl:                     Configuration  - HDAUDIO\FUNC_01 [HdAudModel]
+     utl:                     Driver Rank    - 00FF300C
+     utl:                     Signer Score   - Inbox (0D000003)
+     utl:           {Select Drivers - exit(0x00000000} 21:53:58.283
+     dvs:           Installing best driver (oem1.inf) on device 'HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&a4c0fcf&0&0001'.
+     ump:           {Plug and Play Service: Device Install for HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001}
+     dvi:                Searching for hardware ID(s):
+     dvi:                     hdaudio\func_01&ven_1013&dev_8409&subsys_106b3600&rev_1001
+     dvi:                     hdaudio\func_01&ven_1013&dev_8409&subsys_106b3600
+     dvi:                Searching for compatible ID(s):
+     dvi:                     hdaudio\func_01&ctlr_ven_8086&ctlr_dev_9d70&ven_1013&dev_8409&rev_1001
+     dvi:                     hdaudio\func_01&ctlr_ven_8086&ven_1013&dev_8409&rev_1001
+     dvi:                     hdaudio\func_01&ven_1013&dev_8409&rev_1001
+     dvi:                     hdaudio\func_01&ctlr_ven_8086&ctlr_dev_9d70&ven_1013&dev_8409
+     dvi:                     hdaudio\func_01&ctlr_ven_8086&ven_1013&dev_8409
+     dvi:                     hdaudio\func_01&ven_1013&dev_8409
+     dvi:                     hdaudio\func_01&ctlr_ven_8086&ctlr_dev_9d70&ven_1013
+     dvi:                     hdaudio\func_01&ctlr_ven_8086&ven_1013
+     dvi:                     hdaudio\func_01&ven_1013
+     dvi:                     hdaudio\func_01&ctlr_ven_8086&ctlr_dev_9d70
+     dvi:                     hdaudio\func_01&ctlr_ven_8086
+     dvi:                     hdaudio\func_01&gf&ven_1013&dev_8409&subsys_106b3600&rev_1001
+     dvi:                     hdaudio\func_01
+     dvi:                Class GUID of device changed to: {4d36e96c-e325-11ce-bfc1-08002be10318}.
+     ndv:                {Core Device Install} 21:53:58.330
+     dvi:                     {Install Device - HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001} 21:53:58.330
+     dvi:                          Device Status: 0x0180200a
+     dvi:                          Config Flags: 0x00000000
+     dvi:                          Parent Device: PCI\VEN_8086&DEV_9D70&SUBSYS_72708086&REV_21\3&11583659&0&FB
+     dvi:                          {DIF_ALLOW_INSTALL} 21:53:58.330
+     dvi:                               Default installer: Enter 21:53:58.345
+     dvi:                               Default installer: Exit
+     dvi:                          {DIF_ALLOW_INSTALL - exit(0xe000020e)} 21:53:58.345
+     dvi:                          {DIF_INSTALLDEVICEFILES} 21:53:58.345
+     dvi:                               Default installer: Enter 21:53:58.345
+     dvi:                               Default installer: Exit
+     dvi:                          {DIF_INSTALLDEVICEFILES - exit(0x00000000)} 21:53:58.377
+     dvi:                          {_SCAN_FILE_QUEUE} 21:53:58.377
+     flq:                               File 'X:\windows\system32\DRIVERS\HdAudio.sys' pruned from copy.
+     dvi:                          {_SCAN_FILE_QUEUE - exit(0x00000000)} 21:53:58.705
+     flq:                          {FILE_QUEUE_COMMIT} 21:53:58.720
+     flq:                               Copying 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CSLFD.sys' to 'X:\windows\system32\DRIVERS\CSLFD.sys'.
+     flq:                               Copying 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CSUFD.sys' to 'X:\windows\system32\DRIVERS\CSUFD.sys'.
+     flq:                               Copying 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CLFiltAPO.dll' to 'X:\windows\system32\CLFiltAPO.dll'.
+     flq:                               Copying 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\WdfCoInstaller01011.dll' to 'X:\windows\system32\WdfCoInstaller01011.dll'.
+     flq:                          {FILE_QUEUE_COMMIT - exit(0x00000000)} 21:53:58.783
+     dvi:                          {_SCAN_FILE_QUEUE} 21:53:58.783
+     dvi:                          {_SCAN_FILE_QUEUE - exit(0x00000000)} 21:53:58.783
+     dvi:                          {DIF_REGISTER_COINSTALLERS} 21:53:58.783
+     dvi:                               Reset Device: Resetting device configuration. 21:53:58.783
+     dvi:                               Reset Device: Resetting device configuration completed. 21:53:58.798
+     dvi:                               Default installer: Enter 21:53:58.798
+     inf:                                    {Install from INF Section - HDAudio.Cirrus_CONF_0901.CoInstallers} 21:53:58.814
+     inf:                                         Flags         - 0x001001ee
+     inf:                                    {Install from INF Section - exit(0x00000000)} 21:53:58.814
+     dvi:                               Default installer: Exit
+     dvi:                          {DIF_REGISTER_COINSTALLERS - exit(0x00000000)} 21:53:58.814
+     dvi:                          {DIF_INSTALLINTERFACES} 21:53:58.814
+     dvi:                               Using exported function 'WdfCoInstaller' in module 'X:\windows\system32\WdfCoInstaller01011.dll'.
+     dvi:                               CoInstaller 1 == WdfCoInstaller01011.dll,WdfCoInstaller
+     dvi:                               CoInstaller 1: Enter 21:53:58.814
+     dvi:                               CoInstaller 1: Exit
+     dvi:                               Default installer: Enter 21:53:58.814
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.ApoQuadTopo} 21:53:58.830
+     inf:                                         Flags         - 0x001005ee
+     inf:                                    {Install from INF Section - exit(0x00000000)} 21:53:58.830
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.ApoQuadTopo} 21:53:58.830
+     inf:                                         Flags         - 0x001005ee
+     inf:                                    {Install from INF Section - exit(0x00000000)} 21:53:58.830
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.NoApoHPTopo} 21:53:58.830
+     inf:                                         Flags         - 0x001005ee
+     inf:                                    {Install from INF Section - exit(0x00000000)} 21:53:58.830
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.NoApoHPTopo} 21:53:58.830
+     inf:                                         Flags         - 0x001005ee
+     inf:                                    {Install from INF Section - exit(0x00000000)} 21:53:58.830
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.HSInTopo} 21:53:58.830
+     inf:                                         Flags         - 0x001005ee
+     inf:                                    {Install from INF Section - exit(0x00000000)} 21:53:58.830
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.HSInTopo} 21:53:58.830
+     inf:                                         Flags         - 0x001005ee
+     inf:                                    {Install from INF Section - exit(0x00000000)} 21:53:58.830
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.MicApoTopo} 21:53:58.830
+     inf:                                         Flags         - 0x001005ee
+     inf:                                    {Install from INF Section - exit(0x00000000)} 21:53:58.830
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.MicApoTopo} 21:53:58.830
+     inf:                                         Flags         - 0x001005ee
+     inf:                                    {Install from INF Section - exit(0x00000000)} 21:53:58.845
+     dvi:                               Default installer: Exit
+     dvi:                          {DIF_INSTALLINTERFACES - exit(0x00000000)} 21:53:58.845
+     dvi:                          {DIF_INSTALLDEVICE} 21:53:58.845
+     dvi:                               CoInstaller 1: Enter 21:53:58.845
+     dvi:                               CoInstaller 1: Exit
+     dvi:                               Default installer: Enter 21:53:58.861
+     dvi:                                    {Install DEVICE}
+     inf:                                         {Install from INF Section - HDAudio.Cirrus_CONF_0901} 21:53:58.877
+     inf:                                              Flags         - 0x001005ee
+     inf:                                         {Install from INF Section - exit(0x00000000)} 21:53:58.908
+     inf:                                         {Install from INF Section - HdAudOEM.CopyFiles} 21:53:58.908
+     inf:                                              Flags         - 0x001005ee
+     inf:                                         {Install from INF Section - exit(0x00000000)} 21:53:58.908
+     inf:                                         {Install from INF Section - HdAudOEM.AddReg} 21:53:58.908
+     inf:                                              Flags         - 0x001005ee
+     inf:                                         {Install from INF Section - exit(0x00000000)} 21:53:58.923
+     inf:                                         {Install from INF Section - CSHDA.Conf} 21:53:58.923
+     inf:                                              Flags         - 0x001005ee
+     inf:                                              Processing REGISTERDLLS section [CLFiltAPO.RegisterDlls]. Module: '%11%\CLFiltAPO.dll', flags: 0x0001, timeout: 300s, Arguments: '(null)'.
+     inf:                                         {Install from INF Section - exit(0x00000000)} 21:53:58.939
+     inf:                                         {Install from INF Section - HDAudio.Cirrus_CONF_0901.Hw} 21:53:58.939
+     inf:                                              Flags         - 0x00100004
+     inf:                                         {Install from INF Section - exit(0x00000000)} 21:53:58.939
+     inf:                                         {Install from INF Section - HdAudModel.HW} 21:53:58.939
+     inf:                                              Flags         - 0x00100004
+     inf:                                         {Install from INF Section - exit(0x00000000)} 21:53:58.939
+     inf:                                         {Install from INF Section - CSHDA.HW} 21:53:58.939
+     inf:                                              Flags         - 0x00100004
+     inf:                                         {Install from INF Section - exit(0x00000000)} 21:53:58.939
+     dvi:                                         {Writing Device Properties}
+     dvi:                                              Strong Name=oem1.inf:ed86ca1170e2762f:HDAudio.Cirrus_CONF_0901:6.6001.3.36:hdaudio\func_01&ven_1013&dev_8409&subsys_106b3600
+     dvi:                                         {Writing Device Properties - Complete}
+     inf:                                         AddService=HdAudAddService,0x00000002,HdAud_Service_Install  (hdaudio.inf line 92)
+     dvi:                                         Add Service: Modified existing service 'HdAudAddService'.
+     inf:                                         {Install from INF Section - HdAud_Service_Install} 21:53:58.955
+     inf:                                              Flags         - 0x00100004
+     inf:                                         {Install from INF Section - exit(0x00000000)} 21:53:58.955
+     inf:                                         AddService=CirrusLFD,,LowerFilt_Service_Inst  (cs4208_36.inf line 1342)
+     dvi:                                         Add Service: Created service 'CirrusLFD'.
+     inf:                                         {Install from INF Section - LowerFilt_Service_Inst} 21:53:58.970
+     inf:                                              Flags         - 0x00100004
+     inf:                                         {Install from INF Section - exit(0x00000000)} 21:53:58.970
+     inf:                                         AddService=CirrusUFD,,UpperFilt_Service_Inst  (cs4208_36.inf line 1343)
+     dvi:                                         Add Service: Created service 'CirrusUFD'.
+     inf:                                         {Install from INF Section - UpperFilt_Service_Inst} 21:53:58.970
+     inf:                                              Flags         - 0x00100004
+     inf:                                         {Install from INF Section - exit(0x00000000)} 21:53:58.970
+     dvi:                                    {Install DEVICE exit (0x00000000)}
+     sto:                                    {Configure Driver Package: x:\windows\system32\driverstore\filerepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf}
+     sto:                                         Source Filter  = HDAudio.Cirrus_CONF_0901
+     sto:                                         Target Filter  = HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001
+     inf:                                         Class GUID     = {4d36e96c-e325-11ce-bfc1-08002be10318}
+     inf:                                         Class Options  = Configurable
+     inf:                                         {Configure Driver: Cirrus Logic CS8409 (AB 54)}
+     inf:                                              Section Name = HDAudio.Cirrus_CONF_0901
+     inf:                                              {Configure Device: HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001}
+     inf:                                              {Configure Device: exit(0x00000000)}
+     inf:                                         {Configure Driver: exit(0x00000000)}
+     sto:                                    {Configure Driver Package: exit(0x00000000)}
+     dvi:                                    Install Device: Configuring device class. 21:53:59.048
+     dvi:                                    Install Device: Configuring device class completed. 21:53:59.048
+     dvi:                                    Device Status: 0x0180200a
+     dvi:                                    {Restarting Devices} 21:53:59.048
+     dvi:                                         Query-remove: HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001
+     dvi:                                         Query-remove: HDAUDIO\FUNC_01&VEN_8086&DEV_2809&SUBSYS_80860101&REV_1000\4&A4C0FCF&0&0201
+     dvi:                                         Start: HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001
+     dvi:                                         Start: HDAUDIO\FUNC_01&VEN_8086&DEV_2809&SUBSYS_80860101&REV_1000\4&A4C0FCF&0&0201
+     dvi:                                         Restart verified: HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001
+     dvi:                                         Restart verified: HDAUDIO\FUNC_01&VEN_8086&DEV_2809&SUBSYS_80860101&REV_1000\4&A4C0FCF&0&0201
+     dvi:                                    {Restarting Devices exit} 21:53:59.242
+     dvi:                               Default installer: Exit
+     dvi:                               CoInstaller 1: Enter (Post Processing) 21:53:59.242
+     dvi:                               CoInstaller 1: Exit (Post Processing)
+     dvi:                          {DIF_INSTALLDEVICE - exit(0x00000000)} 21:53:59.242
+     dvi:                          {DIF_NEWDEVICEWIZARD_FINISHINSTALL} 21:53:59.242
+     dvi:                               CoInstaller 1: Enter 21:53:59.242
+     dvi:                               CoInstaller 1: Exit
+     dvi:                               Default installer: Enter 21:53:59.242
+     dvi:                               Default installer: Exit
+     dvi:                          {DIF_NEWDEVICEWIZARD_FINISHINSTALL - exit(0xe000020e)} 21:53:59.242
+     dvi:                     {Install Device - exit(0x00000000)} 21:53:59.258
+     dvi:                {Core Device Install - exit(0x00000000)} 21:53:59.258
+     dvi:                {DIF_DESTROYPRIVATEDATA} 21:53:59.258
+     dvi:                     CoInstaller 1: Enter 21:53:59.258
+     dvi:                     CoInstaller 1: Exit
+     dvi:                     Default installer: Enter 21:53:59.258
+     dvi:                     Default installer: Exit
+     dvi:                {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 21:53:59.258
+     ump:           {Plug and Play Service: Device Install exit(00000000)}
+     dvs:           {Install Related Drivers} 21:53:59.258
+     dvs:           {Install Related Drivers: exit(0x00000000)} 21:53:59.258
+     dvs:      {Driver Setup Update Device - exit(0x00000000)} 21:53:59.258
+     dvs: {DrvSetupInstallDriver - exit(00000000)}
+<<<  Section end 2026/09/26 21:53:59.258
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Device Install (DiInstallDriver) - E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf]
+>>>  Section start 2026/09/26 21:53:59.336
+      cmd: drvload  "E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf" 
+     ndv: Flags: 0x00000000
+     ndv: INF path: E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf
+     dvs: {DrvSetupInstallDriver - E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf}
+     dvs:      Flags: 0x00000000
+     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf} 21:53:59.336
+     sto:           {Copy Driver Package: E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf} 21:53:59.367
+     sto:                Driver Package = E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf
+     sto:                Flags          = 0x00000007
+     sto:                Destination    = X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}
+     sto:                Copying driver package files to 'X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}'.
+!    inf:                Could not find include INF file "ks.inf". Error = 0x00000002
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     flq:                {FILE_QUEUE_COMMIT} 21:53:59.428
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf' to 'X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}\cs420x_46.inf'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\CirrusAPO_x64.dll' to 'X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}\CirrusAPO_x64.dll'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\CS420x64.cat' to 'X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}\CS420x64.cat'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\CS420x64.sys' to 'X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}\CS420x64.sys'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 21:53:59.428
+     sto:           {Copy Driver Package: exit(0x00000000)} 21:53:59.428
+     ump:           Import flags: 0x00000000
+     pol:           {Driver package policy check} 21:53:59.443
+     pol:           {Driver package policy check - exit(0x00000000)} 21:53:59.443
+     sto:           {Stage Driver Package: X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}\cs420x_46.inf} 21:53:59.443
+!    inf:                Could not find include INF file "ks.inf". Error = 0x00000002
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
+     inf:                {Query Configurability: X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}\cs420x_46.inf} 21:53:59.506
+!    inf:                     Could not find include INF file "ks.inf". Error = 0x00000002
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 194
+!    inf:                     Found legacy RegisterDlls operation. Code = 1300
+!    inf:                     Found legacy AddReg operation using non-relative key (HKLM\SOFTWARE\\Cirrus\\CS420x\\Versions). Code = 1304
+!    inf:                     Found legacy DelReg operation. Code = 1308
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 265
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 318
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 371
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 424
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 477
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 530
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 583
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 689
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 636
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 742
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 795
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 848
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 958
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1015
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1129
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 905
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1072
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1182
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1231
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1292
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1353
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1414
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1475
+     inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
+!    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1548
+!    inf:                     Driver package 'cs420x_46.inf' is NOT configurable.
+!    inf:                     Driver package 'cs420x_46.inf' has unresolved external dependencies.
+     inf:                {Query Configurability: exit(0x00000000)} 21:53:59.568
+     flq:                {FILE_QUEUE_COMMIT} 21:53:59.568
+     flq:                     Copying 'X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}\cs420x_46.inf' to 'X:\windows\System32\DriverStore\Temp\{b1b8a968-580b-8949-9c66-1e37a382696e}\cs420x_46.inf'.
+     flq:                     Copying 'X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}\CirrusAPO_x64.dll' to 'X:\windows\System32\DriverStore\Temp\{b1b8a968-580b-8949-9c66-1e37a382696e}\CirrusAPO_x64.dll'.
+     flq:                     Copying 'X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}\CS420x64.cat' to 'X:\windows\System32\DriverStore\Temp\{b1b8a968-580b-8949-9c66-1e37a382696e}\CS420x64.cat'.
+     flq:                     Copying 'X:\windows\TEMP\{e641f3c7-367b-834a-a44f-d857ad324fb6}\CS420x64.sys' to 'X:\windows\System32\DriverStore\Temp\{b1b8a968-580b-8949-9c66-1e37a382696e}\CS420x64.sys'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 21:53:59.584
+     sto:                {DRIVERSTORE IMPORT VALIDATE} 21:53:59.600
+     sig:                     Driver package catalog is valid.
+     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 21:53:59.646
+     sig:                Signer Score  = 0x0D000004 (Unclassified)
+     sig:                Submission ID = 1641440
+     sto:                {Core Driver Package Import: cs420x_46.inf_amd64_5a5add9946f1615b} 21:53:59.662
+     sto:                     {DRIVERSTORE IMPORT BEGIN} 21:53:59.662
+     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 21:53:59.662
+     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{b1b8a968-580b-8949-9c66-1e37a382696e}} 21:53:59.662
+     cpy:                          Target Path = X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b
+     cpy:                     {Copy Directory: exit(0x00000000)} 21:53:59.662
+     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b\cs420x_46.inf} 21:53:59.662
+     idb:                          Created driver package object 'cs420x_46.inf_amd64_5a5add9946f1615b' in DRIVERS database node.
+     idb:                          Created driver INF file object 'oem2.inf' in DRIVERS database node.
+     idb:                          Registered driver package 'cs420x_46.inf_amd64_5a5add9946f1615b' with 'oem2.inf'.
+     idb:                     {Register Driver Package: exit(0x00000000)} 21:53:59.678
+     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b\cs420x_46.inf} 21:53:59.678
+     idb:                          Activating driver package 'cs420x_46.inf_amd64_5a5add9946f1615b'.
+     cpy:                          Published 'cs420x_46.inf_amd64_5a5add9946f1615b\cs420x_46.inf' to 'oem2.inf'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 194
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 265
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 318
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 371
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 424
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 477
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 530
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 583
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 689
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 636
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 742
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 795
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 848
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 958
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1015
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1129
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 905
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1072
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1182
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1231
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1292
+!    idb:                          Driver INF match for 'oem2.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_4207&SUBSYS_1C230110&REV_1003'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1353
+!    idb:                          Driver INF match for 'oem2.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_4207&SUBSYS_1C230110&REV_1003'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1414
+!    idb:                          Driver INF match for 'oem2.inf' already exists under 'HDAUDIO\FUNC_01&VEN_1013&DEV_4207&SUBSYS_1C230110&REV_1003'.
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1475
+!    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1548
+     idb:                          Indexed 60 device IDs for 'cs420x_46.inf_amd64_5a5add9946f1615b'.
+     sto:                          Flushed driver database node 'DRIVERS'. Time = 0 ms
+     sto:                          Flushed driver database node 'SYSTEM'. Time = 0 ms
+     idb:                     {Publish Driver Package: exit(0x00000000)} 21:53:59.725
+!    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b\CirrusAPO_x64.dll'. Error = 0x00000001
+!    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b\CS420x64.sys'. Error = 0x00000001
+     sto:                     {DRIVERSTORE IMPORT END} 21:53:59.740
+!    dvi:                          Unable to flush all driver package files to disk. Time = 0 ms, Error = 0x00000005
+     sig:                          Installed catalog 'CS420x64.cat' as 'oem2.cat'.
+     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 21:53:59.756
+     sto:                {Core Driver Package Import: exit(0x00000000)} 21:53:59.756
+     sto:           {Stage Driver Package: exit(0x00000000)} 21:53:59.756
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 194
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 265
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 318
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 371
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 424
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 477
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 530
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 583
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 689
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 636
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 742
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 795
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 848
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 958
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1015
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1129
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 905
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1072
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1182
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1231
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1292
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1353
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1414
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1475
+!    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1548
+     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 21:53:59.803
+!    dvs:      Unable to find any matching devices.
+     dvs: {DrvSetupInstallDriver - exit(00000000)}
+<<<  Section end 2026/09/26 21:53:59.818
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Device Install (DiInstallDriver) - E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf]
+>>>  Section start 2026/09/26 21:53:59.943
+      cmd: drvload  "E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf" 
+     ndv: Flags: 0x00000000
+     ndv: INF path: E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf
+     dvs: {DrvSetupInstallDriver - E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf}
+     dvs:      Flags: 0x00000000
+     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf} 21:53:59.943
+     sto:           {Copy Driver Package: E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf} 21:53:59.943
+     sto:                Driver Package = E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf
+     sto:                Flags          = 0x00000007
+     sto:                Destination    = X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}
+     sto:                Copying driver package files to 'X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}'.
+!    inf:                Section [destinationdirs] is defined multiple times. Code = 1209, Line = 13
+!    inf:                Section [sourcedisksfiles] is defined multiple times. Code = 1209, Line = 19
+     flq:                {FILE_QUEUE_COMMIT} 21:53:59.943
+     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.cat' to 'X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}\AppleSPIKeyboard.cat'.
+     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf' to 'X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}\AppleSPIKeyboard.inf'.
+     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.sys' to 'X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}\AppleSPIKeyboard.sys'.
+     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\WdfCoInstaller01011.dll' to 'X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}\WdfCoInstaller01011.dll'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 21:53:59.990
+     sto:           {Copy Driver Package: exit(0x00000000)} 21:53:59.990
+     ump:           Import flags: 0x00000000
+     pol:           {Driver package policy check} 21:54:00.006
+     pol:           {Driver package policy check - exit(0x00000000)} 21:54:00.006
+     sto:           {Stage Driver Package: X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}\AppleSPIKeyboard.inf} 21:54:00.006
+!    inf:                Section [destinationdirs] is defined multiple times. Code = 1209, Line = 13
+!    inf:                Section [sourcedisksfiles] is defined multiple times. Code = 1209, Line = 19
+     inf:                {Query Configurability: X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}\AppleSPIKeyboard.inf} 21:54:00.006
+!    inf:                     Section [destinationdirs] is defined multiple times. Code = 1209, Line = 13
+!    inf:                     Section [sourcedisksfiles] is defined multiple times. Code = 1209, Line = 19
+     inf:                     Driver package uses WDF.
+     inf:                     Driver package 'AppleSPIKeyboard.inf' is configurable.
+     inf:                {Query Configurability: exit(0x00000000)} 21:54:00.006
+     flq:                {FILE_QUEUE_COMMIT} 21:54:00.006
+     flq:                     Copying 'X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}\AppleSPIKeyboard.cat' to 'X:\windows\System32\DriverStore\Temp\{1f00a929-010a-a24d-bca4-e0e2cec62e63}\AppleSPIKeyboard.cat'.
+     flq:                     Copying 'X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}\AppleSPIKeyboard.inf' to 'X:\windows\System32\DriverStore\Temp\{1f00a929-010a-a24d-bca4-e0e2cec62e63}\AppleSPIKeyboard.inf'.
+     flq:                     Copying 'X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}\AppleSPIKeyboard.sys' to 'X:\windows\System32\DriverStore\Temp\{1f00a929-010a-a24d-bca4-e0e2cec62e63}\AppleSPIKeyboard.sys'.
+     flq:                     Copying 'X:\windows\TEMP\{f0e18ff6-55c9-1045-a4f8-12722a10ece1}\WdfCoInstaller01011.dll' to 'X:\windows\System32\DriverStore\Temp\{1f00a929-010a-a24d-bca4-e0e2cec62e63}\WdfCoInstaller01011.dll'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 21:54:00.053
+     sto:                {DRIVERSTORE IMPORT VALIDATE} 21:54:00.053
+     sig:                     Driver package catalog is valid.
+!    inf:                     Section [destinationdirs] is defined multiple times. Code = 1209, Line = 13
+!    inf:                     Section [sourcedisksfiles] is defined multiple times. Code = 1209, Line = 19
+     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 21:54:00.084
+     sig:                Signer Score  = 0x0D000004 (Unclassified)
+     sig:                Submission ID = 1858594
+     sto:                {Core Driver Package Import: applespikeyboard.inf_amd64_e0db65d93aa907c7} 21:54:00.084
+     sto:                     {DRIVERSTORE IMPORT BEGIN} 21:54:00.084
+     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 21:54:00.084
+     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{1f00a929-010a-a24d-bca4-e0e2cec62e63}} 21:54:00.084
+     cpy:                          Target Path = X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7
+     cpy:                     {Copy Directory: exit(0x00000000)} 21:54:00.126
+     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7\AppleSPIKeyboard.inf} 21:54:00.126
+     idb:                          Created driver package object 'applespikeyboard.inf_amd64_e0db65d93aa907c7' in SYSTEM database node.
+     idb:                          Created driver INF file object 'oem3.inf' in SYSTEM database node.
+     idb:                          Registered driver package 'applespikeyboard.inf_amd64_e0db65d93aa907c7' with 'oem3.inf'.
+     idb:                     {Register Driver Package: exit(0x00000000)} 21:54:00.126
+     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7\AppleSPIKeyboard.inf} 21:54:00.126
+     idb:                          Activating driver package 'applespikeyboard.inf_amd64_e0db65d93aa907c7'.
+     cpy:                          Published 'applespikeyboard.inf_amd64_e0db65d93aa907c7\applespikeyboard.inf' to 'oem3.inf'.
+     idb:                          Indexed 9 device IDs for 'applespikeyboard.inf_amd64_e0db65d93aa907c7'.
+     sto:                          Flushed driver database node 'SYSTEM'. Time = 0 ms
+     idb:                     {Publish Driver Package: exit(0x00000000)} 21:54:00.126
+!    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7\AppleSPIKeyboard.sys'. Error = 0x00000001
+!    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7\WdfCoInstaller01011.dll'. Error = 0x00000001
+     sto:                     {DRIVERSTORE IMPORT END} 21:54:00.126
+!    dvi:                          Unable to flush all driver package files to disk. Time = 0 ms, Error = 0x00000005
+     sig:                          Installed catalog 'AppleSPIKeyboard.cat' as 'oem3.cat'.
+     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 21:54:00.126
+     sto:                {Core Driver Package Import: exit(0x00000000)} 21:54:00.126
+     sto:           {Stage Driver Package: exit(0x00000000)} 21:54:00.126
+     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 21:54:00.157
+!    dvs:      Unable to find any matching devices.
+     dvs: {DrvSetupInstallDriver - exit(00000000)}
+<<<  Section end 2026/09/26 21:54:00.157
+<<<  [Exit status: SUCCESS]
+
+
+>>>  [Device Install (DiInstallDriver) - E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf]
+>>>  Section start 2026/09/26 21:54:01.487
+      cmd: drvload  "E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf" 
+     ndv: Flags: 0x00000000
+     ndv: INF path: E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf
+     dvs: {DrvSetupInstallDriver - E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf}
+     dvs:      Flags: 0x00000000
+     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf} 21:54:01.487
+     sto:           {Copy Driver Package: E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf} 21:54:01.503
+     sto:                Driver Package = E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf
+     sto:                Flags          = 0x00000007
+     sto:                Destination    = X:\windows\TEMP\{b0a5a0bf-14aa-8540-b885-90c15a0d31d4}
+     sto:                Copying driver package files to 'X:\windows\TEMP\{b0a5a0bf-14aa-8540-b885-90c15a0d31d4}'.
+     flq:                {FILE_QUEUE_COMMIT} 21:54:01.503
+     flq:                     Copying 'E:\$WinPEDriver$\AppleDFR64\AppleDFR.cat' to 'X:\windows\TEMP\{b0a5a0bf-14aa-8540-b885-90c15a0d31d4}\AppleDFR.cat'.
+     flq:                     Copying 'E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf' to 'X:\windows\TEMP\{b0a5a0bf-14aa-8540-b885-90c15a0d31d4}\AppleDFR.inf'.
+     flq:                     Copying 'E:\$WinPEDriver$\AppleDFR64\AppleDFR.sys' to 'X:\windows\TEMP\{b0a5a0bf-14aa-8540-b885-90c15a0d31d4}\AppleDFR.sys'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 21:54:01.524
+     sto:           {Copy Driver Package: exit(0x00000000)} 21:54:01.524
+     ump:           Import flags: 0x00000000
+     pol:           {Driver package policy check} 21:54:01.524
+     pol:           {Driver package policy check - exit(0x00000000)} 21:54:01.524
+     sto:           {Stage Driver Package: X:\windows\TEMP\{b0a5a0bf-14aa-8540-b885-90c15a0d31d4}\AppleDFR.inf} 21:54:01.524
+     inf:                {Query Configurability: X:\windows\TEMP\{b0a5a0bf-14aa-8540-b885-90c15a0d31d4}\AppleDFR.inf} 21:54:01.524
+     inf:                     Driver package uses WDF.
+     inf:                     Driver package 'AppleDFR.inf' is configurable.
+     inf:                {Query Configurability: exit(0x00000000)} 21:54:01.539
+     flq:                {FILE_QUEUE_COMMIT} 21:54:01.539
+     flq:                     Copying 'X:\windows\TEMP\{b0a5a0bf-14aa-8540-b885-90c15a0d31d4}\AppleDFR.cat' to 'X:\windows\System32\DriverStore\Temp\{5b892125-640d-5949-844d-dc8d83fcbf77}\AppleDFR.cat'.
+     flq:                     Copying 'X:\windows\TEMP\{b0a5a0bf-14aa-8540-b885-90c15a0d31d4}\AppleDFR.inf' to 'X:\windows\System32\DriverStore\Temp\{5b892125-640d-5949-844d-dc8d83fcbf77}\AppleDFR.inf'.
+     flq:                     Copying 'X:\windows\TEMP\{b0a5a0bf-14aa-8540-b885-90c15a0d31d4}\AppleDFR.sys' to 'X:\windows\System32\DriverStore\Temp\{5b892125-640d-5949-844d-dc8d83fcbf77}\AppleDFR.sys'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 21:54:01.539
+     sto:                {DRIVERSTORE IMPORT VALIDATE} 21:54:01.539
+     sig:                     Driver package catalog is valid.
+     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 21:54:01.555
+     sig:                Signer Score  = 0x0D000004 (Unclassified)
+     sig:                Submission ID = 1919233
+     sto:                {Core Driver Package Import: appledfr.inf_amd64_ec3ab803889f24fd} 21:54:01.555
+     sto:                     {DRIVERSTORE IMPORT BEGIN} 21:54:01.555
+     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 21:54:01.555
+     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{5b892125-640d-5949-844d-dc8d83fcbf77}} 21:54:01.555
+     cpy:                          Target Path = X:\windows\System32\DriverStore\FileRepository\appledfr.inf_amd64_ec3ab803889f24fd
+     cpy:                     {Copy Directory: exit(0x00000000)} 21:54:01.555
+     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\appledfr.inf_amd64_ec3ab803889f24fd\AppleDFR.inf} 21:54:01.555
+     idb:                          Created driver package object 'appledfr.inf_amd64_ec3ab803889f24fd' in SYSTEM database node.
+     idb:                          Created driver INF file object 'oem4.inf' in SYSTEM database node.
+     idb:                          Registered driver package 'appledfr.inf_amd64_ec3ab803889f24fd' with 'oem4.inf'.
+     idb:                     {Register Driver Package: exit(0x00000000)} 21:54:01.555
+     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\appledfr.inf_amd64_ec3ab803889f24fd\AppleDFR.inf} 21:54:01.555
+     idb:                          Activating driver package 'appledfr.inf_amd64_ec3ab803889f24fd'.
+     cpy:                          Published 'appledfr.inf_amd64_ec3ab803889f24fd\appledfr.inf' to 'oem4.inf'.
+     idb:                          Indexed 2 device IDs for 'appledfr.inf_amd64_ec3ab803889f24fd'.
+     sto:                          Flushed driver database node 'SYSTEM'. Time = 0 ms
+     idb:                     {Publish Driver Package: exit(0x00000000)} 21:54:01.555
+!    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\appledfr.inf_amd64_ec3ab803889f24fd\AppleDFR.sys'. Error = 0x00000001
+     sto:                     {DRIVERSTORE IMPORT END} 21:54:01.555
+!    dvi:                          Unable to flush all driver package files to disk. Time = 0 ms, Error = 0x00000005
+     sig:                          Installed catalog 'AppleDFR.cat' as 'oem4.cat'.
+     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 21:54:01.555
+     sto:                {Core Driver Package Import: exit(0x00000000)} 21:54:01.555
+     sto:           {Stage Driver Package: exit(0x00000000)} 21:54:01.555
+     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 21:54:01.586
+!    dvs:      Unable to find any matching devices.
+     dvs: {DrvSetupInstallDriver - exit(00000000)}
+<<<  Section end 2026/09/26 21:54:01.586
+<<<  [Exit status: SUCCESS]
+

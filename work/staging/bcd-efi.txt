@@ -1,0 +1,17 @@
+
+Windows Boot Loader
+-------------------
+identifier              {default}
+device                  ramdisk=[boot]\sources\boot.wim,{7619dcc8-fafe-11d9-b411-000476eba25f}
+path                    \windows\system32\boot\winload.efi
+description             Windows Setup
+locale                  en-US
+inherit                 {bootloadersettings}
+testsigning             Yes
+isolatedcontext         Yes
+osdevice                ramdisk=[boot]\sources\boot.wim,{7619dcc8-fafe-11d9-b411-000476eba25f}
+systemroot              \windows
+bootmenupolicy          Standard
+detecthal               Yes
+winpe                   Yes
+ems                     No

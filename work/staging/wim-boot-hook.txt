@@ -1,0 +1,5 @@
+add "I:\MacbookISOBuildingSpace\work\staging\a1706.cmd" \Windows\System32\a1706.cmd
+add "I:\MacbookISOBuildingSpace\work\staging\winpeshl.ini" \Windows\System32\winpeshl.ini
+add "I:\MacbookISOBuildingSpace\work\staging\startnet.cmd" \Windows\System32\startnet.cmd
+add "C:\Windows\System32\DisplaySwitch.exe" \Windows\System32\DisplaySwitch.exe
+add "C:\Windows\System32\en-US\DisplaySwitch.exe.mui" \Windows\System32\en-US\DisplaySwitch.exe.mui

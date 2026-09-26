@@ -1,0 +1,3 @@
+add "I:\MacbookISOBuildingSpace\work\all-drivers" \Drivers
+add "I:\MacbookISOBuildingSpace\work\tb-extract\apple-pkg\dmg\BootCamp" \BootCamp
+add "I:\MacbookISOBuildingSpace\work\staging\SetupComplete.cmd" \Windows\Setup\Scripts\SetupComplete.cmd

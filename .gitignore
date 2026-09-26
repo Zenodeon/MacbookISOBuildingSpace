@@ -1,0 +1,32 @@
+# Windows installer images and extracted trees
+out/
+WindowsISO/
+BootcampDrivers/
+work/iso-root/
+work/all-drivers/
+work/tb-extract/
+work/wimlib/
+work/boot2-extract/
+work/mount-boot/
+work/mount-boot2/
+work/mount-install/
+work/staging/A1706Drivers/
+work/staging/boot2/
+work/staging/verify/
+work/staging/wimcheck/
+
+# Build leftovers
+*.iso
+*.wim
+*.esd
+*.log
+*.obj
+*.exe
+*.dll
+*.sys
+*.mui
+*.cat
+
+# Keep the Mac Setup logs
+!A1706Logs/
+!A1706Logs/**
