@@ -1,10 +1,10 @@
-A1706 setup log v5 Sat 09/26/2026 21:53:48.97
+A1706 setup log v6 Sat 09/26/2026 22:54:45.89
 writable drives: C
 logs appended to \A1706Logs on each writable drive
 wpeinit finished errorlevel=0
 copied setupapi.dev.log 
 step after-wpeinit
-iris preinstalled in boot image, skip drvload
+iris boot-start in image, skip drvload
 check C
 check E
 iris-inf-on E
@@ -508,6 +508,14 @@ Manufacturer Name:          Microsoft
 Status:                     Started
 Driver Name:                basicrender.inf
 
+Instance ID:                STORAGE\Volume\{4ea080bb-ba40-11f1-be0e-806e6f6e6963}#0000000E89000000
+Device Description:         Volume
+Class Name:                 Volume
+Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+Manufacturer Name:          Microsoft
+Status:                     Started
+Driver Name:                volume.inf
+
 Instance ID:                HID\VID_046D&PID_C534&MI_00\8&176b181&0&0000
 Device Description:         HID Keyboard Device
 Class Name:                 Keyboard
@@ -630,14 +638,6 @@ Manufacturer Name:          Unknown
 Status:                     Problem
 Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
 Problem Status:             0xC0000490
-
-Instance ID:                STORAGE\Volume\{c7e7cc7b-ba37-11f1-a953-806e6f6e6963}#0000000E89000000
-Device Description:         Volume
-Class Name:                 Volume
-Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
-Manufacturer Name:          Microsoft
-Status:                     Started
-Driver Name:                volume.inf
 
 Instance ID:                PCI\VEN_8086&DEV_9D70&SUBSYS_72708086&REV_21\3&11583659&0&FB
 Device Description:         High Definition Audio Controller
@@ -1001,18 +1001,18 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID
     (Default)    REG_NONE    52004F004F0054005C004200610073006900630044006900730070006C00610079005C0030003000300030000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0064
-    (Default)    REG_NONE    CDFF3990444EDD01
+    (Default)    REG_NONE    85BBED134D4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0065
-    (Default)    REG_NONE    CDFF3990444EDD01
+    (Default)    REG_NONE    85BBED134D4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0066
-    (Default)    REG_NONE    CDFF3990444EDD01
+    (Default)    REG_NONE    85BBED134D4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0001
-    (Default)    REG_NONE    ECBC000000000000
+    (Default)    REG_NONE    ADBD000000000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0002
     (Default)    REG_NONE    00000000
@@ -1059,12 +1059,12 @@ dump errorlevel=0
 
 05/21/2024  12:04 PM         1,925,104 DisplaySwitch.exe
                1 File(s)      1,925,104 bytes
-               0 Dir(s)     521,924,608 bytes free
+               0 Dir(s)     521,940,992 bytes free
 DisplaySwitch.exe present
 copied setupapi.dev.log touchbar
-display cycle start 21:54:02.45
+display cycle start 22:54:59.46
 cue display errorlevel=3
 copied setupapi.dev.log touchbar
-display cycle finished 21:54:51.39
+display cycle finished 22:55:48.46
 cue done errorlevel=3
 copied setupapi.dev.log touchbar
