@@ -5,7 +5,7 @@ echo ran>X:\a1706.ran
 set LOGX=X:\a1706-setup-log.txt
 set LOGS=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :try %%L
-set "MSG=A1706 setup log v6 %DATE% %TIME%"
+set "MSG=A1706 setup log v7 %DATE% %TIME%"
 call :note
 set "MSG=writable drives:!LOGS!"
 call :note
@@ -71,6 +71,36 @@ if exist %SystemRoot%\System32\DisplaySwitch.exe (
 )
 call :copysapi
 if exist %SystemRoot%\System32\Narrator.exe start "" %SystemRoot%\System32\Narrator.exe
+set "MSG=step force-switch"
+call :note
+set "GPU=PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10"
+set "MSG=remove !GPU!"
+call :note
+pnputil /remove-device "!GPU!" >X:\a1706-cmd-out.txt 2>&1
+set RC=!ERRORLEVEL!
+call :addfile X:\a1706-cmd-out.txt
+if !RC! equ 0 (
+  set "MSG=errorlevel=!RC! removed gpu"
+) else (
+  set "MSG=ERROR errorlevel=!RC! remove gpu"
+)
+call :note
+set "MSG=step scan-devices"
+call :note
+pnputil /scan-devices >X:\a1706-cmd-out.txt 2>&1
+set RC=!ERRORLEVEL!
+call :addfile X:\a1706-cmd-out.txt
+if !RC! equ 0 (
+  set "MSG=errorlevel=!RC! scan-devices"
+) else (
+  set "MSG=ERROR errorlevel=!RC! scan-devices"
+)
+call :note
+call :dump pnputil /enum-devices /problem
+call :dump pnputil /enum-devices /class Display
+set "MSG=step save hive"
+call :note
+for %%D in (!LOGS!) do call :savehiv %%D
 set "MSG=display cycle start %TIME%"
 call :note
 call :cue display
@@ -168,6 +198,20 @@ goto :eof
 if not exist "%~1" goto :eof
 type "%~1" >>"%LOGX%"
 for %%D in (!LOGS!) do type "%~1" >>"%%D:\A1706Logs\a1706-setup-log.txt"
+goto :eof
+:savehiv
+set "MSG=save SYSTEM.hiv on %~1"
+call :note
+if not exist "%~1:\A1706Logs\" mkdir "%~1:\A1706Logs"
+reg save HKLM\SYSTEM "%~1:\A1706Logs\SYSTEM.hiv" /y >X:\a1706-cmd-out.txt 2>&1
+set RC=!ERRORLEVEL!
+call :addfile X:\a1706-cmd-out.txt
+if !RC! equ 0 (
+  set "MSG=errorlevel=!RC! saved SYSTEM.hiv on %~1"
+) else (
+  set "MSG=ERROR errorlevel=!RC! SYSTEM.hiv on %~1"
+)
+call :note
 goto :eof
 :cue
 if not exist %SystemRoot%\System32\a1706cue.exe (
