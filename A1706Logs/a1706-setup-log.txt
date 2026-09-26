@@ -1,4 +1,4 @@
-A1706 setup log v6 Sat 09/26/2026 22:54:45.89
+A1706 setup log v7 Sat 09/26/2026 23:37:11.75
 writable drives: C
 logs appended to \A1706Logs on each writable drive
 wpeinit finished errorlevel=0
@@ -508,14 +508,6 @@ Manufacturer Name:          Microsoft
 Status:                     Started
 Driver Name:                basicrender.inf
 
-Instance ID:                STORAGE\Volume\{4ea080bb-ba40-11f1-be0e-806e6f6e6963}#0000000E89000000
-Device Description:         Volume
-Class Name:                 Volume
-Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
-Manufacturer Name:          Microsoft
-Status:                     Started
-Driver Name:                volume.inf
-
 Instance ID:                HID\VID_046D&PID_C534&MI_00\8&176b181&0&0000
 Device Description:         HID Keyboard Device
 Class Name:                 Keyboard
@@ -580,6 +572,14 @@ Class GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
 Manufacturer Name:          (Standard USB HUBs)
 Status:                     Started
 Driver Name:                usbhub3.inf
+
+Instance ID:                STORAGE\Volume\{3c294570-ba46-11f1-b2ae-806e6f6e6963}#0000000E89000000
+Device Description:         Volume
+Class Name:                 Volume
+Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+Manufacturer Name:          Microsoft
+Status:                     Started
+Driver Name:                volume.inf
 
 Instance ID:                PCI\VEN_8086&DEV_15D4&SUBSYS_00008086&REV_02\6&108342b7&0&001000E4
 Device Description:         Intel(R) USB 3.1 eXtensible Host Controller - 1.10 (Microsoft)
@@ -1001,18 +1001,18 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID
     (Default)    REG_NONE    52004F004F0054005C004200610073006900630044006900730070006C00610079005C0030003000300030000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0064
-    (Default)    REG_NONE    85BBED134D4EDD01
+    (Default)    REG_NONE    1D476301534EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0065
-    (Default)    REG_NONE    85BBED134D4EDD01
+    (Default)    REG_NONE    1D476301534EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0066
-    (Default)    REG_NONE    85BBED134D4EDD01
+    (Default)    REG_NONE    1D476301534EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0001
-    (Default)    REG_NONE    ADBD000000000000
+    (Default)    REG_NONE    96BC000000000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0002
     (Default)    REG_NONE    00000000
@@ -1059,12 +1059,175 @@ dump errorlevel=0
 
 05/21/2024  12:04 PM         1,925,104 DisplaySwitch.exe
                1 File(s)      1,925,104 bytes
-               0 Dir(s)     521,940,992 bytes free
+               0 Dir(s)     521,953,280 bytes free
 DisplaySwitch.exe present
 copied setupapi.dev.log touchbar
-display cycle start 22:54:59.46
+step force-switch
+remove PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Microsoft PnP Utility
+
+Removing device:          PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Device removed successfully.
+
+errorlevel=0 removed gpu
+step scan-devices
+Microsoft PnP Utility
+
+Scanning for device hardware changes.
+Scan complete.
+
+errorlevel=0 scan-devices
+----- pnputil /enum-devices /problem -----
+Microsoft PnP Utility
+
+Instance ID:                PCI\VEN_8086&DEV_9D27&SUBSYS_72708086&REV_21\3&11583659&0&F0
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D66&SUBSYS_72708086&REV_21\3&11583659&0&C8
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                ACPI\APP0002\10
+Device Description:         Unknown
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                USB\VID_1D5C&PID_7102\6&2cf71ea0&0&1
+Device Description:         Generic Billboard Device
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_14E4&DEV_43BA&SUBSYS_0157106B&REV_02\4&1a5036a5&0&00EB
+Device Description:         Network Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Device Description:         Video Controller (VGA Compatible)
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               1 (0x01) [CM_PROB_NOT_CONFIGURED]
+Problem Status:             0xC0000493
+
+Instance ID:                PCI\VEN_8086&DEV_9D21&SUBSYS_72708086&REV_21\3&11583659&0&FA
+Device Description:         PCI Memory Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D2A&SUBSYS_72708086&REV_21\3&11583659&0&F3
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                ACPI\APP7777\5&2c705bfe&0
+Device Description:         Unknown
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D23&SUBSYS_72708086&REV_21\3&11583659&0&FC
+Device Description:         SM Bus Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                ACPI\APP0001\4&15fbc11c&0
+Device Description:         Unknown
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D28&SUBSYS_72708086&REV_21\3&11583659&0&F1
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                USB\VID_05AC&PID_8600\5&2c705bfe&0&3
+Device Description:         iBridge
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D3A&SUBSYS_72708086&REV_21\3&11583659&0&B0
+Device Description:         PCI Simple Communications Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_106B&DEV_2003&SUBSYS_2003106B&REV_12\4&32fa7cc7&0&00E0
+Device Description:         Mass Storage Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+dump errorlevel=0
+----- pnputil /enum-devices /class Display -----
+Microsoft PnP Utility
+
+No devices were found on the system.
+dump errorlevel=0
+step save hive
+save SYSTEM.hiv on C
+The operation completed successfully.
+errorlevel=0 saved SYSTEM.hiv on C
+display cycle start 23:37:25.78
 cue display errorlevel=3
 copied setupapi.dev.log touchbar
-display cycle finished 22:55:48.46
+display cycle finished 23:38:14.76
 cue done errorlevel=3
 copied setupapi.dev.log touchbar
