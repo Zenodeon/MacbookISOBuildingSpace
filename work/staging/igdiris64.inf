@@ -50,7 +50,7 @@ igdmd64.dll,,,0x00004000
 
 [igfx_Service_Inst]
 ServiceType=1
-StartType=3
+StartType=0
 ErrorControl=0
 LoadOrderGroup=Video
 ServiceBinary=%12%\igdkmd64.sys

@@ -5,7 +5,7 @@ echo ran>X:\a1706.ran
 set LOGX=X:\a1706-setup-log.txt
 set LOGS=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :try %%L
-set "MSG=A1706 setup log v5 %DATE% %TIME%"
+set "MSG=A1706 setup log v6 %DATE% %TIME%"
 call :note
 set "MSG=writable drives:!LOGS!"
 call :note
@@ -18,7 +18,7 @@ call :note
 call :copysapi
 set "MSG=step after-wpeinit"
 call :note
-set "MSG=iris preinstalled in boot image, skip drvload"
+set "MSG=iris boot-start in image, skip drvload"
 call :note
 set DRV=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :finddrv %%L
