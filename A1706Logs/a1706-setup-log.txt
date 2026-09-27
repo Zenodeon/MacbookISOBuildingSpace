@@ -1,10 +1,10 @@
-A1706 setup log v13 Sun 09/27/2026  2:55:43.01
+A1706 setup log v14 Sun 09/27/2026  3:42:38.05
 writable drives: C
 logs appended to \A1706Logs on each writable drive
 wpeinit finished errorlevel=0
 copied setupapi.dev.log 
 step after-wpeinit
-v13 restart iris only
+v14 restart iris only
 ----- pnputil /enum-devices /class Display -----
 Microsoft PnP Utility
 
@@ -805,6 +805,14 @@ Manufacturer Name:          (Standard keyboards)
 Status:                     Started
 Driver Name:                keyboard.inf
 
+Instance ID:                STORAGE\Volume\{828f9c5c-ba68-11f1-aa4f-806e6f6e6963}#0000000E89000000
+Device Description:         Volume
+Class Name:                 Volume
+Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+Manufacturer Name:          Microsoft
+Status:                     Started
+Driver Name:                volume.inf
+
 Instance ID:                USB\VID_046D&PID_C534&MI_00\7&2ef17630&0&0000
 Device Description:         USB Input Device
 Class Name:                 HIDClass
@@ -836,14 +844,6 @@ Class GUID:                 {4d36e97d-e325-11ce-bfc1-08002be10318}
 Manufacturer Name:          (Standard system devices)
 Status:                     Started
 Driver Name:                machine.inf
-
-Instance ID:                STORAGE\Volume\{f4b0b2d9-ba61-11f1-a472-806e6f6e6963}#0000000E89000000
-Device Description:         Volume
-Class Name:                 Volume
-Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
-Manufacturer Name:          Microsoft
-Status:                     Started
-Driver Name:                volume.inf
 
 Instance ID:                PCI\VEN_8086&DEV_9D23&SUBSYS_72708086&REV_21\3&11583659&0&FC
 Device Description:         SM Bus Controller
@@ -1295,21 +1295,21 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID
     (Default)    REG_NONE    52004F004F0054005C004200610073006900630044006900730070006C00610079005C0030003000300030000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0064
-    (Default)    REG_NONE    B2B811BD6E4EDD01
+    (Default)    REG_NONE    F800F54A754EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0065
-    (Default)    REG_NONE    B2B811BD6E4EDD01
+    (Default)    REG_NONE    F800F54A754EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0066
-    (Default)    REG_NONE    B2B811BD6E4EDD01
+    (Default)    REG_NONE    F800F54A754EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0067
-    (Default)    REG_NONE    8513EBC46E4EDD01
+    (Default)    REG_NONE    A6B4D552754EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0001
-    (Default)    REG_NONE    F5BC000000000000
+    (Default)    REG_NONE    20BD000000000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0002
     (Default)    REG_NONE    00000000
@@ -1350,13 +1350,13 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UI
     (Default)    REG_NONE    5000430049005C00560045004E005F00380030003800360026004400450056005F00310039003200370026005300550042005300590053005F003000310035004400310030003600420026005200450056005F00300041005C003300260031003100350038003300360035003900260030002600310030000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0064
-    (Default)    REG_NONE    EFC0C8C56E4EDD01
+    (Default)    REG_NONE    05D7C853754EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0065
-    (Default)    REG_NONE    EFC0C8C56E4EDD01
+    (Default)    REG_NONE    05D7C853754EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0066
-    (Default)    REG_NONE    EFC0C8C56E4EDD01
+    (Default)    REG_NONE    3527B853754EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{a45c254e-df1c-4efd-8020-67d146a850e0}
 
@@ -1366,7 +1366,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UI
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{ca085853-16ce-48aa-b114-de9c72334223}
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0001
-    (Default)    REG_NONE    EDBB020000000000
+    (Default)    REG_NONE    17BB020000000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0002
     (Default)    REG_NONE    030E0300
@@ -1423,13 +1423,33 @@ dump errorlevel=0
 
 05/21/2024  12:04 PM         1,925,104 DisplaySwitch.exe
                1 File(s)      1,925,104 bytes
-               0 Dir(s)     411,299,840 bytes free
+               0 Dir(s)     411,344,896 bytes free
 DisplaySwitch.exe present
 copied setupapi.dev.log touchbar
-v13 display cycle
-display cycle start  2:55:58.72
+v14 display cycle
+display cycle start  3:42:54.17
 cue display errorlevel=3
 copied setupapi.dev.log touchbar
-display cycle finished  2:56:47.73
+display cycle finished  3:43:43.06
 cue done errorlevel=3
 copied setupapi.dev.log touchbar
+v14 delete oem0 force
+Microsoft PnP Utility
+
+Driver package deleted successfully.
+delete-driver errorlevel=0
+----- pnputil /enum-devices /class Display -----
+Microsoft PnP Utility
+
+Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Device Description:         Intel(R) Iris(TM) Graphics 550
+Class Name:                 Display
+Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
+Manufacturer Name:          Intel Corporation
+Status:                     Started
+Driver Name:                oem0.---
+
+dump errorlevel=0
+copied setupapi.dev.log touchbar
+ERROR missing ESD-ISO install.wim
+after-setup log a1706-after-setup.txt
