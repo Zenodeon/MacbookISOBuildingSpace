@@ -7,16 +7,16 @@
 
 [BeginLog]
 
-[Boot Session: 2026/09/26 23:37:04.500]
+[Boot Session: 2026/09/27 01:15:23.500]
 
 >>>  [Device Install (DiInstallDevice) - USB\VID_0B95&PID_1790\000000000000A9]
->>>  Section start 2026/09/26 23:37:13.009
+>>>  Section start 2026/09/27 01:15:32.275
       cmd: wpeinit
      ndv: Flags: 0x00000002
      dvi: Class GUID of device changed to: {4d36e972-e325-11ce-bfc1-08002be10318}.
-     sto: {Setup Import Driver Package: X:\windows\INF\netax88179_178a.inf} 23:37:13.009
+     sto: {Setup Import Driver Package: X:\windows\INF\netax88179_178a.inf} 01:15:32.275
      sto:      Driver package already imported as 'netax88179_178a.inf'.
-     sto: {Setup Import Driver Package - exit (0x00000000)} 23:37:13.024
+     sto: {Setup Import Driver Package - exit (0x00000000)} 01:15:32.290
      dvi: Searching for hardware ID(s):
      dvi:      usb\vid_0b95&pid_1790&rev_0200
      dvi:      usb\vid_0b95&pid_1790
@@ -26,8 +26,8 @@
      dvi:      usb\class_ff
      dvi: Class GUID of device changed to: {4d36e972-e325-11ce-bfc1-08002be10318}.
      ump: {Plug and Play Service: Device Install for USB\VID_0B95&PID_1790\000000000000A9}
-     dvi:      {Core Device Install} 23:37:13.040
-     dvi:           {Configure Device - USB\VID_0B95&PID_1790\000000000000A9} 23:37:13.040
+     dvi:      {Core Device Install} 01:15:32.306
+     dvi:           {Configure Device - USB\VID_0B95&PID_1790\000000000000A9} 01:15:32.306
      dvi:                Device Status: 0x01806400 [0x12 - 0xc0000493]
      dvi:                Config Flags: 0x00000020
      dvi:                Parent Device: USB\VID_05E3&PID_0626\8&105e9f7c&0&4
@@ -51,98 +51,98 @@
      inf:                               Config Flags  = 0x00000000
      inf:                          {Configure Driver Configuration: exit(0x00000000)}
      inf:                     {Configure Driver: exit(0x00000000)}
-     flq:                     {FILE_QUEUE_COMMIT} 23:37:13.055
+     flq:                     {FILE_QUEUE_COMMIT} 01:15:32.337
      flq:                          Hardlinking 'X:\windows\System32\DriverStore\FileRepository\netax88179_178a.inf_amd64_b6748bc8bb8ccf4d\ax88179_178a.sys' to 'X:\windows\System32\drivers\ax88179_178a.sys'.
 !    flq:                          HardLink: 'X:\windows\System32\DriverStore\FileRepository\netax88179_178a.inf_amd64_b6748bc8bb8ccf4d\ax88179_178a.sys' to 'X:\windows\System32\drivers\ax88179_178a.sys' FAILED
 !    flq:                          Error 1: Incorrect function.
-     flq:                     {FILE_QUEUE_COMMIT - exit(0x00000000)} 23:37:13.071
+     flq:                     {FILE_QUEUE_COMMIT - exit(0x00000000)} 01:15:32.337
      dvi:                     Existing files modified, may need to restart related services.
      sto:                {Configure Driver Package: exit(0x00000bc3)}
      dvi:                Restart required for any devices using this driver.
-     dvi:                Install Device: Configuring device. 23:37:13.071
+     dvi:                Install Device: Configuring device. 01:15:32.337
      dvi:                     Configuration: netax88179_178a.inf:usb\vid_0b95&pid_1790,AX88179.Ndi
-     dvi:                Install Device: Configuring device completed. 23:37:13.071
+     dvi:                Install Device: Configuring device completed. 01:15:32.353
      dvi:                Device Status: 0x01806000
-     dvi:                {Restarting Devices} 23:37:13.071
+     dvi:                {Restarting Devices} 01:15:32.353
      dvi:                     Start: USB\VID_0B95&PID_1790\000000000000A9
 !    dvi:                     Device 'USB\VID_0B95&PID_1790\000000000000A9' pending start: Device has problem: 0x38 (CM_PROB_NEED_CLASS_CONFIG), problem status: 0x00000000.
-     dvi:                {Restarting Devices exit} 23:37:13.071
-     dvi:           {Configure Device - exit(0x00000000)} 23:37:13.071
-     dvi:      {Core Device Install - exit(0x00000000)} 23:37:13.071
-     dvi:      Waiting for device post-install to complete. 23:37:13.071
-     dvi:      Device post-install completed. 23:37:14.327
+     dvi:                {Restarting Devices exit} 01:15:32.353
+     dvi:           {Configure Device - exit(0x00000000)} 01:15:32.353
+     dvi:      {Core Device Install - exit(0x00000000)} 01:15:32.353
+     dvi:      Waiting for device post-install to complete. 01:15:32.353
+     dvi:      Device post-install completed. 01:15:33.616
      dvi:      Device Status: 0x0180600a
      ump: {Plug and Play Service: Device Install exit(00000000)}
-<<<  Section end 2026/09/26 23:37:14.327
+<<<  Section end 2026/09/27 01:15:33.616
 <<<  [Exit status: SUCCESS]
 
 
 >>>  [Device Install (DiInstallDriver) - E:\$WinPEDriver$\Thunderbolt\tbt81x.inf]
->>>  Section start 2026/09/26 23:37:20.136
+>>>  Section start 2026/09/27 01:15:39.616
       cmd: drvload  "E:\$WinPEDriver$\Thunderbolt\tbt81x.inf" 
      ndv: Flags: 0x00000000
      ndv: INF path: E:\$WinPEDriver$\Thunderbolt\tbt81x.inf
      dvs: {DrvSetupInstallDriver - E:\$WinPEDriver$\Thunderbolt\tbt81x.inf}
      dvs:      Flags: 0x00000000
-     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\Thunderbolt\tbt81x.inf} 23:37:20.148
-     sto:           {Copy Driver Package: E:\$WinPEDriver$\Thunderbolt\tbt81x.inf} 23:37:20.149
+     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\Thunderbolt\tbt81x.inf} 01:15:39.623
+     sto:           {Copy Driver Package: E:\$WinPEDriver$\Thunderbolt\tbt81x.inf} 01:15:39.628
      sto:                Driver Package = E:\$WinPEDriver$\Thunderbolt\tbt81x.inf
      sto:                Flags          = 0x00000007
-     sto:                Destination    = X:\windows\TEMP\{0a85d69e-7628-3f44-8f12-0059909276cc}
-     sto:                Copying driver package files to 'X:\windows\TEMP\{0a85d69e-7628-3f44-8f12-0059909276cc}'.
-     flq:                {FILE_QUEUE_COMMIT} 23:37:20.149
-     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbtcoinx.dll' to 'X:\windows\TEMP\{0a85d69e-7628-3f44-8f12-0059909276cc}\tbtcoinx.dll'.
-     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbt81x.cat' to 'X:\windows\TEMP\{0a85d69e-7628-3f44-8f12-0059909276cc}\tbt81x.cat'.
-     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbt81x.inf' to 'X:\windows\TEMP\{0a85d69e-7628-3f44-8f12-0059909276cc}\tbt81x.inf'.
-     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbt81x.sys' to 'X:\windows\TEMP\{0a85d69e-7628-3f44-8f12-0059909276cc}\tbt81x.sys'.
+     sto:                Destination    = X:\windows\TEMP\{c3ae491e-4e39-424a-b180-bddaf3dd02a5}
+     sto:                Copying driver package files to 'X:\windows\TEMP\{c3ae491e-4e39-424a-b180-bddaf3dd02a5}'.
+     flq:                {FILE_QUEUE_COMMIT} 01:15:39.631
+     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbtcoinx.dll' to 'X:\windows\TEMP\{c3ae491e-4e39-424a-b180-bddaf3dd02a5}\tbtcoinx.dll'.
+     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbt81x.cat' to 'X:\windows\TEMP\{c3ae491e-4e39-424a-b180-bddaf3dd02a5}\tbt81x.cat'.
+     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbt81x.inf' to 'X:\windows\TEMP\{c3ae491e-4e39-424a-b180-bddaf3dd02a5}\tbt81x.inf'.
+     flq:                     Copying 'E:\$WinPEDriver$\Thunderbolt\tbt81x.sys' to 'X:\windows\TEMP\{c3ae491e-4e39-424a-b180-bddaf3dd02a5}\tbt81x.sys'.
 !!!  flq:                     Error installing file (0x00000002)
 !!!  flq:                     Error 2: The system cannot find the file specified.
 !    flq:                          SourceFile   - 'E:\$WinPEDriver$\Thunderbolt\setup.msi'
-!    flq:                          TargetFile   - 'X:\windows\TEMP\{0a85d69e-7628-3f44-8f12-0059909276cc}\setup.msi'
-!!!  cpy:                     Failed to copy file 'E:\$WinPEDriver$\Thunderbolt\setup.msi' to 'X:\windows\TEMP\{0a85d69e-7628-3f44-8f12-0059909276cc}\setup.msi'. Error = 0x00000002
+!    flq:                          TargetFile   - 'X:\windows\TEMP\{c3ae491e-4e39-424a-b180-bddaf3dd02a5}\setup.msi'
+!!!  cpy:                     Failed to copy file 'E:\$WinPEDriver$\Thunderbolt\setup.msi' to 'X:\windows\TEMP\{c3ae491e-4e39-424a-b180-bddaf3dd02a5}\setup.msi'. Error = 0x00000002
 !!!  flq:                     SPFQNOTIFY_COPYERROR: returned SPFQOPERATION_ABORT.
 !!!  flq:                     Error 995: The I/O operation has been aborted because of either a thread exit or an application request.
 !!!  flq:                     Failed to commit copy queue. Error = 0x000003e3
 !!!  flq:                     FileQueueCommit aborting
 !!!  flq:                     Error 995: The I/O operation has been aborted because of either a thread exit or an application request.
-     flq:                {FILE_QUEUE_COMMIT - exit(0x000003e3)} 23:37:20.167
-!!!  sto:                Failed to copy driver package to 'X:\windows\TEMP\{0a85d69e-7628-3f44-8f12-0059909276cc}'. Error = 0x00000002
-     sto:           {Copy Driver Package: exit(0x00000002)} 23:37:20.167
-     dvs:      {Driver Setup Import Driver Package - exit (0x00000002)} 23:37:20.167
+     flq:                {FILE_QUEUE_COMMIT - exit(0x000003e3)} 01:15:39.647
+!!!  sto:                Failed to copy driver package to 'X:\windows\TEMP\{c3ae491e-4e39-424a-b180-bddaf3dd02a5}'. Error = 0x00000002
+     sto:           {Copy Driver Package: exit(0x00000002)} 01:15:39.647
+     dvs:      {Driver Setup Import Driver Package - exit (0x00000002)} 01:15:39.647
 !!!  dvs:      Failed to import driver packages under 'E:\$WinPEDriver$\Thunderbolt\tbt81x.inf'. Error = 0x00000002
      dvs: {DrvSetupInstallDriver - exit(00000002)}
-<<<  Section end 2026/09/26 23:37:20.167
+<<<  Section end 2026/09/27 01:15:39.647
 <<<  [Exit status: FAILURE(0x00000002)]
 
 
 >>>  [Device Install (DiInstallDriver) - E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf]
->>>  Section start 2026/09/26 23:37:20.270
+>>>  Section start 2026/09/27 01:15:39.756
       cmd: drvload  "E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf" 
      ndv: Flags: 0x00000000
      ndv: INF path: E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf
      dvs: {DrvSetupInstallDriver - E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf}
      dvs:      Flags: 0x00000000
-     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf} 23:37:20.277
-     sto:           {Copy Driver Package: E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf} 23:37:20.314
+     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf} 01:15:39.756
+     sto:           {Copy Driver Package: E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf} 01:15:39.803
      sto:                Driver Package = E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf
      sto:                Flags          = 0x00000007
-     sto:                Destination    = X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}
-     sto:                Copying driver package files to 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}'.
-     flq:                {FILE_QUEUE_COMMIT} 23:37:20.365
-     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CLFiltAPO.dll' to 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\x64\CLFiltAPO.dll'.
-     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CLLoopAPO.dll' to 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\x64\CLLoopAPO.dll'.
-     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CSLFD.sys' to 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\x64\CSLFD.sys'.
-     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CSUFD.sys' to 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\x64\CSUFD.sys'.
-     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\WdfCoInstaller01011.dll' to 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\x64\WdfCoInstaller01011.dll'.
-     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\CS4208.cat' to 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\CS4208.cat'.
-     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf' to 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\cs4208_36.inf'.
-     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 23:37:20.444
-     sto:           {Copy Driver Package: exit(0x00000000)} 23:37:20.444
+     sto:                Destination    = X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}
+     sto:                Copying driver package files to 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}'.
+     flq:                {FILE_QUEUE_COMMIT} 01:15:39.850
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CLFiltAPO.dll' to 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\x64\CLFiltAPO.dll'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CLLoopAPO.dll' to 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\x64\CLLoopAPO.dll'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CSLFD.sys' to 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\x64\CSLFD.sys'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\CSUFD.sys' to 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\x64\CSUFD.sys'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\x64\WdfCoInstaller01011.dll' to 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\x64\WdfCoInstaller01011.dll'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\CS4208.cat' to 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\CS4208.cat'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4208x64\cs4208_36.inf' to 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\cs4208_36.inf'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 01:15:39.913
+     sto:           {Copy Driver Package: exit(0x00000000)} 01:15:39.913
      ump:           Import flags: 0x00000000
-     pol:           {Driver package policy check} 23:37:20.444
-     pol:           {Driver package policy check - exit(0x00000000)} 23:37:20.444
-     sto:           {Stage Driver Package: X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\cs4208_36.inf} 23:37:20.444
-     inf:                {Query Configurability: X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\cs4208_36.inf} 23:37:20.522
+     pol:           {Driver package policy check} 01:15:39.928
+     pol:           {Driver package policy check - exit(0x00000000)} 01:15:39.928
+     sto:           {Stage Driver Package: X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\cs4208_36.inf} 01:15:39.928
+     inf:                {Query Configurability: X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\cs4208_36.inf} 01:15:39.991
 !    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
 !    inf:                     Found legacy RegisterDlls operation. Code = 1300
 !    inf:                     Found legacy AddReg operation using non-relative key (HKLM\Software\\Cirrus\\APO\\FilterAPO). Code = 1304
@@ -175,36 +175,36 @@
 !    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
 !    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
 !    inf:                     Driver package 'cs4208_36.inf' is NOT configurable.
-     inf:                {Query Configurability: exit(0x00000000)} 23:37:20.569
-     flq:                {FILE_QUEUE_COMMIT} 23:37:20.584
-     flq:                     Copying 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\x64\CLFiltAPO.dll' to 'X:\windows\System32\DriverStore\Temp\{84c025ab-40ed-2b4a-9dbd-775682db8fe6}\x64\CLFiltAPO.dll'.
-     flq:                     Copying 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\x64\CLLoopAPO.dll' to 'X:\windows\System32\DriverStore\Temp\{84c025ab-40ed-2b4a-9dbd-775682db8fe6}\x64\CLLoopAPO.dll'.
-     flq:                     Copying 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\x64\CSLFD.sys' to 'X:\windows\System32\DriverStore\Temp\{84c025ab-40ed-2b4a-9dbd-775682db8fe6}\x64\CSLFD.sys'.
-     flq:                     Copying 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\x64\CSUFD.sys' to 'X:\windows\System32\DriverStore\Temp\{84c025ab-40ed-2b4a-9dbd-775682db8fe6}\x64\CSUFD.sys'.
-     flq:                     Copying 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\x64\WdfCoInstaller01011.dll' to 'X:\windows\System32\DriverStore\Temp\{84c025ab-40ed-2b4a-9dbd-775682db8fe6}\x64\WdfCoInstaller01011.dll'.
-     flq:                     Copying 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\CS4208.cat' to 'X:\windows\System32\DriverStore\Temp\{84c025ab-40ed-2b4a-9dbd-775682db8fe6}\CS4208.cat'.
-     flq:                     Copying 'X:\windows\TEMP\{cd090667-ace5-3b47-a166-b3967d7bfc40}\cs4208_36.inf' to 'X:\windows\System32\DriverStore\Temp\{84c025ab-40ed-2b4a-9dbd-775682db8fe6}\cs4208_36.inf'.
-     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 23:37:20.631
-     sto:                {DRIVERSTORE IMPORT VALIDATE} 23:37:20.647
+     inf:                {Query Configurability: exit(0x00000000)} 01:15:40.053
+     flq:                {FILE_QUEUE_COMMIT} 01:15:40.053
+     flq:                     Copying 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\x64\CLFiltAPO.dll' to 'X:\windows\System32\DriverStore\Temp\{42201292-498f-1c43-8dcb-2f7950486e1f}\x64\CLFiltAPO.dll'.
+     flq:                     Copying 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\x64\CLLoopAPO.dll' to 'X:\windows\System32\DriverStore\Temp\{42201292-498f-1c43-8dcb-2f7950486e1f}\x64\CLLoopAPO.dll'.
+     flq:                     Copying 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\x64\CSLFD.sys' to 'X:\windows\System32\DriverStore\Temp\{42201292-498f-1c43-8dcb-2f7950486e1f}\x64\CSLFD.sys'.
+     flq:                     Copying 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\x64\CSUFD.sys' to 'X:\windows\System32\DriverStore\Temp\{42201292-498f-1c43-8dcb-2f7950486e1f}\x64\CSUFD.sys'.
+     flq:                     Copying 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\x64\WdfCoInstaller01011.dll' to 'X:\windows\System32\DriverStore\Temp\{42201292-498f-1c43-8dcb-2f7950486e1f}\x64\WdfCoInstaller01011.dll'.
+     flq:                     Copying 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\CS4208.cat' to 'X:\windows\System32\DriverStore\Temp\{42201292-498f-1c43-8dcb-2f7950486e1f}\CS4208.cat'.
+     flq:                     Copying 'X:\windows\TEMP\{5e4c0f6d-de7c-3b4b-aef5-582d8edba900}\cs4208_36.inf' to 'X:\windows\System32\DriverStore\Temp\{42201292-498f-1c43-8dcb-2f7950486e1f}\cs4208_36.inf'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 01:15:40.110
+     sto:                {DRIVERSTORE IMPORT VALIDATE} 01:15:40.126
      sig:                     Driver package catalog is valid.
-     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 23:37:20.725
+     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 01:15:40.219
      sig:                Signer Score  = 0x0D000004 (Unclassified)
      sig:                Submission ID = 1926262
-     sto:                {Core Driver Package Import: cs4208_36.inf_amd64_79baf8ffb0dada0e} 23:37:20.756
-     sto:                     {DRIVERSTORE IMPORT BEGIN} 23:37:20.756
-     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 23:37:20.756
-     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{84c025ab-40ed-2b4a-9dbd-775682db8fe6}} 23:37:20.756
+     sto:                {Core Driver Package Import: cs4208_36.inf_amd64_79baf8ffb0dada0e} 01:15:40.235
+     sto:                     {DRIVERSTORE IMPORT BEGIN} 01:15:40.235
+     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 01:15:40.235
+     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{42201292-498f-1c43-8dcb-2f7950486e1f}} 01:15:40.235
      cpy:                          Target Path = X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e
-     cpy:                          {Copy Directory: X:\windows\System32\DriverStore\Temp\{84c025ab-40ed-2b4a-9dbd-775682db8fe6}\x64} 23:37:20.756
+     cpy:                          {Copy Directory: X:\windows\System32\DriverStore\Temp\{42201292-498f-1c43-8dcb-2f7950486e1f}\x64} 01:15:40.235
      cpy:                               Target Path = X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64
-     cpy:                          {Copy Directory: exit(0x00000000)} 23:37:20.803
-     cpy:                     {Copy Directory: exit(0x00000000)} 23:37:20.803
-     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf} 23:37:20.803
+     cpy:                          {Copy Directory: exit(0x00000000)} 01:15:40.278
+     cpy:                     {Copy Directory: exit(0x00000000)} 01:15:40.278
+     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf} 01:15:40.278
      idb:                          Created driver package object 'cs4208_36.inf_amd64_79baf8ffb0dada0e' in DRIVERS database node.
      idb:                          Created driver INF file object 'oem1.inf' in DRIVERS database node.
      idb:                          Registered driver package 'cs4208_36.inf_amd64_79baf8ffb0dada0e' with 'oem1.inf'.
-     idb:                     {Register Driver Package: exit(0x00000000)} 23:37:20.819
-     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf} 23:37:20.819
+     idb:                     {Register Driver Package: exit(0x00000000)} 01:15:40.309
+     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf} 01:15:40.309
      idb:                          Activating driver package 'cs4208_36.inf_amd64_79baf8ffb0dada0e'.
      cpy:                          Published 'cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf' to 'oem1.inf'.
 !    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
@@ -247,18 +247,18 @@
      idb:                          Indexed 38 device IDs for 'cs4208_36.inf_amd64_79baf8ffb0dada0e'.
      sto:                          Flushed driver database node 'DRIVERS'. Time = 0 ms
      sto:                          Flushed driver database node 'SYSTEM'. Time = 0 ms
-     idb:                     {Publish Driver Package: exit(0x00000000)} 23:37:20.881
+     idb:                     {Publish Driver Package: exit(0x00000000)} 01:15:40.372
 !    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CLFiltAPO.dll'. Error = 0x00000001
 !    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CLLoopAPO.dll'. Error = 0x00000001
 !    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CSLFD.sys'. Error = 0x00000001
 !    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CSUFD.sys'. Error = 0x00000001
 !    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\WdfCoInstaller01011.dll'. Error = 0x00000001
-     sto:                     {DRIVERSTORE IMPORT END} 23:37:20.912
+     sto:                     {DRIVERSTORE IMPORT END} 01:15:40.387
 !    dvi:                          Unable to flush all driver package files to disk. Time = 0 ms, Error = 0x00000005
      sig:                          Installed catalog 'CS4208.cat' as 'oem1.cat'.
-     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 23:37:20.928
-     sto:                {Core Driver Package Import: exit(0x00000000)} 23:37:20.928
-     sto:           {Stage Driver Package: exit(0x00000000)} 23:37:20.928
+     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 01:15:40.403
+     sto:                {Core Driver Package Import: exit(0x00000000)} 01:15:40.403
+     sto:           {Stage Driver Package: exit(0x00000000)} 01:15:40.419
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 256
@@ -287,9 +287,9 @@
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1335
-     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 23:37:21.022
-     dvs:      {Driver Setup Update Device: HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&a4c0fcf&0&0001} 23:37:21.022
-     utl:           {Select Drivers - HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&a4c0fcf&0&0001} 23:37:21.022
+     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 01:15:40.497
+     dvs:      {Driver Setup Update Device: HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&a4c0fcf&0&0001} 01:15:40.497
+     utl:           {Select Drivers - HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&a4c0fcf&0&0001} 01:15:40.497
      utl:                Driver Node:
      utl:                     Status         - Selected
      utl:                     Driver INF     - oem1.inf (X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf)
@@ -306,7 +306,7 @@
      utl:                     Configuration  - HDAUDIO\FUNC_01 [HdAudModel]
      utl:                     Driver Rank    - 00FF300C
      utl:                     Signer Score   - Inbox (0D000003)
-     utl:           {Select Drivers - exit(0x00000000} 23:37:21.022
+     utl:           {Select Drivers - exit(0x00000000} 01:15:40.497
      dvs:           Installing best driver (oem1.inf) on device 'HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&a4c0fcf&0&0001'.
      ump:           {Plug and Play Service: Device Install for HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001}
      dvi:                Searching for hardware ID(s):
@@ -327,116 +327,116 @@
      dvi:                     hdaudio\func_01&gf&ven_1013&dev_8409&subsys_106b3600&rev_1001
      dvi:                     hdaudio\func_01
      dvi:                Class GUID of device changed to: {4d36e96c-e325-11ce-bfc1-08002be10318}.
-     ndv:                {Core Device Install} 23:37:21.068
-     dvi:                     {Install Device - HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001} 23:37:21.068
+     ndv:                {Core Device Install} 01:15:40.544
+     dvi:                     {Install Device - HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001} 01:15:40.544
      dvi:                          Device Status: 0x0180200a
      dvi:                          Config Flags: 0x00000000
      dvi:                          Parent Device: PCI\VEN_8086&DEV_9D70&SUBSYS_72708086&REV_21\3&11583659&0&FB
-     dvi:                          {DIF_ALLOW_INSTALL} 23:37:21.084
-     dvi:                               Default installer: Enter 23:37:21.100
+     dvi:                          {DIF_ALLOW_INSTALL} 01:15:40.544
+     dvi:                               Default installer: Enter 01:15:40.559
      dvi:                               Default installer: Exit
-     dvi:                          {DIF_ALLOW_INSTALL - exit(0xe000020e)} 23:37:21.100
-     dvi:                          {DIF_INSTALLDEVICEFILES} 23:37:21.100
-     dvi:                               Default installer: Enter 23:37:21.100
+     dvi:                          {DIF_ALLOW_INSTALL - exit(0xe000020e)} 01:15:40.559
+     dvi:                          {DIF_INSTALLDEVICEFILES} 01:15:40.559
+     dvi:                               Default installer: Enter 01:15:40.559
      dvi:                               Default installer: Exit
-     dvi:                          {DIF_INSTALLDEVICEFILES - exit(0x00000000)} 23:37:21.131
-     dvi:                          {_SCAN_FILE_QUEUE} 23:37:21.131
+     dvi:                          {DIF_INSTALLDEVICEFILES - exit(0x00000000)} 01:15:40.606
+     dvi:                          {_SCAN_FILE_QUEUE} 01:15:40.606
      flq:                               File 'X:\windows\system32\DRIVERS\HdAudio.sys' pruned from copy.
-     dvi:                          {_SCAN_FILE_QUEUE - exit(0x00000000)} 23:37:21.428
-     flq:                          {FILE_QUEUE_COMMIT} 23:37:21.443
+     dvi:                          {_SCAN_FILE_QUEUE - exit(0x00000000)} 01:15:40.934
+     flq:                          {FILE_QUEUE_COMMIT} 01:15:40.950
      flq:                               Copying 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CSLFD.sys' to 'X:\windows\system32\DRIVERS\CSLFD.sys'.
      flq:                               Copying 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CSUFD.sys' to 'X:\windows\system32\DRIVERS\CSUFD.sys'.
      flq:                               Copying 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\CLFiltAPO.dll' to 'X:\windows\system32\CLFiltAPO.dll'.
      flq:                               Copying 'X:\windows\System32\DriverStore\FileRepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\x64\WdfCoInstaller01011.dll' to 'X:\windows\system32\WdfCoInstaller01011.dll'.
-     flq:                          {FILE_QUEUE_COMMIT - exit(0x00000000)} 23:37:21.506
-     dvi:                          {_SCAN_FILE_QUEUE} 23:37:21.506
-     dvi:                          {_SCAN_FILE_QUEUE - exit(0x00000000)} 23:37:21.506
-     dvi:                          {DIF_REGISTER_COINSTALLERS} 23:37:21.506
-     dvi:                               Reset Device: Resetting device configuration. 23:37:21.506
-     dvi:                               Reset Device: Resetting device configuration completed. 23:37:21.506
-     dvi:                               Default installer: Enter 23:37:21.506
-     inf:                                    {Install from INF Section - HDAudio.Cirrus_CONF_0901.CoInstallers} 23:37:21.537
+     flq:                          {FILE_QUEUE_COMMIT - exit(0x00000000)} 01:15:41.012
+     dvi:                          {_SCAN_FILE_QUEUE} 01:15:41.012
+     dvi:                          {_SCAN_FILE_QUEUE - exit(0x00000000)} 01:15:41.012
+     dvi:                          {DIF_REGISTER_COINSTALLERS} 01:15:41.012
+     dvi:                               Reset Device: Resetting device configuration. 01:15:41.012
+     dvi:                               Reset Device: Resetting device configuration completed. 01:15:41.028
+     dvi:                               Default installer: Enter 01:15:41.028
+     inf:                                    {Install from INF Section - HDAudio.Cirrus_CONF_0901.CoInstallers} 01:15:41.043
      inf:                                         Flags         - 0x001001ee
-     inf:                                    {Install from INF Section - exit(0x00000000)} 23:37:21.537
+     inf:                                    {Install from INF Section - exit(0x00000000)} 01:15:41.043
      dvi:                               Default installer: Exit
-     dvi:                          {DIF_REGISTER_COINSTALLERS - exit(0x00000000)} 23:37:21.537
-     dvi:                          {DIF_INSTALLINTERFACES} 23:37:21.537
+     dvi:                          {DIF_REGISTER_COINSTALLERS - exit(0x00000000)} 01:15:41.043
+     dvi:                          {DIF_INSTALLINTERFACES} 01:15:41.043
      dvi:                               Using exported function 'WdfCoInstaller' in module 'X:\windows\system32\WdfCoInstaller01011.dll'.
      dvi:                               CoInstaller 1 == WdfCoInstaller01011.dll,WdfCoInstaller
-     dvi:                               CoInstaller 1: Enter 23:37:21.537
+     dvi:                               CoInstaller 1: Enter 01:15:41.043
      dvi:                               CoInstaller 1: Exit
-     dvi:                               Default installer: Enter 23:37:21.537
-     inf:                                    {Install from INF Section - HDAudio.Cirrus.ApoQuadTopo} 23:37:21.553
+     dvi:                               Default installer: Enter 01:15:41.043
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.ApoQuadTopo} 01:15:41.059
      inf:                                         Flags         - 0x001005ee
-     inf:                                    {Install from INF Section - exit(0x00000000)} 23:37:21.553
-     inf:                                    {Install from INF Section - HDAudio.Cirrus.ApoQuadTopo} 23:37:21.553
+     inf:                                    {Install from INF Section - exit(0x00000000)} 01:15:41.059
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.ApoQuadTopo} 01:15:41.059
      inf:                                         Flags         - 0x001005ee
-     inf:                                    {Install from INF Section - exit(0x00000000)} 23:37:21.553
-     inf:                                    {Install from INF Section - HDAudio.Cirrus.NoApoHPTopo} 23:37:21.553
+     inf:                                    {Install from INF Section - exit(0x00000000)} 01:15:41.059
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.NoApoHPTopo} 01:15:41.059
      inf:                                         Flags         - 0x001005ee
-     inf:                                    {Install from INF Section - exit(0x00000000)} 23:37:21.553
-     inf:                                    {Install from INF Section - HDAudio.Cirrus.NoApoHPTopo} 23:37:21.553
+     inf:                                    {Install from INF Section - exit(0x00000000)} 01:15:41.059
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.NoApoHPTopo} 01:15:41.059
      inf:                                         Flags         - 0x001005ee
-     inf:                                    {Install from INF Section - exit(0x00000000)} 23:37:21.553
-     inf:                                    {Install from INF Section - HDAudio.Cirrus.HSInTopo} 23:37:21.553
+     inf:                                    {Install from INF Section - exit(0x00000000)} 01:15:41.059
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.HSInTopo} 01:15:41.059
      inf:                                         Flags         - 0x001005ee
-     inf:                                    {Install from INF Section - exit(0x00000000)} 23:37:21.553
-     inf:                                    {Install from INF Section - HDAudio.Cirrus.HSInTopo} 23:37:21.553
+     inf:                                    {Install from INF Section - exit(0x00000000)} 01:15:41.059
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.HSInTopo} 01:15:41.059
      inf:                                         Flags         - 0x001005ee
-     inf:                                    {Install from INF Section - exit(0x00000000)} 23:37:21.553
-     inf:                                    {Install from INF Section - HDAudio.Cirrus.MicApoTopo} 23:37:21.553
+     inf:                                    {Install from INF Section - exit(0x00000000)} 01:15:41.059
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.MicApoTopo} 01:15:41.059
      inf:                                         Flags         - 0x001005ee
-     inf:                                    {Install from INF Section - exit(0x00000000)} 23:37:21.553
-     inf:                                    {Install from INF Section - HDAudio.Cirrus.MicApoTopo} 23:37:21.553
+     inf:                                    {Install from INF Section - exit(0x00000000)} 01:15:41.059
+     inf:                                    {Install from INF Section - HDAudio.Cirrus.MicApoTopo} 01:15:41.059
      inf:                                         Flags         - 0x001005ee
-     inf:                                    {Install from INF Section - exit(0x00000000)} 23:37:21.553
+     inf:                                    {Install from INF Section - exit(0x00000000)} 01:15:41.059
      dvi:                               Default installer: Exit
-     dvi:                          {DIF_INSTALLINTERFACES - exit(0x00000000)} 23:37:21.553
-     dvi:                          {DIF_INSTALLDEVICE} 23:37:21.553
-     dvi:                               CoInstaller 1: Enter 23:37:21.553
+     dvi:                          {DIF_INSTALLINTERFACES - exit(0x00000000)} 01:15:41.059
+     dvi:                          {DIF_INSTALLDEVICE} 01:15:41.059
+     dvi:                               CoInstaller 1: Enter 01:15:41.059
      dvi:                               CoInstaller 1: Exit
-     dvi:                               Default installer: Enter 23:37:21.568
+     dvi:                               Default installer: Enter 01:15:41.090
      dvi:                                    {Install DEVICE}
-     inf:                                         {Install from INF Section - HDAudio.Cirrus_CONF_0901} 23:37:21.600
+     inf:                                         {Install from INF Section - HDAudio.Cirrus_CONF_0901} 01:15:41.106
      inf:                                              Flags         - 0x001005ee
-     inf:                                         {Install from INF Section - exit(0x00000000)} 23:37:21.631
-     inf:                                         {Install from INF Section - HdAudOEM.CopyFiles} 23:37:21.631
+     inf:                                         {Install from INF Section - exit(0x00000000)} 01:15:41.137
+     inf:                                         {Install from INF Section - HdAudOEM.CopyFiles} 01:15:41.137
      inf:                                              Flags         - 0x001005ee
-     inf:                                         {Install from INF Section - exit(0x00000000)} 23:37:21.631
-     inf:                                         {Install from INF Section - HdAudOEM.AddReg} 23:37:21.631
+     inf:                                         {Install from INF Section - exit(0x00000000)} 01:15:41.137
+     inf:                                         {Install from INF Section - HdAudOEM.AddReg} 01:15:41.137
      inf:                                              Flags         - 0x001005ee
-     inf:                                         {Install from INF Section - exit(0x00000000)} 23:37:21.631
-     inf:                                         {Install from INF Section - CSHDA.Conf} 23:37:21.631
+     inf:                                         {Install from INF Section - exit(0x00000000)} 01:15:41.153
+     inf:                                         {Install from INF Section - CSHDA.Conf} 01:15:41.153
      inf:                                              Flags         - 0x001005ee
      inf:                                              Processing REGISTERDLLS section [CLFiltAPO.RegisterDlls]. Module: '%11%\CLFiltAPO.dll', flags: 0x0001, timeout: 300s, Arguments: '(null)'.
-     inf:                                         {Install from INF Section - exit(0x00000000)} 23:37:21.646
-     inf:                                         {Install from INF Section - HDAudio.Cirrus_CONF_0901.Hw} 23:37:21.646
+     inf:                                         {Install from INF Section - exit(0x00000000)} 01:15:41.168
+     inf:                                         {Install from INF Section - HDAudio.Cirrus_CONF_0901.Hw} 01:15:41.168
      inf:                                              Flags         - 0x00100004
-     inf:                                         {Install from INF Section - exit(0x00000000)} 23:37:21.646
-     inf:                                         {Install from INF Section - HdAudModel.HW} 23:37:21.646
+     inf:                                         {Install from INF Section - exit(0x00000000)} 01:15:41.168
+     inf:                                         {Install from INF Section - HdAudModel.HW} 01:15:41.168
      inf:                                              Flags         - 0x00100004
-     inf:                                         {Install from INF Section - exit(0x00000000)} 23:37:21.646
-     inf:                                         {Install from INF Section - CSHDA.HW} 23:37:21.646
+     inf:                                         {Install from INF Section - exit(0x00000000)} 01:15:41.168
+     inf:                                         {Install from INF Section - CSHDA.HW} 01:15:41.168
      inf:                                              Flags         - 0x00100004
-     inf:                                         {Install from INF Section - exit(0x00000000)} 23:37:21.646
+     inf:                                         {Install from INF Section - exit(0x00000000)} 01:15:41.168
      dvi:                                         {Writing Device Properties}
      dvi:                                              Strong Name=oem1.inf:ed86ca1170e2762f:HDAudio.Cirrus_CONF_0901:6.6001.3.36:hdaudio\func_01&ven_1013&dev_8409&subsys_106b3600
      dvi:                                         {Writing Device Properties - Complete}
      inf:                                         AddService=HdAudAddService,0x00000002,HdAud_Service_Install  (hdaudio.inf line 92)
      dvi:                                         Add Service: Modified existing service 'HdAudAddService'.
-     inf:                                         {Install from INF Section - HdAud_Service_Install} 23:37:21.662
+     inf:                                         {Install from INF Section - HdAud_Service_Install} 01:15:41.168
      inf:                                              Flags         - 0x00100004
-     inf:                                         {Install from INF Section - exit(0x00000000)} 23:37:21.662
+     inf:                                         {Install from INF Section - exit(0x00000000)} 01:15:41.168
      inf:                                         AddService=CirrusLFD,,LowerFilt_Service_Inst  (cs4208_36.inf line 1342)
      dvi:                                         Add Service: Created service 'CirrusLFD'.
-     inf:                                         {Install from INF Section - LowerFilt_Service_Inst} 23:37:21.678
+     inf:                                         {Install from INF Section - LowerFilt_Service_Inst} 01:15:41.200
      inf:                                              Flags         - 0x00100004
-     inf:                                         {Install from INF Section - exit(0x00000000)} 23:37:21.678
+     inf:                                         {Install from INF Section - exit(0x00000000)} 01:15:41.200
      inf:                                         AddService=CirrusUFD,,UpperFilt_Service_Inst  (cs4208_36.inf line 1343)
      dvi:                                         Add Service: Created service 'CirrusUFD'.
-     inf:                                         {Install from INF Section - UpperFilt_Service_Inst} 23:37:21.693
+     inf:                                         {Install from INF Section - UpperFilt_Service_Inst} 01:15:41.200
      inf:                                              Flags         - 0x00100004
-     inf:                                         {Install from INF Section - exit(0x00000000)} 23:37:21.693
+     inf:                                         {Install from INF Section - exit(0x00000000)} 01:15:41.200
      dvi:                                    {Install DEVICE exit (0x00000000)}
      sto:                                    {Configure Driver Package: x:\windows\system32\driverstore\filerepository\cs4208_36.inf_amd64_79baf8ffb0dada0e\cs4208_36.inf}
      sto:                                         Source Filter  = HDAudio.Cirrus_CONF_0901
@@ -449,57 +449,57 @@
      inf:                                              {Configure Device: exit(0x00000000)}
      inf:                                         {Configure Driver: exit(0x00000000)}
      sto:                                    {Configure Driver Package: exit(0x00000000)}
-     dvi:                                    Install Device: Configuring device class. 23:37:21.771
-     dvi:                                    Install Device: Configuring device class completed. 23:37:21.771
+     dvi:                                    Install Device: Configuring device class. 01:15:41.278
+     dvi:                                    Install Device: Configuring device class completed. 01:15:41.278
      dvi:                                    Device Status: 0x0180200a
-     dvi:                                    {Restarting Devices} 23:37:21.771
+     dvi:                                    {Restarting Devices} 01:15:41.278
      dvi:                                         Query-remove: HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001
      dvi:                                         Query-remove: HDAUDIO\FUNC_01&VEN_8086&DEV_2809&SUBSYS_80860101&REV_1000\4&A4C0FCF&0&0201
      dvi:                                         Start: HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001
      dvi:                                         Start: HDAUDIO\FUNC_01&VEN_8086&DEV_2809&SUBSYS_80860101&REV_1000\4&A4C0FCF&0&0201
      dvi:                                         Restart verified: HDAUDIO\FUNC_01&VEN_1013&DEV_8409&SUBSYS_106B3600&REV_1001\4&A4C0FCF&0&0001
      dvi:                                         Restart verified: HDAUDIO\FUNC_01&VEN_8086&DEV_2809&SUBSYS_80860101&REV_1000\4&A4C0FCF&0&0201
-     dvi:                                    {Restarting Devices exit} 23:37:22.009
+     dvi:                                    {Restarting Devices exit} 01:15:41.481
      dvi:                               Default installer: Exit
-     dvi:                               CoInstaller 1: Enter (Post Processing) 23:37:22.009
+     dvi:                               CoInstaller 1: Enter (Post Processing) 01:15:41.481
      dvi:                               CoInstaller 1: Exit (Post Processing)
-     dvi:                          {DIF_INSTALLDEVICE - exit(0x00000000)} 23:37:22.009
-     dvi:                          {DIF_NEWDEVICEWIZARD_FINISHINSTALL} 23:37:22.009
-     dvi:                               CoInstaller 1: Enter 23:37:22.009
+     dvi:                          {DIF_INSTALLDEVICE - exit(0x00000000)} 01:15:41.481
+     dvi:                          {DIF_NEWDEVICEWIZARD_FINISHINSTALL} 01:15:41.481
+     dvi:                               CoInstaller 1: Enter 01:15:41.481
      dvi:                               CoInstaller 1: Exit
-     dvi:                               Default installer: Enter 23:37:22.009
+     dvi:                               Default installer: Enter 01:15:41.481
      dvi:                               Default installer: Exit
-     dvi:                          {DIF_NEWDEVICEWIZARD_FINISHINSTALL - exit(0xe000020e)} 23:37:22.009
-     dvi:                     {Install Device - exit(0x00000000)} 23:37:22.024
-     dvi:                {Core Device Install - exit(0x00000000)} 23:37:22.024
-     dvi:                {DIF_DESTROYPRIVATEDATA} 23:37:22.024
-     dvi:                     CoInstaller 1: Enter 23:37:22.024
+     dvi:                          {DIF_NEWDEVICEWIZARD_FINISHINSTALL - exit(0xe000020e)} 01:15:41.481
+     dvi:                     {Install Device - exit(0x00000000)} 01:15:41.497
+     dvi:                {Core Device Install - exit(0x00000000)} 01:15:41.497
+     dvi:                {DIF_DESTROYPRIVATEDATA} 01:15:41.497
+     dvi:                     CoInstaller 1: Enter 01:15:41.497
      dvi:                     CoInstaller 1: Exit
-     dvi:                     Default installer: Enter 23:37:22.024
+     dvi:                     Default installer: Enter 01:15:41.497
      dvi:                     Default installer: Exit
-     dvi:                {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 23:37:22.024
+     dvi:                {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 01:15:41.497
      ump:           {Plug and Play Service: Device Install exit(00000000)}
-     dvs:           {Install Related Drivers} 23:37:22.024
-     dvs:           {Install Related Drivers: exit(0x00000000)} 23:37:22.024
-     dvs:      {Driver Setup Update Device - exit(0x00000000)} 23:37:22.024
+     dvs:           {Install Related Drivers} 01:15:41.497
+     dvs:           {Install Related Drivers: exit(0x00000000)} 01:15:41.497
+     dvs:      {Driver Setup Update Device - exit(0x00000000)} 01:15:41.497
      dvs: {DrvSetupInstallDriver - exit(00000000)}
-<<<  Section end 2026/09/26 23:37:22.024
+<<<  Section end 2026/09/27 01:15:41.497
 <<<  [Exit status: SUCCESS]
 
 
 >>>  [Device Install (DiInstallDriver) - E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf]
->>>  Section start 2026/09/26 23:37:22.102
+>>>  Section start 2026/09/27 01:15:41.559
       cmd: drvload  "E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf" 
      ndv: Flags: 0x00000000
      ndv: INF path: E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf
      dvs: {DrvSetupInstallDriver - E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf}
      dvs:      Flags: 0x00000000
-     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf} 23:37:22.102
-     sto:           {Copy Driver Package: E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf} 23:37:22.133
+     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf} 01:15:41.559
+     sto:           {Copy Driver Package: E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf} 01:15:41.591
      sto:                Driver Package = E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf
      sto:                Flags          = 0x00000007
-     sto:                Destination    = X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}
-     sto:                Copying driver package files to 'X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}'.
+     sto:                Destination    = X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}
+     sto:                Copying driver package files to 'X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}'.
 !    inf:                Could not find include INF file "ks.inf". Error = 0x00000002
      inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
      inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
@@ -526,17 +526,17 @@
      inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
      inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
      inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
-     flq:                {FILE_QUEUE_COMMIT} 23:37:22.196
-     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf' to 'X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}\cs420x_46.inf'.
-     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\CirrusAPO_x64.dll' to 'X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}\CirrusAPO_x64.dll'.
-     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\CS420x64.cat' to 'X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}\CS420x64.cat'.
-     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\CS420x64.sys' to 'X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}\CS420x64.sys'.
-     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 23:37:22.196
-     sto:           {Copy Driver Package: exit(0x00000000)} 23:37:22.196
+     flq:                {FILE_QUEUE_COMMIT} 01:15:41.669
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\cs420x_46.inf' to 'X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}\cs420x_46.inf'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\CirrusAPO_x64.dll' to 'X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}\CirrusAPO_x64.dll'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\CS420x64.cat' to 'X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}\CS420x64.cat'.
+     flq:                     Copying 'E:\$WinPEDriver$\CirrusAudioCS4206x64\CS420x64.sys' to 'X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}\CS420x64.sys'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 01:15:41.669
+     sto:           {Copy Driver Package: exit(0x00000000)} 01:15:41.669
      ump:           Import flags: 0x00000000
-     pol:           {Driver package policy check} 23:37:22.212
-     pol:           {Driver package policy check - exit(0x00000000)} 23:37:22.212
-     sto:           {Stage Driver Package: X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}\cs420x_46.inf} 23:37:22.212
+     pol:           {Driver package policy check} 01:15:41.684
+     pol:           {Driver package policy check - exit(0x00000000)} 01:15:41.684
+     sto:           {Stage Driver Package: X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}\cs420x_46.inf} 01:15:41.684
 !    inf:                Could not find include INF file "ks.inf". Error = 0x00000002
      inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
      inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
@@ -563,7 +563,7 @@
      inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
      inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
      inf:                Needed section [KS.Registration] not found, might exist in missing included INF.
-     inf:                {Query Configurability: X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}\cs420x_46.inf} 23:37:22.258
+     inf:                {Query Configurability: X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}\cs420x_46.inf} 01:15:41.747
 !    inf:                     Could not find include INF file "ks.inf". Error = 0x00000002
      inf:                     Needed section [KS.Registration] not found, might exist in missing included INF.
 !    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 194
@@ -620,30 +620,30 @@
 !    inf:                     Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1548
 !    inf:                     Driver package 'cs420x_46.inf' is NOT configurable.
 !    inf:                     Driver package 'cs420x_46.inf' has unresolved external dependencies.
-     inf:                {Query Configurability: exit(0x00000000)} 23:37:22.321
-     flq:                {FILE_QUEUE_COMMIT} 23:37:22.321
-     flq:                     Copying 'X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}\cs420x_46.inf' to 'X:\windows\System32\DriverStore\Temp\{34940d77-6c56-6249-8826-c68e04fd85a3}\cs420x_46.inf'.
-     flq:                     Copying 'X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}\CirrusAPO_x64.dll' to 'X:\windows\System32\DriverStore\Temp\{34940d77-6c56-6249-8826-c68e04fd85a3}\CirrusAPO_x64.dll'.
-     flq:                     Copying 'X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}\CS420x64.cat' to 'X:\windows\System32\DriverStore\Temp\{34940d77-6c56-6249-8826-c68e04fd85a3}\CS420x64.cat'.
-     flq:                     Copying 'X:\windows\TEMP\{e86fc02c-c2eb-0544-8667-d717b225ee68}\CS420x64.sys' to 'X:\windows\System32\DriverStore\Temp\{34940d77-6c56-6249-8826-c68e04fd85a3}\CS420x64.sys'.
-     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 23:37:22.337
-     sto:                {DRIVERSTORE IMPORT VALIDATE} 23:37:22.352
+     inf:                {Query Configurability: exit(0x00000000)} 01:15:41.809
+     flq:                {FILE_QUEUE_COMMIT} 01:15:41.809
+     flq:                     Copying 'X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}\cs420x_46.inf' to 'X:\windows\System32\DriverStore\Temp\{8080c31a-2500-a042-a429-682483436e28}\cs420x_46.inf'.
+     flq:                     Copying 'X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}\CirrusAPO_x64.dll' to 'X:\windows\System32\DriverStore\Temp\{8080c31a-2500-a042-a429-682483436e28}\CirrusAPO_x64.dll'.
+     flq:                     Copying 'X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}\CS420x64.cat' to 'X:\windows\System32\DriverStore\Temp\{8080c31a-2500-a042-a429-682483436e28}\CS420x64.cat'.
+     flq:                     Copying 'X:\windows\TEMP\{04ba6d2c-7b1f-4e40-b4e8-0928801e9c37}\CS420x64.sys' to 'X:\windows\System32\DriverStore\Temp\{8080c31a-2500-a042-a429-682483436e28}\CS420x64.sys'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 01:15:41.809
+     sto:                {DRIVERSTORE IMPORT VALIDATE} 01:15:41.825
      sig:                     Driver package catalog is valid.
-     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 23:37:22.415
+     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 01:15:41.872
      sig:                Signer Score  = 0x0D000004 (Unclassified)
      sig:                Submission ID = 1641440
-     sto:                {Core Driver Package Import: cs420x_46.inf_amd64_5a5add9946f1615b} 23:37:22.430
-     sto:                     {DRIVERSTORE IMPORT BEGIN} 23:37:22.430
-     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 23:37:22.430
-     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{34940d77-6c56-6249-8826-c68e04fd85a3}} 23:37:22.430
+     sto:                {Core Driver Package Import: cs420x_46.inf_amd64_5a5add9946f1615b} 01:15:41.887
+     sto:                     {DRIVERSTORE IMPORT BEGIN} 01:15:41.887
+     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 01:15:41.887
+     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{8080c31a-2500-a042-a429-682483436e28}} 01:15:41.887
      cpy:                          Target Path = X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b
-     cpy:                     {Copy Directory: exit(0x00000000)} 23:37:22.430
-     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b\cs420x_46.inf} 23:37:22.430
+     cpy:                     {Copy Directory: exit(0x00000000)} 01:15:41.903
+     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b\cs420x_46.inf} 01:15:41.903
      idb:                          Created driver package object 'cs420x_46.inf_amd64_5a5add9946f1615b' in DRIVERS database node.
      idb:                          Created driver INF file object 'oem2.inf' in DRIVERS database node.
      idb:                          Registered driver package 'cs420x_46.inf_amd64_5a5add9946f1615b' with 'oem2.inf'.
-     idb:                     {Register Driver Package: exit(0x00000000)} 23:37:22.446
-     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b\cs420x_46.inf} 23:37:22.446
+     idb:                     {Register Driver Package: exit(0x00000000)} 01:15:41.919
+     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b\cs420x_46.inf} 01:15:41.919
      idb:                          Activating driver package 'cs420x_46.inf_amd64_5a5add9946f1615b'.
      cpy:                          Published 'cs420x_46.inf_amd64_5a5add9946f1615b\cs420x_46.inf' to 'oem2.inf'.
 !    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 194
@@ -675,17 +675,17 @@
 !    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1475
 !    inf:                          Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1548
      idb:                          Indexed 60 device IDs for 'cs420x_46.inf_amd64_5a5add9946f1615b'.
-     sto:                          Flushed driver database node 'DRIVERS'. Time = 0 ms
+     sto:                          Flushed driver database node 'DRIVERS'. Time = 16 ms
      sto:                          Flushed driver database node 'SYSTEM'. Time = 0 ms
-     idb:                     {Publish Driver Package: exit(0x00000000)} 23:37:22.493
+     idb:                     {Publish Driver Package: exit(0x00000000)} 01:15:41.965
 !    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b\CirrusAPO_x64.dll'. Error = 0x00000001
 !    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\cs420x_46.inf_amd64_5a5add9946f1615b\CS420x64.sys'. Error = 0x00000001
-     sto:                     {DRIVERSTORE IMPORT END} 23:37:22.508
+     sto:                     {DRIVERSTORE IMPORT END} 01:15:41.965
 !    dvi:                          Unable to flush all driver package files to disk. Time = 0 ms, Error = 0x00000005
      sig:                          Installed catalog 'CS420x64.cat' as 'oem2.cat'.
-     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 23:37:22.524
-     sto:                {Core Driver Package Import: exit(0x00000000)} 23:37:22.524
-     sto:           {Stage Driver Package: exit(0x00000000)} 23:37:22.524
+     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 01:15:41.981
+     sto:                {Core Driver Package Import: exit(0x00000000)} 01:15:41.981
+     sto:           {Stage Driver Package: exit(0x00000000)} 01:15:41.981
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 194
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 265
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 318
@@ -711,236 +711,156 @@
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1414
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1475
 !    inf:           Legacy directive 'RegisterDlls' will be ignored. Code = 2009, Line = 1548
-     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 23:37:22.586
+     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 01:15:42.044
 !    dvs:      Unable to find any matching devices.
      dvs: {DrvSetupInstallDriver - exit(00000000)}
-<<<  Section end 2026/09/26 23:37:22.586
+<<<  Section end 2026/09/27 01:15:42.044
 <<<  [Exit status: SUCCESS]
 
 
 >>>  [Device Install (DiInstallDriver) - E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf]
->>>  Section start 2026/09/26 23:37:22.703
+>>>  Section start 2026/09/27 01:15:42.184
       cmd: drvload  "E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf" 
      ndv: Flags: 0x00000000
      ndv: INF path: E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf
      dvs: {DrvSetupInstallDriver - E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf}
      dvs:      Flags: 0x00000000
-     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf} 23:37:22.703
-     sto:           {Copy Driver Package: E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf} 23:37:22.703
+     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf} 01:15:42.184
+     sto:           {Copy Driver Package: E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf} 01:15:42.184
      sto:                Driver Package = E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf
      sto:                Flags          = 0x00000007
-     sto:                Destination    = X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}
-     sto:                Copying driver package files to 'X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}'.
+     sto:                Destination    = X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}
+     sto:                Copying driver package files to 'X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}'.
 !    inf:                Section [destinationdirs] is defined multiple times. Code = 1209, Line = 13
 !    inf:                Section [sourcedisksfiles] is defined multiple times. Code = 1209, Line = 19
-     flq:                {FILE_QUEUE_COMMIT} 23:37:22.703
-     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.cat' to 'X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}\AppleSPIKeyboard.cat'.
-     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf' to 'X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}\AppleSPIKeyboard.inf'.
-     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.sys' to 'X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}\AppleSPIKeyboard.sys'.
-     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\WdfCoInstaller01011.dll' to 'X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}\WdfCoInstaller01011.dll'.
-     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 23:37:22.766
-     sto:           {Copy Driver Package: exit(0x00000000)} 23:37:22.766
+     flq:                {FILE_QUEUE_COMMIT} 01:15:42.184
+     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.cat' to 'X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}\AppleSPIKeyboard.cat'.
+     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf' to 'X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}\AppleSPIKeyboard.inf'.
+     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.sys' to 'X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}\AppleSPIKeyboard.sys'.
+     flq:                     Copying 'E:\$WinPEDriver$\AppleSPIKeyboard\WdfCoInstaller01011.dll' to 'X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}\WdfCoInstaller01011.dll'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 01:15:42.247
+     sto:           {Copy Driver Package: exit(0x00000000)} 01:15:42.247
      ump:           Import flags: 0x00000000
-     pol:           {Driver package policy check} 23:37:22.766
-     pol:           {Driver package policy check - exit(0x00000000)} 23:37:22.766
-     sto:           {Stage Driver Package: X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}\AppleSPIKeyboard.inf} 23:37:22.766
+     pol:           {Driver package policy check} 01:15:42.263
+     pol:           {Driver package policy check - exit(0x00000000)} 01:15:42.263
+     sto:           {Stage Driver Package: X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}\AppleSPIKeyboard.inf} 01:15:42.263
 !    inf:                Section [destinationdirs] is defined multiple times. Code = 1209, Line = 13
 !    inf:                Section [sourcedisksfiles] is defined multiple times. Code = 1209, Line = 19
-     inf:                {Query Configurability: X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}\AppleSPIKeyboard.inf} 23:37:22.766
+     inf:                {Query Configurability: X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}\AppleSPIKeyboard.inf} 01:15:42.263
 !    inf:                     Section [destinationdirs] is defined multiple times. Code = 1209, Line = 13
 !    inf:                     Section [sourcedisksfiles] is defined multiple times. Code = 1209, Line = 19
      inf:                     Driver package uses WDF.
      inf:                     Driver package 'AppleSPIKeyboard.inf' is configurable.
-     inf:                {Query Configurability: exit(0x00000000)} 23:37:22.766
-     flq:                {FILE_QUEUE_COMMIT} 23:37:22.766
-     flq:                     Copying 'X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}\AppleSPIKeyboard.cat' to 'X:\windows\System32\DriverStore\Temp\{7d6ca21e-6c21-354c-9476-26e049bac7c8}\AppleSPIKeyboard.cat'.
-     flq:                     Copying 'X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}\AppleSPIKeyboard.inf' to 'X:\windows\System32\DriverStore\Temp\{7d6ca21e-6c21-354c-9476-26e049bac7c8}\AppleSPIKeyboard.inf'.
-     flq:                     Copying 'X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}\AppleSPIKeyboard.sys' to 'X:\windows\System32\DriverStore\Temp\{7d6ca21e-6c21-354c-9476-26e049bac7c8}\AppleSPIKeyboard.sys'.
-     flq:                     Copying 'X:\windows\TEMP\{b63b33a8-2ebd-3849-849d-daeed349c249}\WdfCoInstaller01011.dll' to 'X:\windows\System32\DriverStore\Temp\{7d6ca21e-6c21-354c-9476-26e049bac7c8}\WdfCoInstaller01011.dll'.
-     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 23:37:22.812
-     sto:                {DRIVERSTORE IMPORT VALIDATE} 23:37:22.812
+     inf:                {Query Configurability: exit(0x00000000)} 01:15:42.263
+     flq:                {FILE_QUEUE_COMMIT} 01:15:42.263
+     flq:                     Copying 'X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}\AppleSPIKeyboard.cat' to 'X:\windows\System32\DriverStore\Temp\{e0a9ba93-c91d-6248-95cc-4c47ac14450f}\AppleSPIKeyboard.cat'.
+     flq:                     Copying 'X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}\AppleSPIKeyboard.inf' to 'X:\windows\System32\DriverStore\Temp\{e0a9ba93-c91d-6248-95cc-4c47ac14450f}\AppleSPIKeyboard.inf'.
+     flq:                     Copying 'X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}\AppleSPIKeyboard.sys' to 'X:\windows\System32\DriverStore\Temp\{e0a9ba93-c91d-6248-95cc-4c47ac14450f}\AppleSPIKeyboard.sys'.
+     flq:                     Copying 'X:\windows\TEMP\{7d8248c8-9a9a-4e4c-9f3b-2169ba12bff9}\WdfCoInstaller01011.dll' to 'X:\windows\System32\DriverStore\Temp\{e0a9ba93-c91d-6248-95cc-4c47ac14450f}\WdfCoInstaller01011.dll'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 01:15:42.310
+     sto:                {DRIVERSTORE IMPORT VALIDATE} 01:15:42.310
      sig:                     Driver package catalog is valid.
 !    inf:                     Section [destinationdirs] is defined multiple times. Code = 1209, Line = 13
 !    inf:                     Section [sourcedisksfiles] is defined multiple times. Code = 1209, Line = 19
-     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 23:37:22.844
+     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 01:15:42.341
      sig:                Signer Score  = 0x0D000004 (Unclassified)
      sig:                Submission ID = 1858594
-     sto:                {Core Driver Package Import: applespikeyboard.inf_amd64_e0db65d93aa907c7} 23:37:22.844
-     sto:                     {DRIVERSTORE IMPORT BEGIN} 23:37:22.844
-     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 23:37:22.844
-     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{7d6ca21e-6c21-354c-9476-26e049bac7c8}} 23:37:22.844
+     sto:                {Core Driver Package Import: applespikeyboard.inf_amd64_e0db65d93aa907c7} 01:15:42.341
+     sto:                     {DRIVERSTORE IMPORT BEGIN} 01:15:42.341
+     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 01:15:42.341
+     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{e0a9ba93-c91d-6248-95cc-4c47ac14450f}} 01:15:42.341
      cpy:                          Target Path = X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7
-     cpy:                     {Copy Directory: exit(0x00000000)} 23:37:22.891
-     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7\AppleSPIKeyboard.inf} 23:37:22.891
+     cpy:                     {Copy Directory: exit(0x00000000)} 01:15:42.377
+     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7\AppleSPIKeyboard.inf} 01:15:42.377
      idb:                          Created driver package object 'applespikeyboard.inf_amd64_e0db65d93aa907c7' in SYSTEM database node.
      idb:                          Created driver INF file object 'oem3.inf' in SYSTEM database node.
      idb:                          Registered driver package 'applespikeyboard.inf_amd64_e0db65d93aa907c7' with 'oem3.inf'.
-     idb:                     {Register Driver Package: exit(0x00000000)} 23:37:22.891
-     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7\AppleSPIKeyboard.inf} 23:37:22.891
+     idb:                     {Register Driver Package: exit(0x00000000)} 01:15:42.377
+     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7\AppleSPIKeyboard.inf} 01:15:42.377
      idb:                          Activating driver package 'applespikeyboard.inf_amd64_e0db65d93aa907c7'.
      cpy:                          Published 'applespikeyboard.inf_amd64_e0db65d93aa907c7\applespikeyboard.inf' to 'oem3.inf'.
      idb:                          Indexed 9 device IDs for 'applespikeyboard.inf_amd64_e0db65d93aa907c7'.
      sto:                          Flushed driver database node 'SYSTEM'. Time = 0 ms
-     idb:                     {Publish Driver Package: exit(0x00000000)} 23:37:22.891
+     idb:                     {Publish Driver Package: exit(0x00000000)} 01:15:42.377
 !    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7\AppleSPIKeyboard.sys'. Error = 0x00000001
 !    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\applespikeyboard.inf_amd64_e0db65d93aa907c7\WdfCoInstaller01011.dll'. Error = 0x00000001
-     sto:                     {DRIVERSTORE IMPORT END} 23:37:22.891
+     sto:                     {DRIVERSTORE IMPORT END} 01:15:42.377
 !    dvi:                          Unable to flush all driver package files to disk. Time = 0 ms, Error = 0x00000005
      sig:                          Installed catalog 'AppleSPIKeyboard.cat' as 'oem3.cat'.
-     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 23:37:22.891
-     sto:                {Core Driver Package Import: exit(0x00000000)} 23:37:22.891
-     sto:           {Stage Driver Package: exit(0x00000000)} 23:37:22.891
-     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 23:37:22.906
+     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 01:15:42.392
+     sto:                {Core Driver Package Import: exit(0x00000000)} 01:15:42.392
+     sto:           {Stage Driver Package: exit(0x00000000)} 01:15:42.392
+     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 01:15:42.408
 !    dvs:      Unable to find any matching devices.
      dvs: {DrvSetupInstallDriver - exit(00000000)}
-<<<  Section end 2026/09/26 23:37:22.922
+<<<  Section end 2026/09/27 01:15:42.408
 <<<  [Exit status: SUCCESS]
 
 
 >>>  [Device Install (DiInstallDriver) - E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf]
->>>  Section start 2026/09/26 23:37:24.248
+>>>  Section start 2026/09/27 01:15:43.759
       cmd: drvload  "E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf" 
      ndv: Flags: 0x00000000
      ndv: INF path: E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf
      dvs: {DrvSetupInstallDriver - E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf}
      dvs:      Flags: 0x00000000
-     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf} 23:37:24.248
-     sto:           {Copy Driver Package: E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf} 23:37:24.264
+     dvs:      {Driver Setup Import Driver Package: E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf} 01:15:43.759
+     sto:           {Copy Driver Package: E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf} 01:15:43.776
      sto:                Driver Package = E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf
      sto:                Flags          = 0x00000007
-     sto:                Destination    = X:\windows\TEMP\{6851ad7b-1bae-ab47-beaa-d277f3a144a4}
-     sto:                Copying driver package files to 'X:\windows\TEMP\{6851ad7b-1bae-ab47-beaa-d277f3a144a4}'.
-     flq:                {FILE_QUEUE_COMMIT} 23:37:24.264
-     flq:                     Copying 'E:\$WinPEDriver$\AppleDFR64\AppleDFR.cat' to 'X:\windows\TEMP\{6851ad7b-1bae-ab47-beaa-d277f3a144a4}\AppleDFR.cat'.
-     flq:                     Copying 'E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf' to 'X:\windows\TEMP\{6851ad7b-1bae-ab47-beaa-d277f3a144a4}\AppleDFR.inf'.
-     flq:                     Copying 'E:\$WinPEDriver$\AppleDFR64\AppleDFR.sys' to 'X:\windows\TEMP\{6851ad7b-1bae-ab47-beaa-d277f3a144a4}\AppleDFR.sys'.
-     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 23:37:24.279
-     sto:           {Copy Driver Package: exit(0x00000000)} 23:37:24.279
+     sto:                Destination    = X:\windows\TEMP\{971b09c9-a450-3141-a72c-f452f614a276}
+     sto:                Copying driver package files to 'X:\windows\TEMP\{971b09c9-a450-3141-a72c-f452f614a276}'.
+     flq:                {FILE_QUEUE_COMMIT} 01:15:43.785
+     flq:                     Copying 'E:\$WinPEDriver$\AppleDFR64\AppleDFR.cat' to 'X:\windows\TEMP\{971b09c9-a450-3141-a72c-f452f614a276}\AppleDFR.cat'.
+     flq:                     Copying 'E:\$WinPEDriver$\AppleDFR64\AppleDFR.inf' to 'X:\windows\TEMP\{971b09c9-a450-3141-a72c-f452f614a276}\AppleDFR.inf'.
+     flq:                     Copying 'E:\$WinPEDriver$\AppleDFR64\AppleDFR.sys' to 'X:\windows\TEMP\{971b09c9-a450-3141-a72c-f452f614a276}\AppleDFR.sys'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 01:15:43.788
+     sto:           {Copy Driver Package: exit(0x00000000)} 01:15:43.788
      ump:           Import flags: 0x00000000
-     pol:           {Driver package policy check} 23:37:24.279
-     pol:           {Driver package policy check - exit(0x00000000)} 23:37:24.279
-     sto:           {Stage Driver Package: X:\windows\TEMP\{6851ad7b-1bae-ab47-beaa-d277f3a144a4}\AppleDFR.inf} 23:37:24.279
-     inf:                {Query Configurability: X:\windows\TEMP\{6851ad7b-1bae-ab47-beaa-d277f3a144a4}\AppleDFR.inf} 23:37:24.295
+     pol:           {Driver package policy check} 01:15:43.803
+     pol:           {Driver package policy check - exit(0x00000000)} 01:15:43.803
+     sto:           {Stage Driver Package: X:\windows\TEMP\{971b09c9-a450-3141-a72c-f452f614a276}\AppleDFR.inf} 01:15:43.803
+     inf:                {Query Configurability: X:\windows\TEMP\{971b09c9-a450-3141-a72c-f452f614a276}\AppleDFR.inf} 01:15:43.803
      inf:                     Driver package uses WDF.
      inf:                     Driver package 'AppleDFR.inf' is configurable.
-     inf:                {Query Configurability: exit(0x00000000)} 23:37:24.295
-     flq:                {FILE_QUEUE_COMMIT} 23:37:24.295
-     flq:                     Copying 'X:\windows\TEMP\{6851ad7b-1bae-ab47-beaa-d277f3a144a4}\AppleDFR.cat' to 'X:\windows\System32\DriverStore\Temp\{dfcba9c8-64f1-ae4c-a628-51de6c219956}\AppleDFR.cat'.
-     flq:                     Copying 'X:\windows\TEMP\{6851ad7b-1bae-ab47-beaa-d277f3a144a4}\AppleDFR.inf' to 'X:\windows\System32\DriverStore\Temp\{dfcba9c8-64f1-ae4c-a628-51de6c219956}\AppleDFR.inf'.
-     flq:                     Copying 'X:\windows\TEMP\{6851ad7b-1bae-ab47-beaa-d277f3a144a4}\AppleDFR.sys' to 'X:\windows\System32\DriverStore\Temp\{dfcba9c8-64f1-ae4c-a628-51de6c219956}\AppleDFR.sys'.
-     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 23:37:24.295
-     sto:                {DRIVERSTORE IMPORT VALIDATE} 23:37:24.295
+     inf:                {Query Configurability: exit(0x00000000)} 01:15:43.803
+     flq:                {FILE_QUEUE_COMMIT} 01:15:43.803
+     flq:                     Copying 'X:\windows\TEMP\{971b09c9-a450-3141-a72c-f452f614a276}\AppleDFR.cat' to 'X:\windows\System32\DriverStore\Temp\{f6c84625-f97c-cf42-af57-b7713036b2ab}\AppleDFR.cat'.
+     flq:                     Copying 'X:\windows\TEMP\{971b09c9-a450-3141-a72c-f452f614a276}\AppleDFR.inf' to 'X:\windows\System32\DriverStore\Temp\{f6c84625-f97c-cf42-af57-b7713036b2ab}\AppleDFR.inf'.
+     flq:                     Copying 'X:\windows\TEMP\{971b09c9-a450-3141-a72c-f452f614a276}\AppleDFR.sys' to 'X:\windows\System32\DriverStore\Temp\{f6c84625-f97c-cf42-af57-b7713036b2ab}\AppleDFR.sys'.
+     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 01:15:43.819
+     sto:                {DRIVERSTORE IMPORT VALIDATE} 01:15:43.819
      sig:                     Driver package catalog is valid.
-     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 23:37:24.311
+     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 01:15:43.819
      sig:                Signer Score  = 0x0D000004 (Unclassified)
      sig:                Submission ID = 1919233
-     sto:                {Core Driver Package Import: appledfr.inf_amd64_ec3ab803889f24fd} 23:37:24.311
-     sto:                     {DRIVERSTORE IMPORT BEGIN} 23:37:24.311
-     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 23:37:24.311
-     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{dfcba9c8-64f1-ae4c-a628-51de6c219956}} 23:37:24.311
+     sto:                {Core Driver Package Import: appledfr.inf_amd64_ec3ab803889f24fd} 01:15:43.819
+     sto:                     {DRIVERSTORE IMPORT BEGIN} 01:15:43.819
+     sto:                     {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 01:15:43.819
+     cpy:                     {Copy Directory: X:\windows\System32\DriverStore\Temp\{f6c84625-f97c-cf42-af57-b7713036b2ab}} 01:15:43.819
      cpy:                          Target Path = X:\windows\System32\DriverStore\FileRepository\appledfr.inf_amd64_ec3ab803889f24fd
-     cpy:                     {Copy Directory: exit(0x00000000)} 23:37:24.311
-     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\appledfr.inf_amd64_ec3ab803889f24fd\AppleDFR.inf} 23:37:24.311
+     cpy:                     {Copy Directory: exit(0x00000000)} 01:15:43.834
+     idb:                     {Register Driver Package: X:\windows\System32\DriverStore\FileRepository\appledfr.inf_amd64_ec3ab803889f24fd\AppleDFR.inf} 01:15:43.834
      idb:                          Created driver package object 'appledfr.inf_amd64_ec3ab803889f24fd' in SYSTEM database node.
      idb:                          Created driver INF file object 'oem4.inf' in SYSTEM database node.
      idb:                          Registered driver package 'appledfr.inf_amd64_ec3ab803889f24fd' with 'oem4.inf'.
-     idb:                     {Register Driver Package: exit(0x00000000)} 23:37:24.311
-     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\appledfr.inf_amd64_ec3ab803889f24fd\AppleDFR.inf} 23:37:24.311
+     idb:                     {Register Driver Package: exit(0x00000000)} 01:15:43.834
+     idb:                     {Publish Driver Package: X:\windows\System32\DriverStore\FileRepository\appledfr.inf_amd64_ec3ab803889f24fd\AppleDFR.inf} 01:15:43.834
      idb:                          Activating driver package 'appledfr.inf_amd64_ec3ab803889f24fd'.
      cpy:                          Published 'appledfr.inf_amd64_ec3ab803889f24fd\appledfr.inf' to 'oem4.inf'.
      idb:                          Indexed 2 device IDs for 'appledfr.inf_amd64_ec3ab803889f24fd'.
      sto:                          Flushed driver database node 'SYSTEM'. Time = 0 ms
-     idb:                     {Publish Driver Package: exit(0x00000000)} 23:37:24.311
+     idb:                     {Publish Driver Package: exit(0x00000000)} 01:15:43.834
 !    sto:                     Unable to set a catalog hint on driver file 'X:\windows\System32\DriverStore\FileRepository\appledfr.inf_amd64_ec3ab803889f24fd\AppleDFR.sys'. Error = 0x00000001
-     sto:                     {DRIVERSTORE IMPORT END} 23:37:24.326
+     sto:                     {DRIVERSTORE IMPORT END} 01:15:43.834
 !    dvi:                          Unable to flush all driver package files to disk. Time = 0 ms, Error = 0x00000005
      sig:                          Installed catalog 'AppleDFR.cat' as 'oem4.cat'.
-     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 23:37:24.326
-     sto:                {Core Driver Package Import: exit(0x00000000)} 23:37:24.326
-     sto:           {Stage Driver Package: exit(0x00000000)} 23:37:24.326
-     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 23:37:24.342
+     sto:                     {DRIVERSTORE IMPORT END: exit(0x00000000)} 01:15:43.834
+     sto:                {Core Driver Package Import: exit(0x00000000)} 01:15:43.834
+     sto:           {Stage Driver Package: exit(0x00000000)} 01:15:43.834
+     dvs:      {Driver Setup Import Driver Package - exit (0x00000000)} 01:15:43.850
 !    dvs:      Unable to find any matching devices.
      dvs: {DrvSetupInstallDriver - exit(00000000)}
-<<<  Section end 2026/09/26 23:37:24.342
-<<<  [Exit status: SUCCESS]
-
-
->>>  [Delete Device - PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10]
->>>  Section start 2026/09/26 23:37:25.324
-      cmd: pnputil  /remove-device "PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10" 
-     dvi: Query-and-Remove succeeded
-<<<  Section end 2026/09/26 23:37:25.324
-<<<  [Exit status: SUCCESS]
-
-
->>>  [Device Install (Hardware initiated) - PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10]
->>>  Section start 2026/09/26 23:37:25.402
-     utl: {Select Drivers - PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10} 23:37:25.402
-     utl:      Driver Node:
-     utl:           Status         - Selected
-     utl:           Driver INF     - oem0.inf (X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igdiris64.inf)
-     utl:           Class GUID     - {4d36e968-e325-11ce-bfc1-08002be10318}
-     utl:           Driver Version - 07/01/2016,20.19.15.4483
-     utl:           Configuration  - PCI\VEN_8086&DEV_1927
-     utl:           Driver Rank    - 80D12001
-     utl:           Signer Score   - Unsigned (80000000)
-     utl: {Select Drivers - exit(0x00000000} 23:37:25.402
-     dvi: {Core Device Install} 23:37:25.402
-     dvi:      {Configure Device - PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10} 23:37:25.427
-     dvi:           Device Status: 0x01802400 [0x01 - 0xc0000493]
-     dvi:           Parent Device: ACPI\PNP0A08\0
-     sto:           {Configure Driver Package: X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igdiris64.inf}
-     sto:                Source Filter  = PCI\VEN_8086&DEV_1927
-     inf:                Class GUID     = {4d36e968-e325-11ce-bfc1-08002be10318}
-     inf:                Class Options  = Configurable
-     inf:                {Configure Driver: Intel(R) Iris(TM) Graphics 550}
-     inf:                     Section Name = iSKLD_w10
-     inf:                     {Add Service: igfx}
-     inf:                          Start Type    = 0
-     inf:                          Service Type  = 1
-     inf:                          Error Control = 0
-     inf:                          Image Path    = System32\drivers\igdkmd64.sys
-     inf:                          Group         = Video
-     inf:                          Updated service 'igfx'.
-     inf:                          Service image path changed. Restart required for any devices using this service.
-     inf:                     {Add Service: exit(0x00000000)}
-     inf:                     Hardware Id  = PCI\VEN_8086&DEV_1927
-     inf:                     {Configure Driver Configuration: iSKLD_w10}
-     inf:                          Service Name  = igfx
-     inf:                          Config Flags  = 0x00000000
-     inf:                     {Configure Driver Configuration: exit(0x00000000)}
-     inf:                {Configure Driver: exit(0x00000000)}
-     flq:                {FILE_QUEUE_COMMIT} 23:37:25.443
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igdkmd64.sys' to 'X:\windows\System32\drivers\igdkmd64.sys'.
-     cpy:                     Existing file 'X:\windows\System32\drivers\igdkmd64.sys' remains unchanged.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igd10iumd64.dll' to 'X:\windows\System32\igd10iumd64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igd10idpp64.dll' to 'X:\windows\System32\igd10idpp64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igd11dxva64.dll' to 'X:\windows\System32\igd11dxva64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igd12umd64.dll' to 'X:\windows\System32\igd12umd64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igdumdim64.dll' to 'X:\windows\System32\igdumdim64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igdail64.dll' to 'X:\windows\System32\igdail64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igfxcmrt64.dll' to 'X:\windows\System32\igfxcmrt64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igfx11cmrt64.dll' to 'X:\windows\System32\igfx11cmrt64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igfxcmjit64.dll' to 'X:\windows\System32\igfxcmjit64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igdde64.dll' to 'X:\windows\System32\igdde64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\IntelCpHDCPSvc.exe' to 'X:\windows\System32\IntelCpHDCPSvc.exe'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igdusc64.dll' to 'X:\windows\System32\igdusc64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igc64.dll' to 'X:\windows\System32\igc64.dll'.
-     flq:                     Copying 'X:\windows\System32\DriverStore\FileRepository\igdiris64.inf_amd64_1d40c3982dfbfe6c\igdmd64.dll' to 'X:\windows\System32\igdmd64.dll'.
-     flq:                {FILE_QUEUE_COMMIT - exit(0x00000000)} 23:37:27.647
-     dvi:                Existing files modified, may need to restart related services.
-     sto:           {Configure Driver Package: exit(0x00000bc3)}
-     dvi:           Restart required for any devices using this driver.
-     dvi:           Install Device: Configuring device. 23:37:27.647
-     dvi:                Configuration: oem0.inf:PCI\VEN_8086&DEV_1927,*
-     dvi:           Install Device: Configuring device completed. 23:37:27.647
-     dvi:           Device Status: 0x01802000
-     dvi:           {Restarting Devices} 23:37:27.647
-     dvi:                Start: PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-!    dvi:                Device 'PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10' not started: Device has problem: 0x1f (CM_PROB_FAILED_ADD), problem status: 0xc00000bb.
-     dvi:           {Restarting Devices exit} 23:37:27.782
-     dvi:      {Configure Device - exit(0x00000000)} 23:37:27.782
-     dvi: {Core Device Install - exit(0x00000000)} 23:37:27.782
-<<<  Section end 2026/09/26 23:37:27.787
+<<<  Section end 2026/09/27 01:15:43.866
 <<<  [Exit status: SUCCESS]
 
