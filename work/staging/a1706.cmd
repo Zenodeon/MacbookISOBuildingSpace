@@ -5,7 +5,7 @@ echo ran>X:\a1706.ran
 set LOGX=X:\a1706-setup-log.txt
 set LOGS=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :try %%L
-set "MSG=A1706 setup log v16 %DATE% %TIME%"
+set "MSG=A1706 setup log v17 %DATE% %TIME%"
 call :note
 set "MSG=writable drives:!LOGS!"
 call :note
@@ -18,19 +18,13 @@ call :note
 call :copysapi
 set "MSG=step after-wpeinit"
 call :note
-set "MSG=v16 restart iris only"
+set "MSG=v17 restart iris only"
 call :note
 call :dump pnputil /enum-devices /class Display
 call :dump pnputil /enum-devices /problem
 call :copysapi
 set "GPU=PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10"
 call :gpurestart
-findstr /C:"CM_PROB_REINSTALL" X:\a1706-cmd-out.txt >nul
-if !ERRORLEVEL! equ 0 (
-  set "MSG=v16 still problem 18, restart again"
-  call :note
-  call :gpurestart
-)
 set DRV=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :finddrv %%L
 set "MSG=disc=!DRV!"
@@ -76,26 +70,38 @@ if exist %SystemRoot%\System32\DisplaySwitch.exe (
 )
 call :copysapi
 if exist %SystemRoot%\System32\Narrator.exe start "" %SystemRoot%\System32\Narrator.exe
-set "MSG=v16 display cycle"
+set "N=0"
+set "IRISOK=0"
+:waitiris
+set /a N+=1
+pnputil /enum-devices /class Display >X:\a1706-cmd-out.txt 2>&1
+call :addfile X:\a1706-cmd-out.txt
+set "MSG=iris wait !N! %TIME%"
 call :note
-set "MSG=display cycle start %TIME%"
-call :note
-call :cue display
-call :copysapi
-if exist %SystemRoot%\System32\DisplaySwitch.exe (
-  for /L %%N in (1,1,8) do (
-    %SystemRoot%\System32\DisplaySwitch.exe /clone
-    ping -n 3 127.0.0.1 >nul
-    %SystemRoot%\System32\DisplaySwitch.exe /extend
-    ping -n 3 127.0.0.1 >nul
-    %SystemRoot%\System32\DisplaySwitch.exe /external
-    ping -n 3 127.0.0.1 >nul
-  )
+if not exist %SystemRoot%\System32\a1706iris.exe (
+  set "MSG=ERROR missing a1706iris.exe"
+  call :note
+  goto :irisdone
 )
-set "MSG=display cycle finished %TIME%"
-call :note
-call :cue done
-call :copysapi
+%SystemRoot%\System32\a1706iris.exe
+if !ERRORLEVEL! equ 0 (
+  set "MSG=iris started %TIME%"
+  call :note
+  set "IRISOK=1"
+  goto :irisdone
+)
+if !N! geq 30 goto :irisdone
+ping -n 3 127.0.0.1 >nul
+goto :waitiris
+:irisdone
+if not "!IRISOK!"=="1" (
+  set "MSG=ERROR iris not started"
+  call :note
+  goto :eof
+)
+if exist %SystemRoot%\System32\DisplaySwitch.exe (
+  %SystemRoot%\System32\DisplaySwitch.exe /external
+)
 set "SRC="
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do (
   if exist "%%L:\sources\install.wim" (
@@ -117,6 +123,8 @@ if exist %SystemRoot%\System32\a1706dlg.exe (
   set "MSG=ERROR missing a1706dlg.exe"
   call :note
 )
+set "MSG=launching setup %TIME%"
+call :note
 if exist X:\sources\setup.exe (
   if defined SRC (
     X:\sources\setup.exe /InstallFrom:!SRC!\sources\install.wim
