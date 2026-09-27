@@ -1,10 +1,10 @@
-A1706 setup log v14 Sun 09/27/2026  3:42:38.05
+A1706 setup log v15 Sun 09/27/2026  4:20:05.09
 writable drives: C
 logs appended to \A1706Logs on each writable drive
 wpeinit finished errorlevel=0
 copied setupapi.dev.log 
 step after-wpeinit
-v14 restart iris only
+v15 restart iris only
 ----- pnputil /enum-devices /class Display -----
 Microsoft PnP Utility
 
@@ -304,7 +304,6 @@ dump errorlevel=0
 copied setupapi.dev.log 
 check C
 check E
-winpedriver-on E
 disc=E:\$WinPEDriver$
 step load thunderbolt
 LOAD E:\$WinPEDriver$\Thunderbolt\tbt81x.inf
@@ -751,12 +750,12 @@ Status:                     Started
 Driver Name:                pci.inf
 
 Instance ID:                HDAUDIO\FUNC_01&VEN_8086&DEV_2809&SUBSYS_80860101&REV_1000\4&a4c0fcf&0&0201
-Device Description:         High Definition Audio Device
+Device Description:         Intel(R) Display Audio
 Class Name:                 MEDIA
 Class GUID:                 {4d36e96c-e325-11ce-bfc1-08002be10318}
-Manufacturer Name:          Microsoft
+Manufacturer Name:          Intel(R) Corporation
 Status:                     Started
-Driver Name:                hdaudio.inf
+Driver Name:                oem3.inf
 
 Instance ID:                ACPI\PNP0C0C\2&daba3ff&0
 Device Description:         ACPI Power Button
@@ -804,14 +803,6 @@ Class GUID:                 {4d36e96b-e325-11ce-bfc1-08002be10318}
 Manufacturer Name:          (Standard keyboards)
 Status:                     Started
 Driver Name:                keyboard.inf
-
-Instance ID:                STORAGE\Volume\{828f9c5c-ba68-11f1-aa4f-806e6f6e6963}#0000000E89000000
-Device Description:         Volume
-Class Name:                 Volume
-Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
-Manufacturer Name:          Microsoft
-Status:                     Started
-Driver Name:                volume.inf
 
 Instance ID:                USB\VID_046D&PID_C534&MI_00\7&2ef17630&0&0000
 Device Description:         USB Input Device
@@ -869,6 +860,14 @@ Class GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
 Manufacturer Name:          (Standard USB HUBs)
 Status:                     Started
 Driver Name:                usbhub3.inf
+
+Instance ID:                STORAGE\Volume\{c0db89e9-ba6d-11f1-98a3-806e6f6e6963}#0000000E89000000
+Device Description:         Volume
+Class Name:                 Volume
+Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+Manufacturer Name:          Microsoft
+Status:                     Started
+Driver Name:                volume.inf
 
 Instance ID:                PCI\VEN_8086&DEV_15D4&SUBSYS_00008086&REV_02\6&108342b7&0&001000E4
 Device Description:         Intel(R) USB 3.1 eXtensible Host Controller - 1.10 (Microsoft)
@@ -1217,7 +1216,7 @@ dump errorlevel=0
 ----- pnputil /enum-drivers -----
 Microsoft PnP Utility
 
-Published Name:     oem4.inf
+Published Name:     oem6.inf
 Original Name:      appledfr.inf
 Provider Name:      Apple Inc.
 Class Name:         Human Interface Devices
@@ -1225,7 +1224,7 @@ Class GUID:         {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
 Driver Version:     10/25/2016 6.1.6500.0
 Signer Name:        Unknown
 
-Published Name:     oem3.inf
+Published Name:     oem5.inf
 Original Name:      applespikeyboard.inf
 Provider Name:      Apple Inc.
 Class Name:         Human Interface Devices
@@ -1241,7 +1240,7 @@ Class GUID:         {4d36e96c-e325-11ce-bfc1-08002be10318}
 Driver Version:     11/22/2016 6.6001.3.36
 Signer Name:        Unknown
 
-Published Name:     oem2.inf
+Published Name:     oem4.inf
 Original Name:      cs420x_46.inf
 Provider Name:      Cirrus Logic, Inc.
 Class Name:         Sound, video and game controllers
@@ -1250,11 +1249,27 @@ Driver Version:     02/14/2014 6.6001.1.41
 Signer Name:        Unknown
 
 Published Name:     oem0.inf
-Original Name:      igdiris64.inf
+Original Name:      igdlh64.inf
 Provider Name:      Intel Corporation
 Class Name:         Display adapters
 Class GUID:         {4d36e968-e325-11ce-bfc1-08002be10318}
 Driver Version:     11/08/2020 21.20.16.5174
+Signer Name:        Microsoft Windows Hardware Compatibility Publisher
+
+Published Name:     oem3.inf
+Original Name:      intcdaud.inf
+Provider Name:      Intel(R) Corporation
+Class Name:         Sound, video and game controllers
+Class GUID:         {4d36e96c-e325-11ce-bfc1-08002be10318}
+Driver Version:     05/02/2017 10.22.1.100
+Signer Name:        Unknown
+
+Published Name:     oem2.inf
+Original Name:      intcdaud.inf
+Provider Name:      Intel(R) Corporation
+Class Name:         Sound, video and game controllers
+Class GUID:         {4d36e96c-e325-11ce-bfc1-08002be10318}
+Driver Version:     06/22/2017 6.16.0.3200
 Signer Name:        Unknown
 
 dump errorlevel=0
@@ -1295,21 +1310,21 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID
     (Default)    REG_NONE    52004F004F0054005C004200610073006900630044006900730070006C00610079005C0030003000300030000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0064
-    (Default)    REG_NONE    F800F54A754EDD01
+    (Default)    REG_NONE    DB1A46867A4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0065
-    (Default)    REG_NONE    F800F54A754EDD01
+    (Default)    REG_NONE    DB1A46867A4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0066
-    (Default)    REG_NONE    F800F54A754EDD01
+    (Default)    REG_NONE    DB1A46867A4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0067
-    (Default)    REG_NONE    A6B4D552754EDD01
+    (Default)    REG_NONE    9566C1937A4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0001
-    (Default)    REG_NONE    20BD000000000000
+    (Default)    REG_NONE    83BD000000000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0002
     (Default)    REG_NONE    00000000
@@ -1350,13 +1365,13 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UI
     (Default)    REG_NONE    5000430049005C00560045004E005F00380030003800360026004400450056005F00310039003200370026005300550042005300590053005F003000310035004400310030003600420026005200450056005F00300041005C003300260031003100350038003300360035003900260030002600310030000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0064
-    (Default)    REG_NONE    05D7C853754EDD01
+    (Default)    REG_NONE    53AF9C947A4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0065
-    (Default)    REG_NONE    05D7C853754EDD01
+    (Default)    REG_NONE    53AF9C947A4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0066
-    (Default)    REG_NONE    3527B853754EDD01
+    (Default)    REG_NONE    53AF9C947A4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{a45c254e-df1c-4efd-8020-67d146a850e0}
 
@@ -1366,7 +1381,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UI
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{ca085853-16ce-48aa-b114-de9c72334223}
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0001
-    (Default)    REG_NONE    17BB020000000000
+    (Default)    REG_NONE    D71D030000000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0002
     (Default)    REG_NONE    030E0300
@@ -1377,6 +1392,7 @@ dump errorlevel=0
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers
     DxgKrnlVersion    REG_DWORD    0xc004
     MinDxgKrnlVersion    REG_DWORD    0x5013
+    UseXPModel    REG_DWORD    0x0
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\BlockList
 
@@ -1398,13 +1414,17 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\DCI
     Timeout    REG_DWORD    0x7
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\FeatureSetUsage
-    WddmVersion_Max    REG_DWORD    0x7d0
-    WddmVersion_Min    REG_DWORD    0x7d0
+    AdapterMPO_1    REG_DWORD    0x1
+    WddmVersion_Max    REG_DWORD    0x834
+    WddmVersion_Min    REG_DWORD    0x834
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MemoryManager
     DxgMms2OfferReclaim    REG_DWORD    0x2
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MonitorDataStore
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Scheduler
+    EnablePreemption    REG_DWORD    0x1
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\UseNewKey
 
@@ -1423,33 +1443,14 @@ dump errorlevel=0
 
 05/21/2024  12:04 PM         1,925,104 DisplaySwitch.exe
                1 File(s)      1,925,104 bytes
-               0 Dir(s)     411,344,896 bytes free
+               0 Dir(s)     436,674,560 bytes free
 DisplaySwitch.exe present
-copied setupapi.dev.log touchbar
-v14 display cycle
-display cycle start  3:42:54.17
+v15 display cycle
+display cycle start  4:20:41.65
 cue display errorlevel=3
 copied setupapi.dev.log touchbar
-display cycle finished  3:43:43.06
+display cycle finished  4:21:30.59
 cue done errorlevel=3
 copied setupapi.dev.log touchbar
-v14 delete oem0 force
-Microsoft PnP Utility
-
-Driver package deleted successfully.
-delete-driver errorlevel=0
------ pnputil /enum-devices /class Display -----
-Microsoft PnP Utility
-
-Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-Device Description:         Intel(R) Iris(TM) Graphics 550
-Class Name:                 Display
-Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
-Manufacturer Name:          Intel Corporation
-Status:                     Started
-Driver Name:                oem0.---
-
-dump errorlevel=0
-copied setupapi.dev.log touchbar
-ERROR missing ESD-ISO install.wim
+installfrom E:\sources\install.wim
 after-setup log a1706-after-setup.txt
