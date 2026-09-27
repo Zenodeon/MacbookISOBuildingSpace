@@ -1,0 +1,19 @@
+
+Deployment Image Servicing and Management tool
+Version: 10.0.19041.3636
+
+Image Version: 10.0.19041.3803
+
+Obtaining list of 3rd party drivers from the driver store...
+
+Driver packages listing:
+
+Published Name : oem0.inf
+Original File Name : igdlh64.inf
+Inbox : No
+Class Name : Display
+Provider Name : Intel Corporation
+Date : 08/11/2020
+Version : 21.20.16.5174
+
+The operation completed successfully.

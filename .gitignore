@@ -15,6 +15,7 @@ work/staging/A1706Drivers/
 work/staging/boot2/
 work/staging/verify/
 work/staging/wimcheck/
+work/staging/iris2016-outofboot/
 
 # Build leftovers
 *.iso

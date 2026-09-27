@@ -96,6 +96,26 @@ static BOOL CALLBACK topproc(HWND hwnd, LPARAM lp)
     return TRUE;
 }
 
+static void copy_setuperr(void)
+{
+    char src[] = "X:\\Windows\\Panther\\setuperr.log";
+    char path[96];
+    char dir[32];
+    int i;
+    if (GetFileAttributesA(src) == INVALID_FILE_ATTRIBUTES)
+        return;
+    CopyFileA(src, "X:\\a1706-setuperr.log", FALSE);
+    for (i = 'C'; i <= 'Z'; i++) {
+        if (i == 'X')
+            continue;
+        wsprintfA(dir, "%c:\\A1706Logs", i);
+        if (GetFileAttributesA(dir) == INVALID_FILE_ATTRIBUTES)
+            continue;
+        wsprintfA(path, "%c:\\A1706Logs\\a1706-setuperr.log", i);
+        CopyFileA(src, path, FALSE);
+    }
+}
+
 int WINAPI WinMain(HINSTANCE inst, HINSTANCE prev, LPSTR cmd, int show)
 {
     (void)inst;
@@ -105,6 +125,7 @@ int WINAPI WinMain(HINSTANCE inst, HINSTANCE prev, LPSTR cmd, int show)
     write_all("after-setup log started");
     for (;;) {
         EnumWindows(topproc, 0);
+        copy_setuperr();
         Sleep(500);
     }
 }
