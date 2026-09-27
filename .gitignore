@@ -30,3 +30,9 @@ work/staging/wimcheck/
 # Keep the Mac Setup logs
 !A1706Logs/
 !A1706Logs/**
+
+# Registry transaction logs copied beside SYSTEM.hiv
+A1706Logs/hidden/
+
+# Registry transaction logs copied beside SYSTEM.v8.hiv
+work/staging/hidden/
