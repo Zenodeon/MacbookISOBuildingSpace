@@ -1,10 +1,162 @@
-A1706 setup log v12 Sun 09/27/2026  2:30:42.24
+A1706 setup log v13 Sun 09/27/2026  2:55:43.01
 writable drives: C
 logs appended to \A1706Logs on each writable drive
 wpeinit finished errorlevel=0
 copied setupapi.dev.log 
 step after-wpeinit
-v12 2021 iris staged, no restart
+v13 restart iris only
+----- pnputil /enum-devices /class Display -----
+Microsoft PnP Utility
+
+No devices were found on the system.
+dump errorlevel=0
+----- pnputil /enum-devices /problem -----
+Microsoft PnP Utility
+
+Instance ID:                PCI\VEN_8086&DEV_9D27&SUBSYS_72708086&REV_21\3&11583659&0&F0
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D66&SUBSYS_72708086&REV_21\3&11583659&0&C8
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                ACPI\APP0002\10
+Device Description:         Unknown
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                USB\VID_1D5C&PID_7102\6&2cf71ea0&0&1
+Device Description:         Generic Billboard Device
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_14E4&DEV_43BA&SUBSYS_0157106B&REV_02\4&1a5036a5&0&00EB
+Device Description:         Network Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Device Description:         Video Controller (VGA Compatible)
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               18 (0x12) [CM_PROB_REINSTALL]
+Problem Status:             0xC0000493
+
+Instance ID:                PCI\VEN_8086&DEV_9D21&SUBSYS_72708086&REV_21\3&11583659&0&FA
+Device Description:         PCI Memory Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D2A&SUBSYS_72708086&REV_21\3&11583659&0&F3
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                ACPI\APP7777\5&2c705bfe&0
+Device Description:         Unknown
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D23&SUBSYS_72708086&REV_21\3&11583659&0&FC
+Device Description:         SM Bus Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                ACPI\APP0001\4&15fbc11c&0
+Device Description:         Unknown
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D28&SUBSYS_72708086&REV_21\3&11583659&0&F1
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                USB\VID_05AC&PID_8600\5&2c705bfe&0&3
+Device Description:         iBridge
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D3A&SUBSYS_72708086&REV_21\3&11583659&0&B0
+Device Description:         PCI Simple Communications Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_106B&DEV_2003&SUBSYS_2003106B&REV_12\4&32fa7cc7&0&00E0
+Device Description:         Mass Storage Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+dump errorlevel=0
+copied setupapi.dev.log 
+pnputil restart-device
+Microsoft PnP Utility
+
+Restarting device:         PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Device restarted successfully.
+
+restart errorlevel=0
 ----- pnputil /enum-devices /class Display -----
 Microsoft PnP Utility
 
@@ -486,13 +638,12 @@ Status:                     Started
 Driver Name:                usbhub3.inf
 
 Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-Device Description:         Video Controller (VGA Compatible)
-Class Name:                 Unknown
-Class GUID:                 Unknown
-Manufacturer Name:          Unknown
-Status:                     Problem
-Problem Code:               18 (0x12) [CM_PROB_REINSTALL]
-Problem Status:             0xC0000493
+Device Description:         Intel(R) Iris(TM) Graphics 550
+Class Name:                 Display
+Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
+Manufacturer Name:          Intel Corporation
+Status:                     Started
+Driver Name:                oem0.inf
 
 Instance ID:                PCI\VEN_8086&DEV_9D21&SUBSYS_72708086&REV_21\3&11583659&0&FA
 Device Description:         PCI Memory Controller
@@ -517,13 +668,6 @@ Class GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
 Manufacturer Name:          (Standard USB HUBs)
 Status:                     Started
 Driver Name:                usbhub3.inf
-
-Instance ID:                DISPLAY\SAM0D20\1&8713bca&0&UID0
-Device Description:         Generic Monitor
-Class Name:                 Unknown
-Class GUID:                 Unknown
-Manufacturer Name:          Unknown
-Status:                     Started
 
 Instance ID:                Ramdisk\RamVolume\{d9b257fc-684e-4dcb-ab79-03cfa2f6b750}
 Device Description:         RamDisk
@@ -693,6 +837,14 @@ Manufacturer Name:          (Standard system devices)
 Status:                     Started
 Driver Name:                machine.inf
 
+Instance ID:                STORAGE\Volume\{f4b0b2d9-ba61-11f1-a472-806e6f6e6963}#0000000E89000000
+Device Description:         Volume
+Class Name:                 Volume
+Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+Manufacturer Name:          Microsoft
+Status:                     Started
+Driver Name:                volume.inf
+
 Instance ID:                PCI\VEN_8086&DEV_9D23&SUBSYS_72708086&REV_21\3&11583659&0&FC
 Device Description:         SM Bus Controller
 Class Name:                 Unknown
@@ -709,14 +861,6 @@ Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
 Manufacturer Name:          (Standard system devices)
 Status:                     Started
 Driver Name:                input.inf
-
-Instance ID:                STORAGE\Volume\{790136a4-ba5e-11f1-9ecb-806e6f6e6963}#0000000E89000000
-Device Description:         Volume
-Class Name:                 Volume
-Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
-Manufacturer Name:          Microsoft
-Status:                     Started
-Driver Name:                volume.inf
 
 Instance ID:                USB\VID_05E3&PID_0626\8&105e9f7c&0&4
 Device Description:         Generic SuperSpeed USB Hub
@@ -758,6 +902,13 @@ Manufacturer Name:          Unknown
 Status:                     Problem
 Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
 Problem Status:             0xC0000490
+
+Instance ID:                DISPLAY\SAM0D20\4&17205716&0&UID200195
+Device Description:         Generic Monitor
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Started
 
 Instance ID:                ROOT\NdisVirtualBus\0000
 Device Description:         NDIS Virtual Network Adapter Enumerator
@@ -964,15 +1115,6 @@ Status:                     Problem
 Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
 Problem Status:             0xC0000490
 
-Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-Device Description:         Video Controller (VGA Compatible)
-Class Name:                 Unknown
-Class GUID:                 Unknown
-Manufacturer Name:          Unknown
-Status:                     Problem
-Problem Code:               18 (0x12) [CM_PROB_REINSTALL]
-Problem Status:             0xC0000493
-
 Instance ID:                PCI\VEN_8086&DEV_9D21&SUBSYS_72708086&REV_21\3&11583659&0&FA
 Device Description:         PCI Memory Controller
 Class Name:                 Unknown
@@ -1058,7 +1200,14 @@ dump errorlevel=0
 ----- pnputil /enum-devices /class Display -----
 Microsoft PnP Utility
 
-No devices were found on the system.
+Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Device Description:         Intel(R) Iris(TM) Graphics 550
+Class Name:                 Display
+Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
+Manufacturer Name:          Intel Corporation
+Status:                     Started
+Driver Name:                oem0.inf
+
 dump errorlevel=0
 ----- pnputil /enum-devices /class Monitor -----
 Microsoft PnP Utility
@@ -1146,21 +1295,81 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID
     (Default)    REG_NONE    52004F004F0054005C004200610073006900630044006900730070006C00610079005C0030003000300030000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0064
-    (Default)    REG_NONE    AD18823E6B4EDD01
+    (Default)    REG_NONE    B2B811BD6E4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0065
-    (Default)    REG_NONE    AD18823E6B4EDD01
+    (Default)    REG_NONE    B2B811BD6E4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0066
-    (Default)    REG_NONE    AD18823E6B4EDD01
+    (Default)    REG_NONE    B2B811BD6E4EDD01
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0067
+    (Default)    REG_NONE    8513EBC46E4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0001
-    (Default)    REG_NONE    B7BC000000000000
+    (Default)    REG_NONE    F5BC000000000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0002
     (Default)    REG_NONE    00000000
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195
+    DeviceDesc    REG_SZ    Generic Monitor
+    Capabilities    REG_DWORD    0xe4
+    Address    REG_DWORD    0x300
+    ConfigFlags    REG_DWORD    0x0
+    ContainerID    REG_SZ    {8b1940b3-e2eb-5192-b565-9703690fc6f7}
+    HardwareID    REG_MULTI_SZ    MONITOR\SAM0D20
+    CompatibleIDs    REG_MULTI_SZ    *PNP09FF
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Device Parameters
+    EDID    REG_BINARY    00FFFFFFFFFFFF004C2D200D574D5A5A171E010380341D782A9315A655519C27115054BFEF80714F81C0810081809500A9C0B3000101023A801871382D40582C450009252100001E000000FD00324B1E5111000A202020202020000000FC00533234463335300A2020202020000000FF0048345A4E3630303236310A202001CE
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{540b947e-8b40-45bc-a8a2-6a0b894cbda2}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{540b947e-8b40-45bc-a8a2-6a0b894cbda2}\0004
+    (Default)    REG_NONE    470065006E00650072006900630020004D006F006E00690074006F0072000000
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{540b947e-8b40-45bc-a8a2-6a0b894cbda2}\0007
+    (Default)    REG_NONE    0000
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{540b947e-8b40-45bc-a8a2-6a0b894cbda2}\000A
+    (Default)    REG_NONE    5C005F00530042002E0050004300490030002E0049004700500055002E0044004400300031000000
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{80497100-8c73-48b9-aad9-ce387e19c56e}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{80497100-8c73-48b9-aad9-ce387e19c56e}\0006
+    (Default)    REG_NONE    00000000
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{83da6326-97a6-4088-9453-a1923f573b29}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\000A
+    (Default)    REG_NONE    5000430049005C00560045004E005F00380030003800360026004400450056005F00310039003200370026005300550042005300590053005F003000310035004400310030003600420026005200450056005F00300041005C003300260031003100350038003300360035003900260030002600310030000000
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0064
+    (Default)    REG_NONE    EFC0C8C56E4EDD01
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0065
+    (Default)    REG_NONE    EFC0C8C56E4EDD01
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0066
+    (Default)    REG_NONE    EFC0C8C56E4EDD01
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{a45c254e-df1c-4efd-8020-67d146a850e0}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{a45c254e-df1c-4efd-8020-67d146a850e0}\0025
+    (Default)    REG_NONE    410043005000490028005F00530042005F0029002300410043005000490028005000430049003000290023004100430050004900280049004700500055002900230041004300500049002800440044003000310029000000410043005000490028005F00530042005F00290023004100430050004900280055005300420058002900230041004300500049002800490047005000550029002300410043005000490028004400440030003100290000000000
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{ca085853-16ce-48aa-b114-de9c72334223}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0001
+    (Default)    REG_NONE    EDBB020000000000
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\4&17205716&0&UID200195\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0002
+    (Default)    REG_NONE    030E0300
 
 dump errorlevel=0
 ----- reg query HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers /s -----
@@ -1182,8 +1391,18 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Connectivity
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Connectivity\MSNILSAM0D20H4ZN600261_17_07E4_DA_1414_008D_FFFFFFFF_FFFFFFFF_0^E0E8E143773E5EA0DA5775AC96B400E4
     SetId    REG_SZ    MSNILSAM0D20H4ZN600261_17_07E4_DA_1414_008D_FFFFFFFF_FFFFFFFF_0
 
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Connectivity\SAM0D20H4ZN600261_17_07E4_CE^5F210AC769B54BBCAF655B77425C9E78
+    SetId    REG_SZ    SAM0D20H4ZN600261_17_07E4_CE
+
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\DCI
     Timeout    REG_DWORD    0x7
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\FeatureSetUsage
+    WddmVersion_Max    REG_DWORD    0x7d0
+    WddmVersion_Min    REG_DWORD    0x7d0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MemoryManager
+    DxgMms2OfferReclaim    REG_DWORD    0x2
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MonitorDataStore
 
@@ -1204,13 +1423,13 @@ dump errorlevel=0
 
 05/21/2024  12:04 PM         1,925,104 DisplaySwitch.exe
                1 File(s)      1,925,104 bytes
-               0 Dir(s)     521,928,704 bytes free
+               0 Dir(s)     411,299,840 bytes free
 DisplaySwitch.exe present
 copied setupapi.dev.log touchbar
-v12 display cycle
-display cycle start  2:30:55.94
+v13 display cycle
+display cycle start  2:55:58.72
 cue display errorlevel=3
 copied setupapi.dev.log touchbar
-display cycle finished  2:31:44.67
+display cycle finished  2:56:47.73
 cue done errorlevel=3
 copied setupapi.dev.log touchbar
