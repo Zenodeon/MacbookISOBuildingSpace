@@ -1,17 +1,10 @@
-A1706 setup log v11 Sun 09/27/2026  1:45:37.07
+A1706 setup log v12 Sun 09/27/2026  2:30:42.24
 writable drives: C
 logs appended to \A1706Logs on each writable drive
 wpeinit finished errorlevel=0
 copied setupapi.dev.log 
 step after-wpeinit
-v11 log first, pnputil restart igfx, then disable BasicDisplay
-step restart-igfx /restart-device
-Microsoft PnP Utility
-
-Restarting device:         PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-Device restarted successfully.
-
-errorlevel=0 restart-igfx
+v12 2021 iris staged, no restart
 ----- pnputil /enum-devices /class Display -----
 Microsoft PnP Utility
 
@@ -156,38 +149,10 @@ Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
 Problem Status:             0xC0000490
 
 dump errorlevel=0
-step disable-basicdisplay /disable-device
-Microsoft PnP Utility
-
-Failed to disable device:  ROOT\BasicDisplay\0000
-Cannot disable critical system device.
-
-errorlevel=0 disable-basicdisplay
-step restart-igfx-after-basic /restart-device
-Microsoft PnP Utility
-
-Restarting device:         PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-Device restarted successfully.
-
-errorlevel=0 restart-igfx-after-basic
------ pnputil /enum-devices /class Display -----
-Microsoft PnP Utility
-
-Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-Device Description:         Intel(R) Iris(TM) Graphics 550
-Class Name:                 Display
-Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
-Manufacturer Name:          Intel Corporation
-Status:                     Problem
-Problem Code:               31 (0x1F) [CM_PROB_FAILED_ADD]
-Problem Status:             0xC00000BB
-Driver Name:                oem0.inf
-
-dump errorlevel=0
-copied setupapi.dev.log restart-igfx-after-basic
+copied setupapi.dev.log 
 check C
 check E
-iris-inf-on E
+winpedriver-on E
 disc=E:\$WinPEDriver$
 step load thunderbolt
 LOAD E:\$WinPEDriver$\Thunderbolt\tbt81x.inf
@@ -521,13 +486,13 @@ Status:                     Started
 Driver Name:                usbhub3.inf
 
 Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-Device Description:         Intel(R) Iris(TM) Graphics 550
-Class Name:                 Display
-Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
-Manufacturer Name:          Intel Corporation
+Device Description:         Video Controller (VGA Compatible)
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
 Status:                     Problem
-Problem Code:               14 (0x0E) [CM_PROB_NEED_RESTART]
-Driver Name:                oem0.inf
+Problem Code:               18 (0x12) [CM_PROB_REINSTALL]
+Problem Status:             0xC0000493
 
 Instance ID:                PCI\VEN_8086&DEV_9D21&SUBSYS_72708086&REV_21\3&11583659&0&FA
 Device Description:         PCI Memory Controller
@@ -745,6 +710,14 @@ Manufacturer Name:          (Standard system devices)
 Status:                     Started
 Driver Name:                input.inf
 
+Instance ID:                STORAGE\Volume\{790136a4-ba5e-11f1-9ecb-806e6f6e6963}#0000000E89000000
+Device Description:         Volume
+Class Name:                 Volume
+Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+Manufacturer Name:          Microsoft
+Status:                     Started
+Driver Name:                volume.inf
+
 Instance ID:                USB\VID_05E3&PID_0626\8&105e9f7c&0&4
 Device Description:         Generic SuperSpeed USB Hub
 Class Name:                 USB
@@ -909,14 +882,6 @@ Manufacturer Name:          (Standard system devices)
 Status:                     Started
 Driver Name:                pci.inf
 
-Instance ID:                STORAGE\Volume\{29b807fb-ba58-11f1-9ee2-806e6f6e6963}#0000000E89000000
-Device Description:         Volume
-Class Name:                 Volume
-Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
-Manufacturer Name:          Microsoft
-Status:                     Started
-Driver Name:                volume.inf
-
 Instance ID:                PCI\VEN_106B&DEV_2003&SUBSYS_2003106B&REV_12\4&32fa7cc7&0&00E0
 Device Description:         Mass Storage Controller
 Class Name:                 Unknown
@@ -1000,13 +965,13 @@ Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
 Problem Status:             0xC0000490
 
 Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-Device Description:         Intel(R) Iris(TM) Graphics 550
-Class Name:                 Display
-Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
-Manufacturer Name:          Intel Corporation
+Device Description:         Video Controller (VGA Compatible)
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
 Status:                     Problem
-Problem Code:               14 (0x0E) [CM_PROB_NEED_RESTART]
-Driver Name:                oem0.inf
+Problem Code:               18 (0x12) [CM_PROB_REINSTALL]
+Problem Status:             0xC0000493
 
 Instance ID:                PCI\VEN_8086&DEV_9D21&SUBSYS_72708086&REV_21\3&11583659&0&FA
 Device Description:         PCI Memory Controller
@@ -1093,15 +1058,7 @@ dump errorlevel=0
 ----- pnputil /enum-devices /class Display -----
 Microsoft PnP Utility
 
-Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-Device Description:         Intel(R) Iris(TM) Graphics 550
-Class Name:                 Display
-Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
-Manufacturer Name:          Intel Corporation
-Status:                     Problem
-Problem Code:               14 (0x0E) [CM_PROB_NEED_RESTART]
-Driver Name:                oem0.inf
-
+No devices were found on the system.
 dump errorlevel=0
 ----- pnputil /enum-devices /class Monitor -----
 Microsoft PnP Utility
@@ -1148,7 +1105,7 @@ Original Name:      igdiris64.inf
 Provider Name:      Intel Corporation
 Class Name:         Display adapters
 Class GUID:         {4d36e968-e325-11ce-bfc1-08002be10318}
-Driver Version:     07/01/2016 20.19.15.4483
+Driver Version:     11/08/2020 21.20.16.5174
 Signer Name:        Unknown
 
 dump errorlevel=0
@@ -1189,18 +1146,18 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID
     (Default)    REG_NONE    52004F004F0054005C004200610073006900630044006900730070006C00610079005C0030003000300030000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0064
-    (Default)    REG_NONE    93411BF2644EDD01
+    (Default)    REG_NONE    AD18823E6B4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0065
-    (Default)    REG_NONE    93411BF2644EDD01
+    (Default)    REG_NONE    AD18823E6B4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0066
-    (Default)    REG_NONE    93411BF2644EDD01
+    (Default)    REG_NONE    AD18823E6B4EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0001
-    (Default)    REG_NONE    93BD000000000000
+    (Default)    REG_NONE    B7BC000000000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0002
     (Default)    REG_NONE    00000000
@@ -1228,9 +1185,6 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Connectivity
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\DCI
     Timeout    REG_DWORD    0x7
 
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MemoryManager
-    DxgMms2OfferReclaim    REG_DWORD    0x2
-
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MonitorDataStore
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\UseNewKey
@@ -1250,13 +1204,13 @@ dump errorlevel=0
 
 05/21/2024  12:04 PM         1,925,104 DisplaySwitch.exe
                1 File(s)      1,925,104 bytes
-               0 Dir(s)     457,916,416 bytes free
+               0 Dir(s)     521,928,704 bytes free
 DisplaySwitch.exe present
 copied setupapi.dev.log touchbar
-v11 pnputil restart done, display cycle
-display cycle start  1:45:51.74
+v12 display cycle
+display cycle start  2:30:55.94
 cue display errorlevel=3
 copied setupapi.dev.log touchbar
-display cycle finished  1:46:40.68
+display cycle finished  2:31:44.67
 cue done errorlevel=3
 copied setupapi.dev.log touchbar
