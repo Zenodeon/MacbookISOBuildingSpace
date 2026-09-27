@@ -24,3 +24,17 @@ Basic Display stayed running (`Start=1`). The later device list showed Intel(R) 
 The log ends when `X:\sources\setup.exe` starts. The dialog text was not saved. It was closer to "could not install one or more boot-critical drivers" than to the Browse screen that says a media driver is missing.
 
 The running Iris package has no catalog. Setup tries to carry that package into the new Windows. `install.wim` is on the ISO (label `ESD-ISO`), not on the RAM disk `X:`.
+
+## What got Setup on HDMI
+
+The file that showed Setup is `out\Win10_Pro_A1706_SetupGUI_v17.iso`. Three changes, in order.
+
+The unsigned `igdiris64.inf` (`oem0.inf`) was removed from `boot.wim`. Intel's original `igdlh64.inf` plus `igdlh.cat`, version 21.20.16.5174, is in the driver store. Basic Display stays `Start=1`. `igfx` stays demand-start. The same signed package is already in `install.wim`. Turning off driver signature checks only lets an unsigned driver load. It does not let Setup copy that driver into the new Windows.
+
+Thunderbolt (`tbt81x.inf`, missing `setup.msi`) and the older Cirrus CS4206 (missing catalogs) are no longer under `$WinPEDriver$`. CS4208 stays. The 2016 Intel graphics tree stays off the ISO. After that removal, Setup reached the language page, but the picture was already gone.
+
+`work\staging\a1706.cmd` restarts the Iris device once, then polls until the display list contains both `Iris` and `Started`. Only then it runs `DisplaySwitch.exe /external` once and `setup.exe /InstallFrom` the drive that has `\sources\install.wim` (the ISO, label `ESD-ISO`). v16 opened Setup about one second after the script started, before that restart finished, so HDMI went black the old way.
+
+## The Mac disk
+
+Windows Setup cannot shrink the APFS Mac volume. Make the `BOOTCAMP` partition with Boot Camp Assistant in macOS, then boot this v17 ISO with Ventoy `w` and install only onto that partition. Do not point Boot Camp Assistant at this ISO. It adds Apple's 2016 driver pack back.
