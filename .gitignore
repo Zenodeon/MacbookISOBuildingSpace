@@ -16,6 +16,7 @@ work/staging/boot2/
 work/staging/verify/
 work/staging/wimcheck/
 work/staging/iris2016-outofboot/
+work/staging/outofboot/
 
 # Build leftovers
 *.iso

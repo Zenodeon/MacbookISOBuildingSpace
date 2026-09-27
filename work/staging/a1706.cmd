@@ -5,7 +5,7 @@ echo ran>X:\a1706.ran
 set LOGX=X:\a1706-setup-log.txt
 set LOGS=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :try %%L
-set "MSG=A1706 setup log v15 %DATE% %TIME%"
+set "MSG=A1706 setup log v16 %DATE% %TIME%"
 call :note
 set "MSG=writable drives:!LOGS!"
 call :note
@@ -18,7 +18,7 @@ call :note
 call :copysapi
 set "MSG=step after-wpeinit"
 call :note
-set "MSG=v15 restart iris only"
+set "MSG=v16 restart iris only"
 call :note
 call :dump pnputil /enum-devices /class Display
 call :dump pnputil /enum-devices /problem
@@ -27,7 +27,7 @@ set "GPU=PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10"
 call :gpurestart
 findstr /C:"CM_PROB_REINSTALL" X:\a1706-cmd-out.txt >nul
 if !ERRORLEVEL! equ 0 (
-  set "MSG=v15 still problem 18, restart again"
+  set "MSG=v16 still problem 18, restart again"
   call :note
   call :gpurestart
 )
@@ -40,14 +40,8 @@ if not defined DRV (
   call :note
   goto :afterdrv
 )
-set "TAG=thunderbolt"
-set "ONE=!DRV!\Thunderbolt\tbt81x.inf"
-call :loadone
 set "TAG=cirrus4208"
 set "ONE=!DRV!\CirrusAudioCS4208x64\cs4208_36.inf"
-call :loadone
-set "TAG=cirrus4206"
-set "ONE=!DRV!\CirrusAudioCS4206x64\cs420x_46.inf"
 call :loadone
 call :cue speakers
 set "TAG=keyboard"
@@ -82,7 +76,7 @@ if exist %SystemRoot%\System32\DisplaySwitch.exe (
 )
 call :copysapi
 if exist %SystemRoot%\System32\Narrator.exe start "" %SystemRoot%\System32\Narrator.exe
-set "MSG=v15 display cycle"
+set "MSG=v16 display cycle"
 call :note
 set "MSG=display cycle start %TIME%"
 call :note
