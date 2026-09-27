@@ -1,0 +1,2 @@
+"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\Oscdimg\oscdimg.exe" -m -u2 -udfver102 -lESD-ISO -bootdata:2#p0,e,bI:\MacbookISOBuildingSpace\work\iso-root\boot\etfsboot.com#pEF,e,bI:\MacbookISOBuildingSpace\work\iso-root\efi\microsoft\boot\efisys.bin I:\MacbookISOBuildingSpace\work\iso-root I:\MacbookISOBuildingSpace\out\Win10_Pro_A1706_SetupGUI_v14.iso
+echo OSCDIMG_EXIT=%ERRORLEVEL%

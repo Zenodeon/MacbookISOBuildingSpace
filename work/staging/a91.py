@@ -1,0 +1,10 @@
+from pathlib import Path
+p = Path(r"I:\MacbookISOBuildingSpace\work\iris-extract\extracted\a91")
+b = p.read_bytes()
+print("magic", b[:2], "size", len(b))
+text = b.decode("latin1", "replace")
+i = text.lower().find("igfxexps")
+print("ascii at", i, text[i:i+40] if i>=0 else "")
+u = "igfxexps".encode("utf-16le")
+j = b.find(u)
+print("utf16 at", j)

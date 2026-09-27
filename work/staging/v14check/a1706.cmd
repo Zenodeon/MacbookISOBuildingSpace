@@ -126,14 +126,6 @@ if not defined SRC (
   set "MSG=installfrom !SRC!\sources\install.wim"
   call :note
 )
-set "MSG=after-setup log a1706-after-setup.txt"
-call :note
-if exist %SystemRoot%\System32\a1706dlg.exe (
-  start "" %SystemRoot%\System32\a1706dlg.exe
-) else (
-  set "MSG=ERROR missing a1706dlg.exe"
-  call :note
-)
 if exist X:\sources\setup.exe (
   if defined SRC (
     X:\sources\setup.exe /InstallFrom:!SRC!\sources\install.wim
