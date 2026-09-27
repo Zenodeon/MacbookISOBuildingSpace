@@ -1,27 +1,190 @@
-A1706 setup log v10 Sun 09/27/2026  1:15:31.01
+A1706 setup log v11 Sun 09/27/2026  1:45:37.07
 writable drives: C
 logs appended to \A1706Logs on each writable drive
 wpeinit finished errorlevel=0
 copied setupapi.dev.log 
 step after-wpeinit
-v10 BasicDisplay stays on, start igfx after log
------ sc query igfx -----
-'sc' is not recognized as an internal or external command,
-operable program or batch file.
-ERROR dump errorlevel=9009
------ sc query BasicDisplay -----
-'sc' is not recognized as an internal or external command,
-operable program or batch file.
-ERROR dump errorlevel=9009
-step start igfx
------ sc start igfx -----
-'sc' is not recognized as an internal or external command,
-operable program or batch file.
-ERROR dump errorlevel=9009
------ sc query igfx -----
-'sc' is not recognized as an internal or external command,
-operable program or batch file.
-ERROR dump errorlevel=9009
+v11 log first, pnputil restart igfx, then disable BasicDisplay
+step restart-igfx /restart-device
+Microsoft PnP Utility
+
+Restarting device:         PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Device restarted successfully.
+
+errorlevel=0 restart-igfx
+----- pnputil /enum-devices /class Display -----
+Microsoft PnP Utility
+
+No devices were found on the system.
+dump errorlevel=0
+----- pnputil /enum-devices /problem -----
+Microsoft PnP Utility
+
+Instance ID:                PCI\VEN_8086&DEV_9D27&SUBSYS_72708086&REV_21\3&11583659&0&F0
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D66&SUBSYS_72708086&REV_21\3&11583659&0&C8
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                ACPI\APP0002\10
+Device Description:         Unknown
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                USB\VID_1D5C&PID_7102\6&2cf71ea0&0&1
+Device Description:         Generic Billboard Device
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_14E4&DEV_43BA&SUBSYS_0157106B&REV_02\4&1a5036a5&0&00EB
+Device Description:         Network Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Device Description:         Video Controller (VGA Compatible)
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               18 (0x12) [CM_PROB_REINSTALL]
+Problem Status:             0xC0000493
+
+Instance ID:                PCI\VEN_8086&DEV_9D21&SUBSYS_72708086&REV_21\3&11583659&0&FA
+Device Description:         PCI Memory Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D2A&SUBSYS_72708086&REV_21\3&11583659&0&F3
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                ACPI\APP7777\5&2c705bfe&0
+Device Description:         Unknown
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D23&SUBSYS_72708086&REV_21\3&11583659&0&FC
+Device Description:         SM Bus Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                ACPI\APP0001\4&15fbc11c&0
+Device Description:         Unknown
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D28&SUBSYS_72708086&REV_21\3&11583659&0&F1
+Device Description:         PCI Data Acquisition and Signal Processing Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                USB\VID_05AC&PID_8600\5&2c705bfe&0&3
+Device Description:         iBridge
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_8086&DEV_9D3A&SUBSYS_72708086&REV_21\3&11583659&0&B0
+Device Description:         PCI Simple Communications Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+Instance ID:                PCI\VEN_106B&DEV_2003&SUBSYS_2003106B&REV_12\4&32fa7cc7&0&00E0
+Device Description:         Mass Storage Controller
+Class Name:                 Unknown
+Class GUID:                 Unknown
+Manufacturer Name:          Unknown
+Status:                     Problem
+Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
+Problem Status:             0xC0000490
+
+dump errorlevel=0
+step disable-basicdisplay /disable-device
+Microsoft PnP Utility
+
+Failed to disable device:  ROOT\BasicDisplay\0000
+Cannot disable critical system device.
+
+errorlevel=0 disable-basicdisplay
+step restart-igfx-after-basic /restart-device
+Microsoft PnP Utility
+
+Restarting device:         PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Device restarted successfully.
+
+errorlevel=0 restart-igfx-after-basic
+----- pnputil /enum-devices /class Display -----
+Microsoft PnP Utility
+
+Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Device Description:         Intel(R) Iris(TM) Graphics 550
+Class Name:                 Display
+Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
+Manufacturer Name:          Intel Corporation
+Status:                     Problem
+Problem Code:               31 (0x1F) [CM_PROB_FAILED_ADD]
+Problem Status:             0xC00000BB
+Driver Name:                oem0.inf
+
+dump errorlevel=0
+copied setupapi.dev.log restart-igfx-after-basic
 check C
 check E
 iris-inf-on E
@@ -358,13 +521,13 @@ Status:                     Started
 Driver Name:                usbhub3.inf
 
 Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-Device Description:         Video Controller (VGA Compatible)
-Class Name:                 Unknown
-Class GUID:                 Unknown
-Manufacturer Name:          Unknown
+Device Description:         Intel(R) Iris(TM) Graphics 550
+Class Name:                 Display
+Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
+Manufacturer Name:          Intel Corporation
 Status:                     Problem
-Problem Code:               18 (0x12) [CM_PROB_REINSTALL]
-Problem Status:             0xC0000493
+Problem Code:               14 (0x0E) [CM_PROB_NEED_RESTART]
+Driver Name:                oem0.inf
 
 Instance ID:                PCI\VEN_8086&DEV_9D21&SUBSYS_72708086&REV_21\3&11583659&0&FA
 Device Description:         PCI Memory Controller
@@ -540,14 +703,6 @@ Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
 Manufacturer Name:          (Standard system devices)
 Status:                     Started
 Driver Name:                input.inf
-
-Instance ID:                STORAGE\Volume\{f83d3d2d-ba53-11f1-a5fa-806e6f6e6963}#0000000E89000000
-Device Description:         Volume
-Class Name:                 Volume
-Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
-Manufacturer Name:          Microsoft
-Status:                     Started
-Driver Name:                volume.inf
 
 Instance ID:                ACPI\FixedButton\2&daba3ff&0
 Device Description:         ACPI Fixed Feature Button
@@ -754,6 +909,14 @@ Manufacturer Name:          (Standard system devices)
 Status:                     Started
 Driver Name:                pci.inf
 
+Instance ID:                STORAGE\Volume\{29b807fb-ba58-11f1-9ee2-806e6f6e6963}#0000000E89000000
+Device Description:         Volume
+Class Name:                 Volume
+Class GUID:                 {71a27cdd-812a-11d0-bec7-08002be2092f}
+Manufacturer Name:          Microsoft
+Status:                     Started
+Driver Name:                volume.inf
+
 Instance ID:                PCI\VEN_106B&DEV_2003&SUBSYS_2003106B&REV_12\4&32fa7cc7&0&00E0
 Device Description:         Mass Storage Controller
 Class Name:                 Unknown
@@ -837,13 +1000,13 @@ Problem Code:               28 (0x1C) [CM_PROB_FAILED_INSTALL]
 Problem Status:             0xC0000490
 
 Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
-Device Description:         Video Controller (VGA Compatible)
-Class Name:                 Unknown
-Class GUID:                 Unknown
-Manufacturer Name:          Unknown
+Device Description:         Intel(R) Iris(TM) Graphics 550
+Class Name:                 Display
+Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
+Manufacturer Name:          Intel Corporation
 Status:                     Problem
-Problem Code:               18 (0x12) [CM_PROB_REINSTALL]
-Problem Status:             0xC0000493
+Problem Code:               14 (0x0E) [CM_PROB_NEED_RESTART]
+Driver Name:                oem0.inf
 
 Instance ID:                PCI\VEN_8086&DEV_9D21&SUBSYS_72708086&REV_21\3&11583659&0&FA
 Device Description:         PCI Memory Controller
@@ -930,7 +1093,15 @@ dump errorlevel=0
 ----- pnputil /enum-devices /class Display -----
 Microsoft PnP Utility
 
-No devices were found on the system.
+Instance ID:                PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10
+Device Description:         Intel(R) Iris(TM) Graphics 550
+Class Name:                 Display
+Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
+Manufacturer Name:          Intel Corporation
+Status:                     Problem
+Problem Code:               14 (0x0E) [CM_PROB_NEED_RESTART]
+Driver Name:                oem0.inf
+
 dump errorlevel=0
 ----- pnputil /enum-devices /class Monitor -----
 Microsoft PnP Utility
@@ -1018,18 +1189,18 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID
     (Default)    REG_NONE    52004F004F0054005C004200610073006900630044006900730070006C00610079005C0030003000300030000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0064
-    (Default)    REG_NONE    37649BBD604EDD01
+    (Default)    REG_NONE    93411BF2644EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0065
-    (Default)    REG_NONE    37649BBD604EDD01
+    (Default)    REG_NONE    93411BF2644EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{83da6326-97a6-4088-9453-a1923f573b29}\0066
-    (Default)    REG_NONE    37649BBD604EDD01
+    (Default)    REG_NONE    93411BF2644EDD01
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0001
-    (Default)    REG_NONE    98BC000000000000
+    (Default)    REG_NONE    93BD000000000000
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\SAM0D20\1&8713bca&0&UID0\Properties\{ca085853-16ce-48aa-b114-de9c72334223}\0002
     (Default)    REG_NONE    00000000
@@ -1057,19 +1228,14 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Connectivity
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\DCI
     Timeout    REG_DWORD    0x7
 
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MemoryManager
+    DxgMms2OfferReclaim    REG_DWORD    0x2
+
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MonitorDataStore
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\UseNewKey
 
 dump errorlevel=0
------ sc query igfx -----
-'sc' is not recognized as an internal or external command,
-operable program or batch file.
-ERROR dump errorlevel=9009
------ sc query BasicDisplay -----
-'sc' is not recognized as an internal or external command,
-operable program or batch file.
-ERROR dump errorlevel=9009
 ----- volumes -----
  Volume in drive C is Ventoy
  Volume Serial Number is 4E21-0000
@@ -1084,13 +1250,13 @@ ERROR dump errorlevel=9009
 
 05/21/2024  12:04 PM         1,925,104 DisplaySwitch.exe
                1 File(s)      1,925,104 bytes
-               0 Dir(s)     521,953,280 bytes free
+               0 Dir(s)     457,916,416 bytes free
 DisplaySwitch.exe present
 copied setupapi.dev.log touchbar
-v10 igfx demand-start, BasicDisplay left enabled
-display cycle start  1:15:44.71
+v11 pnputil restart done, display cycle
+display cycle start  1:45:51.74
 cue display errorlevel=3
 copied setupapi.dev.log touchbar
-display cycle finished  1:16:33.63
+display cycle finished  1:46:40.68
 cue done errorlevel=3
 copied setupapi.dev.log touchbar
