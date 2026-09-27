@@ -5,7 +5,7 @@ echo ran>X:\a1706.ran
 set LOGX=X:\a1706-setup-log.txt
 set LOGS=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :try %%L
-set "MSG=A1706 setup log v11 %DATE% %TIME%"
+set "MSG=A1706 setup log v12 %DATE% %TIME%"
 call :note
 set "MSG=writable drives:!LOGS!"
 call :note
@@ -18,19 +18,10 @@ call :note
 call :copysapi
 set "MSG=step after-wpeinit"
 call :note
-set "MSG=v11 log first, pnputil restart igfx, then disable BasicDisplay"
+set "MSG=v12 2021 iris staged, no restart"
 call :note
-set "GPU=PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10"
-set "BASIC=ROOT\BasicDisplay\0000"
-set "TAG=restart-igfx"
-call :pnpdev /restart-device
 call :dump pnputil /enum-devices /class Display
 call :dump pnputil /enum-devices /problem
-set "TAG=disable-basicdisplay"
-call :pnpbasic /disable-device
-set "TAG=restart-igfx-after-basic"
-call :pnpdev /restart-device
-call :dump pnputil /enum-devices /class Display
 call :copysapi
 set DRV=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :finddrv %%L
@@ -83,7 +74,7 @@ if exist %SystemRoot%\System32\DisplaySwitch.exe (
 )
 call :copysapi
 if exist %SystemRoot%\System32\Narrator.exe start "" %SystemRoot%\System32\Narrator.exe
-set "MSG=v11 pnputil restart done, display cycle"
+set "MSG=v12 display cycle"
 call :note
 set "MSG=display cycle start %TIME%"
 call :note
@@ -128,9 +119,9 @@ goto :eof
 :finddrv
 set "MSG=check %~1"
 call :note
-if exist "%~1:\$WinPEDriver$\IntelIrisSetup\igdiris64.inf" (
+if exist "%~1:\$WinPEDriver$\AppleSPIKeyboard\AppleSPIKeyboard.inf" (
   set "DRV=%~1:\$WinPEDriver$"
-  set "MSG=iris-inf-on %~1"
+  set "MSG=winpedriver-on %~1"
   call :note
 )
 goto :eof
@@ -182,32 +173,6 @@ goto :eof
 if not exist "%~1" goto :eof
 type "%~1" >>"%LOGX%"
 for %%D in (!LOGS!) do type "%~1" >>"%%D:\A1706Logs\a1706-setup-log.txt"
-goto :eof
-:pnpdev
-set "MSG=step !TAG! %~1"
-call :note
-pnputil %~1 "!GPU!" >X:\a1706-cmd-out.txt 2>&1
-set RC=!ERRORLEVEL!
-call :addfile X:\a1706-cmd-out.txt
-if !RC! equ 0 (
-  set "MSG=errorlevel=!RC! !TAG!"
-) else (
-  set "MSG=ERROR errorlevel=!RC! !TAG!"
-)
-call :note
-goto :eof
-:pnpbasic
-set "MSG=step !TAG! %~1"
-call :note
-pnputil %~1 "!BASIC!" >X:\a1706-cmd-out.txt 2>&1
-set RC=!ERRORLEVEL!
-call :addfile X:\a1706-cmd-out.txt
-if !RC! equ 0 (
-  set "MSG=errorlevel=!RC! !TAG!"
-) else (
-  set "MSG=ERROR errorlevel=!RC! !TAG!"
-)
-call :note
 goto :eof
 :cue
 if not exist %SystemRoot%\System32\a1706cue.exe (

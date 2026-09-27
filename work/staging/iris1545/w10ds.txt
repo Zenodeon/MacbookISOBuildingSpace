@@ -1,0 +1,79 @@
+[iSKLD_w10_DS]
+FeatureScore=D1
+CopyFiles=igfx.Miniport_DS, igfx.UserMode_DS,  igfx.UMWow_DS , Opm.Copy_DS, Opm.Copy_DS_Ext , Installer.Copy_DS , CUI.Copy_DS , CUICPL.Copy_DS , CUISDK.Copy32_DS , Vulkan.Copy_DS , Vulkan.Copy32_DS , OpenGL_Gen9.Copy_DS , OpenGL_Gen9.Copy32_DS  , OpenCL_Cpu_Root.Copy , OpenCL_Cpu_System.Copy32_DS , OpenCL_Cpu_System.Copy32_DS_Ext , OpenCL_Cpu_Bin_x86.Copy32 , OpenCL_Cpu_Bin_Tbb.Copy32 , OpenCL_Cpu_Common.Copy , OpenCL_Cpu_System.Copy64_DS , OpenCL_Cpu_System.Copy64_DS_Ext , OpenCL_Cpu_Bin_x64.Copy64 , OpenCL_Cpu_Bin_Tbb.Copy64 , OpenCL_Gpu.Copy32_DS, OpenCL_Gpu.Copy32_DS_Ext , OpenCL_Gpu.Copy64_DS, OpenCL_Gpu.Copy64_DS_Ext , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , MSDK_w10rs1.copy
+DelFiles=Cleanup.DelFiles_DS, Cleanup.DelFiles32_DS, Cleanup.DelFilesDrivers_DS
+AddReg = igfx_SoftwareDX12Settings_DS
+AddReg =  igfx_Win10Settings
+DelReg =  igfx_RemoveWin10Settings
+AddReg =  igfx_RedstoneSettings
+DelReg =  igfx_RemoveRedstoneSettings
+AddReg =  igfx_SoftwareCommonSettings
+DelReg =   igfx_RemoveDeviceSettings
+AddReg =  Opm.AddReg
+DelReg =  Opm.DelReg
+
+AddReg = CUI.AddReg_DS
+AddReg = CUISDK.AddReg_DS
+
+DelReg  = CUI.DelReg
+DelReg  = CUISDK.DelReg
+
+AddReg = VK.AddReg_DS
+
+DelReg = VK.DelReg        ; Coinstaller will remove driver store entries
+
+AddReg = OpenGL_Gen9.AddReg_DS
+AddReg  = OpenGL.Installed
+
+AddReg = OpenCL.AddReg_DS
+
+DelReg = OpenCL.DelReg
+
+AddReg = Common_AddSwSettings
+DelReg  = Common_DelSwSettings
+AddReg = Common_DT_AddSwSettings
+DelReg  = Common_DT_DelSwSettings
+DelReg  = Common_Device_Specific_DelSwSettings		; Delete device specific regkeys
+AddReg =  PwrCons_SKL_AddSwSettings
+AddReg =  AlternateScramblerSupport_SKL_AddSwSettings
+AddReg = MBO_SKL_AddSwSettings
+AddReg   = XVYCCFeature_AddSwSettings
+DelReg    = XVYCCFeature_DelSwSettings
+AddReg   = HSYNCFeature_AddSwSettings
+DelReg    = HSYNCFeature_DelSwSettings
+AddReg =  DisplayDPP_SKL_AddSwSettings
+DelReg  =  DisplayDPP_SKL_DelSwSettings
+AddReg =  DisplayOptimization_SKL_AddSwSettings
+DelReg  =  DisplayOptimization_DelSwSettings
+AddReg =  igfx_SLT_NB_AddSwSettings
+DelReg  =  igfx_SLT_NB_DelSwSettings
+AddReg = SKL_AUDIO_WA_AddSwSettings
+DelReg = SKL_AUDIO_WA_DelSwSettings
+AddReg = Display_Feature_SKL_AddSwSettings_Win10
+DelReg  = Display_Feature_SKL_DelSwSettings_Win10
+AddReg = SKL_AUDIO_SURPRISE_REMOVAL_WA_AddSwSettings
+DelReg  = SKL_AUDIO_SURPRISE_REMOVAL_WA_DelSwSettings
+AddReg  =  AUDIOWOVIDEOSupport_Disable_AddSwSettings
+DelReg  =  AUDIOWOVIDEOSupport_DelSwSettings
+AddReg = SKL_PANEL_DRIVER_AddSwSettings
+DelReg = SKL_PANEL_DRIVER_DelSwSettings
+AddReg = DISABLE_AUDIO_ENDPOINT_RS1_PLUS_AddSwSettings
+DelReg = DISABLE_AUDIO_ENDPOINT_RS1_PLUS_DelSwSettings
+
+DelReg  = igfx_MC_DelSwSettings
+AddReg = igfx_WinTMC_AddSwSettings_ALL_DS
+DelReg  = igfx_WinTMC_DelSwSettings_ALL_DS
+
+AddReg = MSDK_4_0_AddSwSettings32
+DelReg  = MSDK_4_0_DelSwSettings32
+AddReg = MSDK_4_0_AddSwSettings64
+DelReg  = MSDK_4_0_DelSwSettings64
+AddReg = MSDK_Win10rs1_MFT_Enable
+DelReg  = MSDK_Win10rs1_MFT_Disable
+RegisterDLLs = MSDK_w10rs1_RegisterDLLs
+
+AddPowerSetting = PowerPlanSettings
+AddReg = TiledDisplay_AddSwSettings
+DelReg = TiledDisplay_DelSwSettings
+AddReg = ForceDitheringEnable_AddSwSettings
+DelReg = ForceDitheringEnable_DelSwSettings

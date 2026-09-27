@@ -1,0 +1,65 @@
+[iSKLD_w10_DS.Services]
+AddService = igfx, 0x00000002, igfx_Service_Inst_DS
+
+AddService = cphs,, CP_HECI_Service_Inst_DS
+AddService = cplspcon,, CP_HDCP_Service_Inst_DS
+
+AddService = igfxCUIService2.0.0.0,0x00000800, CUI_Service_Inst_DS
+
+;=====================================================================
+
+[igfx.Miniport]
+igdkmd64.sys
+
+[igfx.Miniport_DS]
+igdkmd64.sys
+
+[igfx.UserMode]
+
+igd10iumd64.dll,,,0x00004000  
+igd10idpp64.dll,,,0x00004000  
+igd11dxva64.dll,,,0x00004000  
+igd12umd64.dll,,,0x00004000  
+igdumdim64.dll,,,0x00004000
+igdail64.dll,,,0x00004000	
+igfxcmrt64.dll,,,0x00004000  
+igfx11cmrt64.dll,,,0x00004000  
+igfxcmjit64.dll,,,0x00004000  
+igdde64.dll,,,0x00004000  
+igd10idpp64.dll,,,0x00004000  
+IntelCpHDCPSvc.exe,,,0x00004000  
+
+igdusc64.dll,,,0x00004000  
+
+iga64.dll,,,0x00004000
+
+igc64.dll,,,0x00004000  
+
+igdmd64.dll,,,0x00004000  
+
+[igfx.UserMode_DS]
+igd10iumd64.dll
+igd10idpp64.dll
+igd11dxva64.dll
+igd12umd64.dll
+igdumdim64.dll
+igdail64.dll
+igfxcmrt64.dll
+igfx11cmrt64.dll
+igfxcmjit64.dll
+igdde64.dll
+
+igdusc64.dll
+
+iga64.dll
+
+igc64.dll
+
+igdmd64.dll
+
+[igfx_Service_Inst]
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 0               ; SERVICE_ERROR_IGNORE
+LoadOrderGroup = Video
+ServiceBinary  = %12%\igdkmd64.sys

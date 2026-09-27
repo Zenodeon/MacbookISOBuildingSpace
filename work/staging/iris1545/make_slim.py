@@ -1,0 +1,132 @@
+import os, shutil
+from pathlib import Path
+src = Path(r"I:\MacbookISOBuildingSpace\work\staging\iris1545\extracted")
+dst = Path(r"I:\MacbookISOBuildingSpace\work\staging\iris1545\slim")
+if dst.exists():
+    shutil.rmtree(dst)
+dst.mkdir()
+files = {
+    "igdkmd64.sys": "a70",
+    "igd10iumd64.dll": "a56",
+    "igd10idpp64.dll": "a54",
+    "igd11dxva64.dll": "a58",
+    "igd12umd64.dll": "a60",
+    "igdumdim64.dll": "a81",
+    "igdail64.dll": "a62",
+    "igfxcmrt64.dll": "a89",
+    "igfx11cmrt64.dll": "a85",
+    "igfxcmjit64.dll": "a87",
+    "igdde64.dll": "a67",
+    "igdusc64.dll": "a83",
+    "iga64.dll": "a50",
+    "igc64.dll": "a52",
+    "igdmd64.dll": "a77",
+    "IntelCpHDCPSvc.exe": "a133",
+}
+total = 0
+for name, member in files.items():
+    data = (src / member).read_bytes()
+    if not data.startswith(b"MZ"):
+        raise SystemExit("not a PE: " + name)
+    (dst / name).write_bytes(data)
+    total += len(data)
+    print(name, len(data))
+print("TOTAL", total)
+inf = r"""[Version]
+Signature="$WINDOWS NT$"
+Provider=%Intel%
+ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
+Class=Display
+DriverVer=11/08/2020,21.20.16.5174
+
+[DestinationDirs]
+DefaultDestDir=11
+igfx.Miniport=12
+igfx.UserMode=11
+
+[Manufacturer]
+%Intel%=IntelGfx,NTamd64.10.0...14393,NTamd64.10.0
+
+[IntelGfx.NTamd64.10.0...14393]
+%iSKLULTGT328W%=iSKLD_w10,PCI\VEN_8086&DEV_1927
+
+[IntelGfx.NTamd64.10.0]
+%iSKLULTGT328W%=iSKLD_w10,PCI\VEN_8086&DEV_1927
+
+[iSKLD_w10]
+FeatureScore=D1
+CopyFiles=igfx.Miniport,igfx.UserMode
+AddReg=igfx_SoftwareDX12Settings
+AddReg=igfx_Win10Settings
+
+[iSKLD_w10.Services]
+AddService=igfx,0x00000002,igfx_Service_Inst
+
+[iSKLD_w10.GeneralConfigData]
+MaximumNumberOfDevices=2
+MaximumDeviceMemoryConfiguration=512
+
+[igfx.Miniport]
+igdkmd64.sys
+
+[igfx.UserMode]
+igd10iumd64.dll,,,0x00004000
+igd10idpp64.dll,,,0x00004000
+igd11dxva64.dll,,,0x00004000
+igd12umd64.dll,,,0x00004000
+igdumdim64.dll,,,0x00004000
+igdail64.dll,,,0x00004000
+igfxcmrt64.dll,,,0x00004000
+igfx11cmrt64.dll,,,0x00004000
+igfxcmjit64.dll,,,0x00004000
+igdde64.dll,,,0x00004000
+IntelCpHDCPSvc.exe,,,0x00004000
+igdusc64.dll,,,0x00004000
+iga64.dll,,,0x00004000
+igc64.dll,,,0x00004000
+igdmd64.dll,,,0x00004000
+
+[igfx_Service_Inst]
+ServiceType=1
+StartType=3
+ErrorControl=0
+LoadOrderGroup=Video
+ServiceBinary=%12%\igdkmd64.sys
+
+[igfx_SoftwareDX12Settings]
+HKR,,InstalledDisplayDrivers,%REG_MULTI_SZ%,igdumdim64,igd10iumd64,igd10iumd64,igd12umd64
+HKR,,UserModeDriverName,%REG_MULTI_SZ%,igdumdim64.dll,igd10iumd64.dll,igd10iumd64.dll,igd12umd64.dll
+
+[igfx_Win10Settings]
+HKLM,"SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MemoryManager",DxgMms2OfferReclaim,%REG_DWORD%,2
+
+[SourceDisksNames]
+1=%DiskId%
+
+[SourceDisksFiles]
+igdkmd64.sys=1
+igd10iumd64.dll=1
+igd10idpp64.dll=1
+igd11dxva64.dll=1
+igd12umd64.dll=1
+igdumdim64.dll=1
+igdail64.dll=1
+igfxcmrt64.dll=1
+igfx11cmrt64.dll=1
+igfxcmjit64.dll=1
+igdde64.dll=1
+IntelCpHDCPSvc.exe=1
+igdusc64.dll=1
+iga64.dll=1
+igc64.dll=1
+igdmd64.dll=1
+
+[Strings]
+DiskId="Intel Iris Graphics 550 15.45"
+Intel="Intel Corporation"
+iSKLULTGT328W="Intel(R) Iris(TM) Graphics 550"
+REG_MULTI_SZ=0x00010000
+REG_DWORD=0x00010001
+"""
+(dst / "igdiris64.inf").write_bytes(inf.replace("\n", "\r\n").encode("ascii"))
+print("inf", (dst / "igdiris64.inf").stat().st_size)

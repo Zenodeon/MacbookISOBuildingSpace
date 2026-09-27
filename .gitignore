@@ -7,6 +7,7 @@ work/all-drivers/
 work/tb-extract/
 work/wimlib/
 work/boot2-extract/
+work/iris-extract/
 work/mount-boot/
 work/mount-boot2/
 work/mount-install/

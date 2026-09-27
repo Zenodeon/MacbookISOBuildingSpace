@@ -1,0 +1,60 @@
+product=Intel(R) Processor Graphics
+HDMI=NOT IsCmd(nodrv) AND IfDrvExists(HDMI)
+MEDIA=IsVar(HDAUDIO,1) AND IfExists("%source%"\Media\Media.cab) AND IsOS(VISTA,0x060001FF)
+GFXOCL=IsGroupSel(GFX) AND IfExists("%source%"\Graphics\OpenCL.dll) AND IsOS(VISTA,MAXOS)
+source=%source%\x64\Drv64.exe
+destination=%installDir%\uninstall\x64\Drv64.exe
+destination=%system%\difxapi.dll
+destination=%system64%\difxapi.dll
+destination=%ProgFilesDir%\Intel\Intel(R) Graphics Media Accelerator Driver
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\HDMI
+path=SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\HDMI
+[inf]
+bin=%systemcuros%\GfxUIEx.exe
+bin=%systemcuros%\GfxUIEx.exe
+bin=%systemcuros%\GfxUIEx.exe
+path=System\CurrentControlSet\Control\Windows
+value=SystemDirectory
+data=%system%
+path=System\CurrentControlSet\Services\ialm\Device0
+value=SystemDirectory
+data=%system%
+path=System\CurrentControlSet\Services\ialm\Device1
+value=SystemDirectory
+data=%system%
+; HDMI
+source=%source%\Media\Media.cab
+[inf]
+name=HDMI
+group=HDMI
+;Uninstall registry values placed by INF during installation. Do not delete key!
+destination=%startmenu%\Intel\Intel(R) HD Graphics Control Panel.lnk
+destination=%startmenu%\Intel(R) HD Graphics Control Panel.lnk
+destination=%startmenu%\Intel(R) Graphics and Media Control Panel.lnk
+destination=%startmenu%\Intel\Intel(R) Graphics and Media Control Panel.lnk
+destination=%commondesktop%\Intel(R) HD Graphics Control Panel.lnk
+destination=%commondesktop%\Intel(R) Graphics and Media Control Panel.lnk
+destination=%startmenu%\Intel\Intel(R) Iris(R) Graphics Control Panel.lnk
+destination=%startmenu%\Intel(R) Iris(R) Graphics Control Panel.lnk
+destination=%commondesktop%\Intel(R) Iris(R) Graphics Control Panel.lnk
+destination=%commondesktop%\Intel\Intel(R) Iris(R) Graphics Control Panel.lnk
+bin=%system%\msiexec.exe
+bin=%system%\msiexec.exe
+bin=%system%\msiexec.exe
+source=%source%\Graphics\media_cp.man
+source=%source%\Graphics\igd11dxva32.dll
+source=%source%\Graphics\igd11dxva64.dll
+bin=%system%\wevtutil.exe
+bin=%system%\wevtutil.exe
+destination=%systemcuros%\igfxsrvc.exe
+destination=%systemcuros%\igfxtray.exe
+path=System\CurrentControlSet\Services\ialm\Device0
+path=System\CurrentControlSet\Services\ialm\Device1
+path=SYSTEM\CurrentControlSet\Services\igfxCUIService2.0.0.0
+destination=%system%\IntelCpHeciSvc.exe
+destination=%system%\iglhcp32.dll
+destination=%systemcuros%\iglhcp64.dll
+;;IntelCpHDCPSvc.exe is always in system32 for both x64/x86
+destination=%systemcuros%\IntelCpHDCPSvc.exe
+;;Cp_resouces.bin? is always in system32 for both x64/x86
+destination=%systemcuros%\cp_resources.bin
