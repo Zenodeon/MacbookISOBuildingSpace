@@ -1,0 +1,1 @@
+add "I:\MacbookISOBuildingSpace\work\staging\a1706.cmd" \Windows\System32\a1706.cmd

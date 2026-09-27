@@ -5,7 +5,7 @@ echo ran>X:\a1706.ran
 set LOGX=X:\a1706-setup-log.txt
 set LOGS=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :try %%L
-set "MSG=A1706 setup log v10 %DATE% %TIME%"
+set "MSG=A1706 setup log v11 %DATE% %TIME%"
 call :note
 set "MSG=writable drives:!LOGS!"
 call :note
@@ -18,14 +18,20 @@ call :note
 call :copysapi
 set "MSG=step after-wpeinit"
 call :note
-set "MSG=v10 BasicDisplay stays on, start igfx after log"
+set "MSG=v11 log first, pnputil restart igfx, then disable BasicDisplay"
 call :note
-call :dump sc query igfx
-call :dump sc query BasicDisplay
-set "MSG=step start igfx"
-call :note
-call :dump sc start igfx
-call :dump sc query igfx
+set "GPU=PCI\VEN_8086&DEV_1927&SUBSYS_015D106B&REV_0A\3&11583659&0&10"
+set "BASIC=ROOT\BasicDisplay\0000"
+set "TAG=restart-igfx"
+call :pnpdev /restart-device
+call :dump pnputil /enum-devices /class Display
+call :dump pnputil /enum-devices /problem
+set "TAG=disable-basicdisplay"
+call :pnpbasic /disable-device
+set "TAG=restart-igfx-after-basic"
+call :pnpdev /restart-device
+call :dump pnputil /enum-devices /class Display
+call :copysapi
 set DRV=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :finddrv %%L
 set "MSG=disc=!DRV!"
@@ -60,8 +66,6 @@ call :dump pnputil /enum-devices /class Monitor
 call :dump pnputil /enum-drivers
 call :dump reg query HKLM\SYSTEM\CurrentControlSet\Enum\DISPLAY /s
 call :dump reg query HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers /s
-call :dump sc query igfx
-call :dump sc query BasicDisplay
 set "MSG=----- volumes -----"
 call :note
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W X Y Z) do if exist %%L:\ (
@@ -79,7 +83,7 @@ if exist %SystemRoot%\System32\DisplaySwitch.exe (
 )
 call :copysapi
 if exist %SystemRoot%\System32\Narrator.exe start "" %SystemRoot%\System32\Narrator.exe
-set "MSG=v10 igfx demand-start, BasicDisplay left enabled"
+set "MSG=v11 pnputil restart done, display cycle"
 call :note
 set "MSG=display cycle start %TIME%"
 call :note
@@ -178,6 +182,32 @@ goto :eof
 if not exist "%~1" goto :eof
 type "%~1" >>"%LOGX%"
 for %%D in (!LOGS!) do type "%~1" >>"%%D:\A1706Logs\a1706-setup-log.txt"
+goto :eof
+:pnpdev
+set "MSG=step !TAG! %~1"
+call :note
+pnputil %~1 "!GPU!" >X:\a1706-cmd-out.txt 2>&1
+set RC=!ERRORLEVEL!
+call :addfile X:\a1706-cmd-out.txt
+if !RC! equ 0 (
+  set "MSG=errorlevel=!RC! !TAG!"
+) else (
+  set "MSG=ERROR errorlevel=!RC! !TAG!"
+)
+call :note
+goto :eof
+:pnpbasic
+set "MSG=step !TAG! %~1"
+call :note
+pnputil %~1 "!BASIC!" >X:\a1706-cmd-out.txt 2>&1
+set RC=!ERRORLEVEL!
+call :addfile X:\a1706-cmd-out.txt
+if !RC! equ 0 (
+  set "MSG=errorlevel=!RC! !TAG!"
+) else (
+  set "MSG=ERROR errorlevel=!RC! !TAG!"
+)
+call :note
 goto :eof
 :cue
 if not exist %SystemRoot%\System32\a1706cue.exe (
