@@ -5,7 +5,7 @@ echo ran>X:\a1706.ran
 set LOGX=X:\a1706-setup-log.txt
 set LOGS=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :try %%L
-set "MSG=A1706 setup log v8 %DATE% %TIME%"
+set "MSG=A1706 setup log v10 %DATE% %TIME%"
 call :note
 set "MSG=writable drives:!LOGS!"
 call :note
@@ -18,8 +18,14 @@ call :note
 call :copysapi
 set "MSG=step after-wpeinit"
 call :note
-set "MSG=iris boot-start in image, skip drvload"
+set "MSG=v10 BasicDisplay stays on, start igfx after log"
 call :note
+call :dump sc query igfx
+call :dump sc query BasicDisplay
+set "MSG=step start igfx"
+call :note
+call :dump sc start igfx
+call :dump sc query igfx
 set DRV=
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do if exist %%L:\ call :finddrv %%L
 set "MSG=disc=!DRV!"
@@ -54,6 +60,8 @@ call :dump pnputil /enum-devices /class Monitor
 call :dump pnputil /enum-drivers
 call :dump reg query HKLM\SYSTEM\CurrentControlSet\Enum\DISPLAY /s
 call :dump reg query HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers /s
+call :dump sc query igfx
+call :dump sc query BasicDisplay
 set "MSG=----- volumes -----"
 call :note
 for %%L in (C D E F G H I J K L M N O P Q R S T U V W X Y Z) do if exist %%L:\ (
@@ -71,11 +79,8 @@ if exist %SystemRoot%\System32\DisplaySwitch.exe (
 )
 call :copysapi
 if exist %SystemRoot%\System32\Narrator.exe start "" %SystemRoot%\System32\Narrator.exe
-set "MSG=booted saved SYSTEM hive, skip force-switch"
+set "MSG=v10 igfx demand-start, BasicDisplay left enabled"
 call :note
-set "MSG=step save hive"
-call :note
-for %%D in (!LOGS!) do call :savehiv %%D
 set "MSG=display cycle start %TIME%"
 call :note
 call :cue display
@@ -173,20 +178,6 @@ goto :eof
 if not exist "%~1" goto :eof
 type "%~1" >>"%LOGX%"
 for %%D in (!LOGS!) do type "%~1" >>"%%D:\A1706Logs\a1706-setup-log.txt"
-goto :eof
-:savehiv
-set "MSG=save SYSTEM.hiv on %~1"
-call :note
-if not exist "%~1:\A1706Logs\" mkdir "%~1:\A1706Logs"
-reg save HKLM\SYSTEM "%~1:\A1706Logs\SYSTEM.hiv" /y >X:\a1706-cmd-out.txt 2>&1
-set RC=!ERRORLEVEL!
-call :addfile X:\a1706-cmd-out.txt
-if !RC! equ 0 (
-  set "MSG=errorlevel=!RC! saved SYSTEM.hiv on %~1"
-) else (
-  set "MSG=ERROR errorlevel=!RC! SYSTEM.hiv on %~1"
-)
-call :note
 goto :eof
 :cue
 if not exist %SystemRoot%\System32\a1706cue.exe (
