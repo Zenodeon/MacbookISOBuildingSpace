@@ -1,2 +1,2 @@
 after-setup log started
-Windows Setup | Windows Setup | OK | Cancel
+Windows Setup | Windows Setup | Nav Window | &Back | Windows Setup | Cancel | Install Windows | Install Windows | Languag&e to install:  | &Time and currency format:  | &Keyboard or input method:  | Enter your language and other preferences and click "Next" to continue. | &Next | © Microsoft Corporation. All rights reserved. | Windows Setup
